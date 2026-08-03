@@ -3421,3 +3421,61 @@ body::after {
     margin-top: 4px;
   }
 }
+
+/* ── プラットフォーム別 機能一覧ページ (= ユーザー要望) ───────────────── */
+.platform-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+.platform-tab {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, .16);
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: background .18s ease, border-color .18s ease;
+}
+.platform-tab:hover { border-color: var(--vermillion, #c1440e); }
+.platform-tab.is-active {
+  background: var(--vermillion, #c1440e);
+  border-color: var(--vermillion, #c1440e);
+  color: #fff;
+}
+.feat-group { margin: 0 0 46px; }
+.feat-group-title {
+  font-size: 22px;
+  margin: 0 0 6px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(0, 0, 0, .10);
+}
+.feat-group-lead { margin: 0 0 16px; opacity: .75; font-size: 14px; }
+.feat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+}
+.feat-item {
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, .5);
+}
+.feat-name { display: block; font-weight: 700; margin-bottom: 6px; }
+.feat-desc { display: block; font-size: 13.5px; line-height: 1.75; opacity: .82; }
+.feat-video-placeholder {
+  margin-top: 14px;
+  padding: 26px 16px;
+  text-align: center;
+  border: 1px dashed rgba(0, 0, 0, .22);
+  border-radius: 12px;
+  font-size: 13px;
+  opacity: .55;
+}

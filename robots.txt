@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kamispec.com/sitemap.xml
+Sitemap: https://hisator-notebook.com/sitemap.xml
