@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ご購入ありがとうございます — HisatorNotebook</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="shortcut icon" href="images/icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="thanks">
+
+<main class="page-main">
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero-title">ご購入ありがとうございます</h1>
+      <p class="page-hero-sub" id="plan-line">— お手続きが完了しました</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="feat-group">
+        <h2 class="feat-group-title">次にすること</h2>
+        <ul class="feat-list">
+          <li class="feat-item">
+            <span class="feat-name">アプリに戻る</span>
+            <span class="feat-desc">
+              HisatorNotebook を開き直すと、プランが反映されます。
+              すぐに反映されない場合は、右上の ⋮ →「プラン・使用状況」から
+              「購入を復元」を実行してください。
+            </span>
+          </li>
+          <li class="feat-item">
+            <span class="feat-name">領収書</span>
+            <span class="feat-desc">
+              ご登録のメールアドレスに Stripe から領収書が届きます。
+            </span>
+          </li>
+          <li class="feat-item">
+            <span class="feat-name">解約・変更</span>
+            <span class="feat-desc">
+              アプリ内の「プラン・使用状況」からいつでも手続きできます。
+              解約後も、次の更新日までは有料機能をご利用いただけます。
+            </span>
+          </li>
+        </ul>
+        <p id="ref" style="opacity:.5;font-size:12px;margin-top:16px"></p>
+      </div>
+      <p><a class="platform-tab" href="index.html">トップへ戻る</a></p>
+    </div>
+  </section>
+</main>
+
+<script>
+  // 決済リンクから ?plan=pro&session_id=cs_test_... で戻ってくる。
+  // 権利付与はサーバー側 (Webhook) が行うので、ここでは表示だけ。
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var plan = (q.get('plan') || '').toLowerCase();
+    var sid = q.get('session_id') || '';
+    var name = plan === 'max' ? 'Max' : (plan === 'pro' ? 'Pro' : '');
+    if (name) {
+      document.getElementById('plan-line').textContent =
+        '— ' + name + ' プランのお申し込みを受け付けました';
+    }
+    if (sid) {
+      document.getElementById('ref').textContent = '受付番号: ' + sid;
+    }
+  })();
+</script>
+
+</body>
+</html>
