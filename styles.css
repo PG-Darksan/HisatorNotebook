@@ -3562,3 +3562,156 @@ body::after {
     @media (prefers-reduced-motion: reduce) {
       .btn-primary:hover { transform: none; }
     }
+
+    /* ══════════════════════════════════════════════════════════════
+       派手めの演出 (= ユーザー要望: もっと派手な UI に)。
+       アイコンの虹をサイト全体の主役にする。 既存指定より後に置いて
+       上書きするので、 この塊を消せば元の落ち着いた見た目に戻る。
+       ══════════════════════════════════════════════════════════════ */
+
+    /* 背景に大きなオーロラを流す */
+    body {
+      background-attachment: fixed;
+    }
+    body::before {
+      background-image:
+        radial-gradient(60vw 60vw at 12% -10%, rgba(92,124,250,0.30), transparent 60%),
+        radial-gradient(55vw 55vw at 92% 8%, rgba(151,117,250,0.26), transparent 60%),
+        radial-gradient(70vw 50vw at 50% 108%, rgba(77,208,225,0.24), transparent 60%),
+        radial-gradient(40vw 40vw at 78% 62%, rgba(255,107,138,0.18), transparent 60%);
+      animation: hnAurora 22s ease-in-out infinite alternate;
+    }
+    @keyframes hnAurora {
+      0%   { transform: translate3d(0,0,0) scale(1); }
+      100% { transform: translate3d(0,-3%,0) scale(1.08); }
+    }
+
+    /* 上部の虹ラインを太く + 流す */
+    body::after {
+      height: 5px;
+      background: var(--rainbow);
+      background-size: 300% 100%;
+      animation: hnFlow 9s linear infinite;
+      box-shadow: 0 0 18px rgba(92,124,250,0.65);
+    }
+    @keyframes hnFlow {
+      0%   { background-position: 0% 50%; }
+      100% { background-position: 300% 50%; }
+    }
+
+    /* 見出しを虹のグラデ文字に */
+    .hero-accent-strong,
+    .hero-title-main .hero-accent-strong {
+      background: var(--rainbow);
+      background-size: 220% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      animation: hnFlow 8s linear infinite;
+      text-shadow: none;
+      filter: drop-shadow(0 4px 18px rgba(92,124,250,0.45));
+    }
+
+    /* セクションラベルをネオンのバッジに */
+    .section-label, .hero-eyebrow {
+      color: #EAF6FF;
+      text-shadow: 0 0 12px rgba(111,195,232,0.75);
+      letter-spacing: 0.22em;
+    }
+
+    /* ボタン: 常時虹 + 光る */
+    .btn-primary {
+      background: var(--rainbow);
+      background-size: 220% 100%;
+      border-color: transparent;
+      color: #10202C;
+      font-weight: 700;
+      animation: hnFlow 10s linear infinite;
+      box-shadow: 0 10px 30px -10px rgba(92,124,250,0.7);
+    }
+    .btn-primary:hover {
+      color: #FFFFFF;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 18px 42px -12px rgba(151,117,250,0.85);
+    }
+    .btn-ghost {
+      border-width: 2px;
+      border-color: rgba(111,195,232,0.55);
+      box-shadow: 0 0 0 0 rgba(111,195,232,0);
+      transition: all 0.25s;
+    }
+    .btn-ghost:hover {
+      border-color: #6FC3E8;
+      box-shadow: 0 0 22px -4px rgba(111,195,232,0.8);
+      background: rgba(111,195,232,0.12);
+      color: #EAF6FF;
+    }
+
+    /* AI / 言語チップを光るピルに */
+    .stat-chip-ai {
+      position: relative;
+      border: 1px solid transparent;
+      background:
+        linear-gradient(#12202E, #12202E) padding-box,
+        var(--rainbow) border-box;
+      background-size: auto, 240% 100%;
+      color: #EAF6FF !important;
+      animation: hnFlow 12s linear infinite;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .stat-chip-ai:hover {
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 10px 26px -10px rgba(92,124,250,0.9);
+    }
+
+    /* ヒーローのアイコンをふわりと浮かせる */
+    .hero-icon {
+      animation: hnFloat 6s ease-in-out infinite;
+    }
+    @keyframes hnFloat {
+      0%,100% { transform: translateY(0); }
+      50%     { transform: translateY(-10px); }
+    }
+
+    /* ヘッダーをすりガラス + 虹の下線に */
+    .site-header {
+      backdrop-filter: blur(14px) saturate(150%);
+      -webkit-backdrop-filter: blur(14px) saturate(150%);
+      border-bottom: 1px solid transparent;
+      background-image:
+        linear-gradient(rgba(10,18,28,0.72), rgba(10,18,28,0.72)) padding-box,
+        var(--rainbow) border-box;
+      background-size: auto, 260% 100%;
+      animation: hnFlow 14s linear infinite;
+    }
+
+    /* 画像・図版を虹の縁で囲う */
+    .feature-shot, .shot, .screenshot, figure img {
+      border-radius: 14px;
+      box-shadow:
+        0 0 0 2px rgba(111,195,232,0.35),
+        0 22px 48px -20px rgba(92,124,250,0.75);
+    }
+
+    /* 動きを減らす設定の人には静かに */
+    @media (prefers-reduced-motion: reduce) {
+      body::before, body::after, .btn-primary, .stat-chip-ai,
+      .site-header, .hero-icon, .hero-accent-strong {
+        animation: none !important;
+      }
+      .btn-primary:hover { transform: none; }
+    }
+
+    /* 言語チップも AI チップと同じガラス調に揃える (白いピルだけ浮くため) */
+    .stat-chip {
+      background: rgba(18, 32, 46, 0.92) !important;
+      border: 1px solid rgba(111, 195, 232, 0.45) !important;
+      color: #DCEEF8 !important;
+      transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+    }
+    .stat-chip:hover {
+      transform: translateY(-2px);
+      border-color: rgba(151, 117, 250, 0.9) !important;
+      box-shadow: 0 8px 22px -10px rgba(92, 124, 250, 0.9);
+    }
