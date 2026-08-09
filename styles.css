@@ -3840,3 +3840,118 @@ body::after {
     }
     /* 数字のカウンタ (対応言語 30 など) も暖色に */
     .stat-list-count { color: var(--warm) !important; font-size: 15px !important; }
+
+/* ══════════════════════════════════════════════════════════════════════
+   ボタンを黄金基調に戻す (= ユーザー要望: ボタン項目の色が地味過ぎる)。
+
+   見出しやチップは琥珀/金なのに、 ボタンだけ灰青のままで浮いていた
+   (--gold 変数の中身も青 #5E8CA6 に差し替わっていた)。 主要ボタン・
+   ダウンロード・お問い合わせを金色に統一する。 前段の青系指定を確実に
+   上書きするため、 ファイル末尾に置く。
+   ══════════════════════════════════════════════════════════════════════ */
+:root {
+  --gold: #E8B563;
+  --gold-deep: #C98F3F;
+  --gold-pale: #FFE7C7;
+}
+
+/* ── 主要ボタン ── */
+.btn-primary {
+  background: linear-gradient(135deg, #FFD98A 0%, #E8B563 45%, #C98F3F 100%) !important;
+  background-size: auto !important;
+  color: #2A1405 !important;
+  border: 1px solid rgba(255, 231, 199, 0.5) !important;
+  font-weight: 700 !important;
+  animation: none !important;            /* 虹のアニメを止める */
+  box-shadow:
+    0 4px 20px rgba(232, 181, 99, 0.35),
+    0 0 30px rgba(232, 181, 99, 0.12) !important;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #FFE7C7 0%, #FFD08A 45%, #D89B48 100%) !important;
+  color: #2A1405 !important;
+  box-shadow:
+    0 8px 30px rgba(232, 181, 99, 0.55),
+    0 0 52px rgba(232, 181, 99, 0.28) !important;
+  transform: translateY(-2px);
+}
+
+/* ── 枠線ボタン ── */
+.btn-ghost {
+  border: 1px solid rgba(232, 181, 99, 0.55) !important;
+  color: #FFD9A8 !important;
+}
+.btn-ghost:hover {
+  border-color: #E8B563 !important;
+  background: rgba(232, 181, 99, 0.10) !important;
+  color: #FFE7C7 !important;
+  box-shadow: 0 0 22px -4px rgba(232, 181, 99, 0.75) !important;
+}
+
+/* ── ダウンロードボタン (ヒーロー) ── */
+.hero .btn-dl {
+  background: linear-gradient(135deg,
+      rgba(48, 34, 14, 0.92) 0%,
+      rgba(26, 20, 10, 0.92) 100%) !important;
+  border: 1px solid rgba(232, 181, 99, 0.55) !important;
+  color: #FFE7C7 !important;
+  box-shadow:
+    0 4px 22px rgba(0, 0, 0, 0.45),
+    0 0 26px rgba(232, 181, 99, 0.14),
+    inset 0 1px 0 rgba(255, 231, 199, 0.12) !important;
+}
+.hero .btn-dl:hover {
+  border-color: #E8B563 !important;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 0 44px rgba(232, 181, 99, 0.40),
+    inset 0 1px 0 rgba(255, 231, 199, 0.20) !important;
+}
+.hero .btn-dl .dl-label { color: #FFE7C7 !important; }
+.hero .btn-dl .dl-sub { color: rgba(255, 231, 199, 0.62) !important; }
+.hero .btn-dl .dl-os { color: #E8B563 !important; }
+
+/* 準備中 (Coming soon) でも金色と分かるよう、 灰色化をやめて薄めるだけに */
+.btn-dl-soon {
+  opacity: 0.92 !important;
+  filter: none !important;
+}
+
+/* ── お問い合わせ (ナビの CTA) ──
+   980px 以下ではアイコン化して透明のピルになるので、 そこは触らない。 */
+@media (min-width: 981px) {
+  nav .nav-cta,
+  body[data-page="home"] nav .nav-cta,
+  body[data-page="home"] nav.scrolled .nav-cta {
+    background: linear-gradient(135deg, #FFD98A 0%, #E8B563 50%, #C98F3F 100%) !important;
+    border: 1px solid rgba(255, 231, 199, 0.45) !important;
+    color: #2A1405 !important;
+    font-weight: 700 !important;
+    box-shadow: 0 3px 16px rgba(232, 181, 99, 0.35) !important;
+  }
+  nav .nav-cta::before { background-color: #2A1405 !important; }
+  nav .nav-cta:hover,
+  body[data-page="home"] nav .nav-cta:hover,
+  body[data-page="home"] nav.scrolled .nav-cta:hover {
+    background: linear-gradient(135deg, #FFE7C7 0%, #FFD08A 50%, #D89B48 100%) !important;
+    color: #2A1405 !important;
+    box-shadow: 0 6px 24px rgba(232, 181, 99, 0.55) !important;
+  }
+}
+
+/* ── 料金カードのボタンも金色で揃える ── */
+.pricing-card.recommended .btn-primary,
+.price-card.recommended .btn-primary {
+  background: linear-gradient(135deg, #FFD98A 0%, #E8B563 45%, #C98F3F 100%) !important;
+  color: #2A1405 !important;
+}
+.pricing-card .btn-ghost,
+.price-card .btn-ghost {
+  border-color: rgba(232, 181, 99, 0.5) !important;
+  color: #FFD9A8 !important;
+}
+.pricing-card .btn-ghost:hover,
+.price-card .btn-ghost:hover {
+  border-color: #E8B563 !important;
+  background: rgba(232, 181, 99, 0.10) !important;
+}
