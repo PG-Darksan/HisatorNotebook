@@ -3454,38 +3454,123 @@ body::after {
   border-color: var(--vermillion, #1F4E68);
   color: #fff;
 }
+/* ── 機能一覧のカード ────────────────────────────────────────────
+   サイト全体が夜空のダークテーマになった後も、 ここだけ元の明るいテーマの
+   ままの色 (白 50% の地 + 黒い枠) だったため、 暗い背景に載ると
+   「ただの灰色の箱」 に見えていた (= ユーザー要望: もっとお洒落に)。
+   ヒーローのボタンと同じ言語 (半透明のガラス + 水色 #6FC3E8 の光) に揃える。
+   ────────────────────────────────────────────────────────── */
 .feat-group { margin: 0 0 46px; }
 .feat-group-title {
   font-size: 22px;
   margin: 0 0 6px;
-  padding-bottom: 8px;
-  border-bottom: 2px solid rgba(0, 0, 0, .10);
+  padding-bottom: 10px;
+  border-bottom: none;
+  position: relative;
+  letter-spacing: .02em;
 }
-.feat-group-lead { margin: 0 0 16px; opacity: .75; font-size: 14px; }
+/* 見出しの下線は、 左から水色が消えていく細い光の線にする */
+.feat-group-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #6FC3E8, rgba(111, 195, 232, 0));
+  box-shadow: 0 0 12px rgba(111, 195, 232, .55);
+}
+.feat-group-lead { margin: 0 0 18px; opacity: .75; font-size: 14px; }
 .feat-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 12px;
+  gap: 14px;
 }
 .feat-item {
-  border: 1px solid rgba(0, 0, 0, .12);
-  border-radius: 12px;
-  padding: 14px 16px;
-  background: rgba(255, 255, 255, .5);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .09);
+  border-radius: 14px;
+  padding: 16px 18px 16px 20px;
+  background:
+    linear-gradient(160deg,
+      rgba(255, 255, 255, .075) 0%,
+      rgba(255, 255, 255, .028) 45%,
+      rgba(8, 10, 20, .34) 100%);
+  backdrop-filter: blur(10px) saturate(115%);
+  -webkit-backdrop-filter: blur(10px) saturate(115%);
+  box-shadow:
+    0 6px 22px rgba(0, 0, 0, .28),
+    inset 0 1px 0 rgba(255, 255, 255, .07);
+  transition:
+    transform .28s cubic-bezier(.2, .7, .3, 1),
+    border-color .28s ease,
+    box-shadow .28s ease;
 }
-.feat-name { display: block; font-weight: 700; margin-bottom: 6px; }
-.feat-desc { display: block; font-size: 13.5px; line-height: 1.75; opacity: .82; }
-.feat-video-placeholder {
-  margin-top: 14px;
-  padding: 26px 16px;
-  text-align: center;
-  border: 1px dashed rgba(0, 0, 0, .22);
-  border-radius: 12px;
-  font-size: 13px;
+/* 左端の細い光の筋。 ホバーで上下に伸びる */
+.feat-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  bottom: 14px;
+  width: 2px;
+  border-radius: 0 2px 2px 0;
+  background: linear-gradient(180deg, #6FC3E8, rgba(111, 195, 232, .12));
   opacity: .55;
+  transition: opacity .28s ease, top .28s ease, bottom .28s ease;
+}
+/* 右上にうっすら差す光。 ふだんは見えず、 ホバーで浮かぶ */
+.feat-item::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 60%;
+  height: 140%;
+  background: radial-gradient(closest-side,
+    rgba(111, 195, 232, .16), rgba(111, 195, 232, 0));
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+}
+.feat-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(111, 195, 232, .42);
+  box-shadow:
+    0 12px 34px rgba(0, 0, 0, .38),
+    0 0 22px rgba(111, 195, 232, .18),
+    inset 0 1px 0 rgba(255, 255, 255, .12);
+}
+.feat-item:hover::before { opacity: 1; top: 8px; bottom: 8px; }
+.feat-item:hover::after { opacity: 1; }
+.feat-name {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 7px;
+  letter-spacing: .01em;
+  color: #EAF4FB !important;
+}
+.feat-desc {
+  display: block;
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: rgba(214, 228, 239, .80) !important;
+}
+.feat-video-placeholder {
+  margin-top: 16px;
+  padding: 28px 16px;
+  text-align: center;
+  border: 1px dashed rgba(111, 195, 232, .28);
+  border-radius: 14px;
+  font-size: 13px;
+  color: rgba(214, 228, 239, .55);
+  background: linear-gradient(180deg,
+    rgba(111, 195, 232, .05), rgba(255, 255, 255, .015));
 }
 
 
