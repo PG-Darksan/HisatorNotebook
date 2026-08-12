@@ -461,31 +461,33 @@
   }
 })();
 
-/* ── 訪問者数カウント (CounterAPI v1 / 登録不要・キー不要) ──
-   GitHub Pages のような静的ホスティングでもサーバー不要でカウントできる。
-   namespace + カウンター名だけで動作する (アカウント登録不要)。
-   1 セッションにつき 1 回だけ +1 し、 それ以降は現在値の取得のみ行う。 */
+/* ── 訪問者数カウント (自前の Worker) ──
+   以前は無料の外部サービス (counterapi.dev v1) を使っていたが、 その API が
+   廃止されて 410 Gone を返すようになり、 数字が出せなくなっていた。
+   今は自分の Worker (api.hisator-notebook.com) の KV で数えている。
+
+     POST /site/visits … 1 つ増やして今の数を返す
+     GET  /site/visits … 数えずに今の数だけ返す
+
+   1 セッションにつき 1 回だけ +1 し、 それ以降は取得のみ。 通信に失敗した
+   時はカウンター自体を隠す (「—」 のまま置いておくと壊れて見えるため)。 */
 (function () {
   var el = document.getElementById('visitor-count');
   if (!el) return;
-  var NS = 'kamispec';       // 名前空間 (サイト識別子)
-  var KEY = 'site-visits';   // カウンター名
-  var base = 'https://api.counterapi.dev/v1/' + NS + '/' + KEY;
+  var API = 'https://api.hisator-notebook.com/site/visits';
   var counted = false;
-  try { counted = !!sessionStorage.getItem('kamispec_visit_counted'); } catch (e) {}
-  var url = counted ? (base + '/') : (base + '/up');
-  fetch(url)
+  try { counted = !!sessionStorage.getItem('hisator_visit_counted'); } catch (e) {}
+  fetch(API, { method: counted ? 'GET' : 'POST' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) {
       if (!counted) {
-        try { sessionStorage.setItem('kamispec_visit_counted', '1'); } catch (e) {}
+        try { sessionStorage.setItem('hisator_visit_counted', '1'); } catch (e) {}
       }
-      if (!d) return;
-      var n = (typeof d.value === 'number') ? d.value
-            : (typeof d.count === 'number') ? d.count
-            : (d.data && (typeof d.data.up_count === 'number' ? d.data.up_count
-                        : (typeof d.data.value === 'number' ? d.data.value : null)));
-      if (typeof n === 'number') el.textContent = n.toLocaleString();
+      if (!d || typeof d.count !== 'number') throw new Error('bad response');
+      el.textContent = d.count.toLocaleString();
     })
-    .catch(function () { /* 取得失敗時は — のまま */ });
+    .catch(function () {
+      var box = el.closest ? el.closest('.visitor-counter') : null;
+      if (box) box.style.display = 'none';
+    });
 })();
