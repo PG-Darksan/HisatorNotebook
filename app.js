@@ -475,6 +475,8 @@
   var el = document.getElementById('visitor-count');
   if (!el) return;
   var API = 'https://api.hisator-notebook.com/site/visits';
+  /* 表示に足す数 (= 依頼: 訪問者数を +510 して見せる)。 */
+  var BOOST = 510;
   var counted = false;
   try { counted = !!sessionStorage.getItem('hisator_visit_counted'); } catch (e) {}
   fetch(API, { method: counted ? 'GET' : 'POST' })
@@ -484,7 +486,9 @@
         try { sessionStorage.setItem('hisator_visit_counted', '1'); } catch (e) {}
       }
       if (!d || typeof d.count !== 'number') throw new Error('bad response');
-      el.textContent = d.count.toLocaleString();
+      /* 表示は下駄を履かせた数にする (= 依頼)。 数え方そのもの (Worker の KV)
+         は素の値のままで、 見せ方だけ +BOOST する。 */
+      el.textContent = (d.count + BOOST).toLocaleString();
     })
     .catch(function () {
       var box = el.closest ? el.closest('.visitor-counter') : null;
