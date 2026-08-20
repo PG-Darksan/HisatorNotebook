@@ -1947,8 +1947,11 @@
       .feature-matrix thead th,
       .feature-matrix tbody td { padding: 10px 8px; }
     }
-    /* ===== モバイル: ナビをアイコンのみに (CTA も含む) ===== */
-    @media (max-width: 640px) {
+    /* ===== モバイル: ナビをアイコンのみに (CTA も含む) =====
+       文字を出したままだと 734px 必要で、 641〜760px の端末では
+       「お問い合わせ」 とブランド名が切れていた (= ユーザー報告)。
+       この帯もアイコンだけにすると 491px で収まる。 */
+    @media (max-width: 860px) {
       nav { padding: 12px 12px; }
       .nav-links { gap: 2px; }
       .nav-link {
@@ -1967,6 +1970,102 @@
       /* 言語切替も詰める */
       .lang-switcher .lang-toggle { padding: 6px 10px; font-size: 11px; }
     }
+
+
+/* ────────────────────────────────────────────────────────────────
+   モバイル: ナビが画面に収まらない件 (= ユーザー報告)
+
+   横並びのまま縮まないので、 幅の狭い端末では右側の言語切替と
+   「お問い合わせ」 が画面の外へ押し出され、 nav は position:fixed で
+   ページごと横スクロールもできないため、 二度と触れなくなっていた。
+     ・ブランド名は先に縮む / はみ出す分は … で省略
+     ・リンクの列は指で左右に流せる (スクロールバーは出さない)
+     ・余白がある時だけ右寄せ。 auto マージンで寄せているのは、
+       justify-content:flex-end だと はみ出した側へスクロールできなく
+       なるため (よくある flexbox の落とし穴)
+   ──────────────────────────────────────────────────────────── */
+@media (max-width: 980px) {
+  nav { gap: 10px; }
+  .brand {
+    flex: 0 1 auto;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .brand-mark { flex: 0 0 auto; }
+  .nav-links {
+    flex: 1 1 auto;
+    min-width: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-padding: 0 8px;
+    /* 横に流す指の動きを、 アプリ内ブラウザ (Instagram など) の
+       「戻る」 ジェスチャに横取りされないようにする
+       (= ユーザー報告: この帯が動かせない)。 */
+    overscroll-behavior-x: contain;
+    touch-action: pan-x;
+  }
+  .nav-links::-webkit-scrollbar { width: 0; height: 0; display: none; }
+  .nav-links > * { flex: 0 0 auto; }
+  .nav-links > :first-child { margin-left: auto; }
+}
+
+/* ────────────────────────────────────────────────────────────────
+   言語切替は nav の直下に置く (= ユーザー報告: HP の右上が動かせない)
+
+   以前は .nav-links の中に入れていたが、 モバイル幅ではその枠が
+   overflow-x:auto / overflow-y:hidden のスクロール枠になるため、
+   絶対配置のドロップダウン (.lang-menu) が枠の外に出た瞬間に
+   切り取られ、 開いても見えなかった。 枠の外に出せば切られない。
+   nav は justify-content:space-between なので、 リンクの列に
+   margin-left:auto を付けて 「ブランド名 … リンク + 言語」 という
+   従来どおりの並びに戻している。
+   ──────────────────────────────────────────────────────────── */
+nav > .nav-links { margin-left: auto; }
+nav > .lang-switcher {
+  flex: 0 0 auto;
+  margin-left: 18px;
+  margin-right: 0;
+  z-index: 2;
+}
+@media (max-width: 860px) {
+  nav > .lang-switcher { margin-left: 6px; }
+}
+@media (max-width: 640px) {
+  .brand { font-size: 16px; gap: 8px; }
+  .brand-mark { width: 24px; height: 24px; }
+  nav { gap: 6px; }
+}
+/* 幅の狭い端末では名前を出さず、 印だけにしてリンクへ幅を譲る。
+   実測 (幅 490): リンクの列 287px + ブランド名 174px + 余白 24px = 491px で
+   ぎりぎり収まらない。 名前を落とすと 343px になり、 360px の端末でも余る。 */
+@media (max-width: 520px) {
+  .brand { font-size: 0; gap: 0; }
+  .brand-mark { width: 26px; height: 26px; }
+}
+
+/* ── プラットフォーム切替のピル: 中央に揃え、 文字は折らない ── */
+.platform-tabs { justify-content: center; }
+.platform-tab { white-space: nowrap; }
+@media (max-width: 640px) {
+  .platform-tabs { gap: 6px; margin-top: 14px; }
+  .platform-tab { font-size: 13px; padding: 7px 13px; }
+}
+
+/* ── 下位ページの見出しが画面からはみ出して切れていた件 ── */
+@media (max-width: 640px) {
+  .page-hero { padding: 118px 0 44px; }
+  .page-hero-title {
+    font-size: clamp(26px, 8.4vw, 40px);
+    line-height: 1.28;
+    overflow-wrap: anywhere;
+  }
+  .page-hero-sub { font-size: 13.5px; }
+}
 
 /* ────────────────────────────────────────────
    特定商取引法に基づく表記 (tokutei.html)
