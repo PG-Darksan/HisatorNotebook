@@ -2040,12 +2040,16 @@ nav > .lang-switcher {
   .brand-mark { width: 24px; height: 24px; }
   nav { gap: 6px; }
 }
-/* 幅の狭い端末では名前を出さず、 印だけにしてリンクへ幅を譲る。
-   実測 (幅 490): リンクの列 287px + ブランド名 174px + 余白 24px = 491px で
-   ぎりぎり収まらない。 名前を落とすと 343px になり、 360px の端末でも余る。 */
+/* 幅の狭い端末でも名前は出す (= ユーザー要望: 左上に HisatorNotebook の
+   文字が出ていない)。 旧実装は font-size: 0 で名前を消していた。
+   文字を小さくして印も縮め、 リンクの列に幅を譲る。 */
 @media (max-width: 520px) {
-  .brand { font-size: 0; gap: 0; }
-  .brand-mark { width: 26px; height: 26px; }
+  .brand { font-size: 13px; gap: 6px; }
+  .brand-mark { width: 22px; height: 22px; }
+}
+@media (max-width: 400px) {
+  .brand { font-size: 12px; gap: 5px; }
+  .brand-mark { width: 20px; height: 20px; }
 }
 
 /* ── プラットフォーム切替のピル: 中央に揃え、 文字は折らない ── */
