@@ -1987,10 +1987,14 @@
 @media (max-width: 980px) {
   nav { gap: 10px; }
   .brand {
-    flex: 0 1 auto;
+    /* 名前は必ず全部出す (= ユーザー報告: 末尾の k が切れる)。
+       旧: flex: 0 1 auto + overflow: hidden で、 幅が足りない時に
+       ブランド側が削られて文字が欠けていた。 縮まない指定にして、
+       代わりに右のリンク列がスクロールする。 */
+    flex: 0 0 auto;
     min-width: 0;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: visible;
   }
   .brand-mark { flex: 0 0 auto; }
   .nav-links {
@@ -2044,12 +2048,13 @@ nav > .lang-switcher {
    文字が出ていない)。 旧実装は font-size: 0 で名前を消していた。
    文字を小さくして印も縮め、 リンクの列に幅を譲る。 */
 @media (max-width: 520px) {
-  .brand { font-size: 13px; gap: 6px; }
+  /* 文字を小さくして 1 行に収める。 欠けさせない (= ユーザー報告)。 */
+  .brand { font-size: 13px; gap: 6px; flex: 0 0 auto; overflow: visible; }
   .brand-mark { width: 22px; height: 22px; }
 }
 @media (max-width: 400px) {
-  .brand { font-size: 12px; gap: 5px; }
-  .brand-mark { width: 20px; height: 20px; }
+  .brand { font-size: 11.5px; gap: 4px; }
+  .brand-mark { width: 18px; height: 18px; }
 }
 
 /* ── プラットフォーム切替のピル: 中央に揃え、 文字は折らない ── */
