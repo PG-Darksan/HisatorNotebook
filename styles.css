@@ -3949,7 +3949,19 @@ body::after {
     /* 上部ラインとロゴ枠も暖色グラデに揃える */
     body::after { background: var(--warm-grad); box-shadow: 0 0 18px rgba(255,138,61,0.6); }
     .brand-mark { background: var(--warm-grad); }
-    .hero-icon  { background: var(--warm-grad); box-shadow: 0 24px 52px -18px rgba(255,138,61,0.45); }
+    /* ── ヒーローのアイコン台紙 ──
+       = ユーザー要望「背景が派手過ぎるからもう少し地味に」。
+       以前は見出しと同じ暖色グラデ (橙→金→桃) を敷いていて、 アイコン本体
+       (紺と金の紋章) より台紙の方が目立っていた。 ページの夜空に馴染む
+       深い紺の台紙にして、 縁と影にだけ暖色をほんのり残す。 */
+    .hero-icon {
+      background:
+        linear-gradient(160deg, rgba(32, 40, 68, 0.96), rgba(16, 20, 38, 0.96));
+      border: 1px solid rgba(255, 178, 102, 0.22);
+      box-shadow:
+        0 20px 44px -22px rgba(0, 0, 0, 0.7),
+        0 0 22px -12px rgba(255, 162, 61, 0.28);
+    }
     .site-header {
       background-image:
         linear-gradient(rgba(14,16,26,0.74), rgba(14,16,26,0.74)) padding-box,
