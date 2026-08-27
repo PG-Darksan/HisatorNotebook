@@ -22,6 +22,20 @@
     <changefreq>weekly</changefreq>
   </url>
 
+  <!-- プライバシーポリシー -->
+  <url>
+    <loc>https://hisator-notebook.com/privacy.html</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- 利用規約 -->
+  <url>
+    <loc>https://hisator-notebook.com/terms.html</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
   <!-- お問い合わせ -->
   <url>
     <loc>https://hisator-notebook.com/contact.html</loc>
