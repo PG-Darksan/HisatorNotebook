@@ -3,71 +3,294 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ご購入ありがとうございます — HisatorNotebook</title>
+  <title>Thank you — HisatorNotebook</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="shortcut icon" href="images/icon.png">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body data-page="thanks">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16232C; --ink-soft:#33505F; --ink-muted:#5E7787; --ink-faint:#93A7B4;
+    --paper:#FFFFFF; --rule:#D7E3EC; --accent:#2C6584; --accent-soft:#4E8F7C;
+    --gold:#B08D57;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:#EEF3F8;color:var(--ink);line-height:1.75;min-height:100vh;
+    font-family:'Zen Kaku Gothic New',-apple-system,BlinkMacSystemFont,
+      'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(circle at 18% 8%,rgba(94,140,166,.10) 0%,transparent 55%),
+      radial-gradient(circle at 82% 78%,rgba(78,143,124,.08) 0%,transparent 55%);
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
 
-<main class="page-main">
-  <section class="page-hero">
-    <div class="container">
-      <h1 class="page-hero-title">ご購入ありがとうございます</h1>
-      <p class="page-hero-sub" id="plan-line">— お手続きが完了しました</p>
+  /* ── 冠 ── */
+  .hero{padding:88px 0 40px;text-align:center;position:relative}
+  .seal{
+    width:84px;height:84px;margin:0 auto 26px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(145deg,#fff,#E7EFF6);
+    border:1px solid var(--rule);
+    box-shadow:0 10px 30px rgba(22,35,44,.10),inset 0 1px 0 #fff;
+    animation:pop .7s cubic-bezier(.2,.9,.3,1.4) both;
+  }
+  .seal svg{width:38px;height:38px}
+  @keyframes pop{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
+  .eyebrow{
+    font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--ink-faint);margin-bottom:14px;
+  }
+  h1{
+    font-family:'Fraunces',Georgia,serif;font-weight:400;
+    font-size:clamp(30px,5.4vw,46px);line-height:1.25;letter-spacing:.01em;
+    color:var(--ink);margin-bottom:14px;
+  }
+  .plan-line{font-size:15px;color:var(--ink-soft)}
+  .plan-chip{
+    display:inline-flex;align-items:center;gap:7px;margin-top:18px;
+    padding:7px 16px;border-radius:999px;background:var(--paper);
+    border:1px solid var(--rule);font-size:13.5px;color:var(--accent);
+    box-shadow:0 2px 10px rgba(22,35,44,.05);
+  }
+  .plan-chip b{font-weight:700}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent-soft)}
+
+  /* ── 次にすること ── */
+  .steps{padding:34px 0 8px}
+  .steps h2{
+    font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-faint);font-weight:500;margin-bottom:18px;text-align:center;
+  }
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(3,1fr)}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{
+    background:var(--paper);border:1px solid var(--rule);border-radius:14px;
+    padding:22px 20px;box-shadow:0 1px 3px rgba(22,35,44,.05);
+    transition:transform .2s ease,box-shadow .2s ease;
+  }
+  .card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(22,35,44,.09)}
+  .card .n{
+    font-family:'Fraunces',serif;font-size:13px;color:var(--gold);
+    letter-spacing:.1em;margin-bottom:8px;
+  }
+  .card h3{font-size:14.5px;font-weight:700;margin-bottom:7px;color:var(--ink)}
+  .card p{font-size:12.8px;color:var(--ink-muted);line-height:1.7}
+
+  /* ── 締め ── */
+  .foot{padding:34px 0 70px;text-align:center}
+  .btn{
+    display:inline-block;padding:13px 30px;border-radius:999px;
+    background:var(--accent);color:#fff;text-decoration:none;font-size:14px;
+    font-weight:500;box-shadow:0 4px 16px rgba(44,101,132,.28);
+    transition:transform .15s ease,box-shadow .15s ease;
+  }
+  .btn:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(44,101,132,.34)}
+  .ref{margin-top:22px;font-size:11px;color:var(--ink-faint);
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    word-break:break-all}
+
+  /* ── 言語 ── */
+  .langbar{
+    position:fixed;top:14px;right:16px;display:flex;flex-wrap:wrap;gap:4px;
+    justify-content:flex-end;max-width:min(560px,calc(100vw - 32px));z-index:9;
+  }
+  .langbar button{
+    font:inherit;font-size:11px;padding:4px 9px;border-radius:999px;
+    border:1px solid var(--rule);background:rgba(255,255,255,.86);
+    color:var(--ink-muted);cursor:pointer;backdrop-filter:blur(6px);
+  }
+  .langbar button:hover{border-color:var(--accent);color:var(--accent)}
+  .langbar button[aria-pressed="true"]{
+    background:var(--accent);border-color:var(--accent);color:#fff;
+  }
+  @media(max-width:720px){.langbar{position:static;margin:12px auto 0;justify-content:center}}
+
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#E9EFF4; --ink-soft:#BACAD6; --ink-muted:#9DB2C0; --ink-faint:#7A909F;
+      --paper:#182430; --rule:#2A3C4A; --accent:#7FB3CE; --accent-soft:#7FBFA9;
+    }
+    body{
+      background:#0F1922;
+      background-image:
+        radial-gradient(circle at 18% 8%,rgba(127,179,206,.10) 0%,transparent 55%),
+        radial-gradient(circle at 82% 78%,rgba(127,191,169,.07) 0%,transparent 55%);
+    }
+    .seal{background:linear-gradient(145deg,#1D2B38,#152029);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+    .btn{color:#0F1922}
+    .langbar button{background:rgba(24,36,48,.86)}
+  }
+</style>
+</head>
+<body>
+
+<nav class="langbar" id="langbar" aria-label="Language"></nav>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#4E8F7C" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+      </div>
+      <p class="eyebrow" data-i="eyebrow">Payment complete</p>
+      <h1 data-i="title">Thank you</h1>
+      <p class="plan-line" data-i="sub">Your subscription is active.</p>
+      <p><span class="plan-chip" id="chip" hidden><span class="dot"></span><b id="chip-plan"></b><span id="chip-period"></span></span></p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="feat-group">
-        <h2 class="feat-group-title">次にすること</h2>
-        <ul class="feat-list">
-          <li class="feat-item">
-            <span class="feat-name">アプリに戻る</span>
-            <span class="feat-desc">
-              HisatorNotebook を開き直すと、プランが反映されます。
-              すぐに反映されない場合は、右上の ⋮ →「プラン・使用状況」から
-              「購入を復元」を実行してください。
-            </span>
-          </li>
-          <li class="feat-item">
-            <span class="feat-name">領収書</span>
-            <span class="feat-desc">
-              ご登録のメールアドレスに Stripe から領収書が届きます。
-            </span>
-          </li>
-          <li class="feat-item">
-            <span class="feat-name">解約・変更</span>
-            <span class="feat-desc">
-              アプリ内の「プラン・使用状況」からいつでも手続きできます。
-              解約後も、次の更新日までは有料機能をご利用いただけます。
-            </span>
-          </li>
-        </ul>
-        <p id="ref" style="opacity:.5;font-size:12px;margin-top:16px"></p>
+  <section class="steps">
+    <div class="wrap">
+      <h2 data-i="next">What happens next</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="n">01</div>
+          <h3 data-i="c1t">Reopen the app</h3>
+          <p data-i="c1b">Your plan appears automatically. If not, use ⋮ → Plan &amp; usage → Restore purchases.</p>
+        </div>
+        <div class="card">
+          <div class="n">02</div>
+          <h3 data-i="c2t">Receipt</h3>
+          <p data-i="c2b">Stripe emails your receipt to the address you entered.</p>
+        </div>
+        <div class="card">
+          <div class="n">03</div>
+          <h3 data-i="c3t">Cancel anytime</h3>
+          <p data-i="c3b">Manage it in the app under Plan &amp; usage. You keep access until the renewal date.</p>
+        </div>
       </div>
-      <p><a class="platform-tab" href="index.html">トップへ戻る</a></p>
+    </div>
+  </section>
+
+  <section class="foot">
+    <div class="wrap">
+      <a class="btn" href="index.html" data-i="back">Back to top</a>
+      <p class="ref" id="ref"></p>
     </div>
   </section>
 </main>
 
 <script>
-  // 決済リンクから ?plan=pro&session_id=cs_test_... で戻ってくる。
-  // 権利付与はサーバー側 (Webhook) が行うので、ここでは表示だけ。
-  (function () {
-    var q = new URLSearchParams(location.search);
-    var plan = (q.get('plan') || '').toLowerCase();
-    var sid = q.get('session_id') || '';
-    var name = plan === 'max' ? 'Max' : (plan === 'pro' ? 'Pro' : '');
-    if (name) {
-      document.getElementById('plan-line').textContent =
-        '— ' + name + ' プランのお申し込みを受け付けました';
+(function () {
+  // ── 表示する言葉 (= ユーザー要望: 海外勢も想定して、 短く色んな言語で) ──
+  var T = {
+    ja: {name:'日本語', eyebrow:'お支払い完了', title:'ありがとうございます',
+      sub:'ご契約が有効になりました。', next:'次にすること',
+      c1t:'アプリを開き直す', c1b:'プランは自動で反映されます。されない時は ⋮ →「プラン・使用状況」→「購入を復元」。',
+      c2t:'領収書', c2b:'ご入力のメールアドレスに Stripe から届きます。',
+      c3t:'いつでも解約', c3b:'アプリの「プラン・使用状況」から。更新日までは使えます。',
+      back:'トップへ戻る', ref:'受付番号', period:{monthly:'月額', yearly:'年額'}},
+    en: {name:'English', eyebrow:'Payment complete', title:'Thank you',
+      sub:'Your subscription is active.', next:'What happens next',
+      c1t:'Reopen the app', c1b:'Your plan applies automatically. If not, use ⋮ → Plan & usage → Restore purchases.',
+      c2t:'Receipt', c2b:'Stripe emails it to the address you entered.',
+      c3t:'Cancel anytime', c3b:'Manage it under Plan & usage. Access lasts until the renewal date.',
+      back:'Back to top', ref:'Reference', period:{monthly:'Monthly', yearly:'Yearly'}},
+    zh: {name:'中文', eyebrow:'支付完成', title:'感谢您的订阅',
+      sub:'您的订阅已生效。', next:'接下来',
+      c1t:'重新打开应用', c1b:'套餐会自动生效。若未生效，请用 ⋮ →「套餐与用量」→「恢复购买」。',
+      c2t:'收据', c2b:'Stripe 会发送到您填写的邮箱。',
+      c3t:'随时取消', c3b:'在「套餐与用量」中管理，到期前仍可使用。',
+      back:'返回首页', ref:'受理编号', period:{monthly:'每月', yearly:'每年'}},
+    ko: {name:'한국어', eyebrow:'결제 완료', title:'감사합니다',
+      sub:'구독이 활성화되었습니다.', next:'다음 단계',
+      c1t:'앱 다시 열기', c1b:'요금제가 자동 적용됩니다. 아니면 ⋮ →「요금제·사용량」→「구매 복원」.',
+      c2t:'영수증', c2b:'입력하신 주소로 Stripe가 보냅니다.',
+      c3t:'언제든 해지', c3b:'「요금제·사용량」에서 관리하세요. 갱신일까지 사용할 수 있습니다.',
+      back:'홈으로', ref:'접수번호', period:{monthly:'월간', yearly:'연간'}},
+    es: {name:'Español', eyebrow:'Pago completado', title:'Gracias',
+      sub:'Tu suscripción ya está activa.', next:'Qué sigue',
+      c1t:'Vuelve a abrir la app', c1b:'El plan se aplica solo. Si no, usa ⋮ → Plan y uso → Restaurar compras.',
+      c2t:'Recibo', c2b:'Stripe lo envía al correo que indicaste.',
+      c3t:'Cancela cuando quieras', c3b:'Gestiónalo en Plan y uso. Mantienes el acceso hasta la renovación.',
+      back:'Volver al inicio', ref:'Referencia', period:{monthly:'Mensual', yearly:'Anual'}},
+    fr: {name:'Français', eyebrow:'Paiement effectué', title:'Merci',
+      sub:'Votre abonnement est actif.', next:'La suite',
+      c1t:'Rouvrez l’application', c1b:'L’offre s’applique seule. Sinon : ⋮ → Offre et usage → Restaurer les achats.',
+      c2t:'Reçu', c2b:'Stripe l’envoie à l’adresse indiquée.',
+      c3t:'Résiliable à tout moment', c3b:'Depuis Offre et usage. L’accès dure jusqu’au renouvellement.',
+      back:'Retour à l’accueil', ref:'Référence', period:{monthly:'Mensuel', yearly:'Annuel'}},
+    de: {name:'Deutsch', eyebrow:'Zahlung abgeschlossen', title:'Vielen Dank',
+      sub:'Dein Abo ist aktiv.', next:'So geht es weiter',
+      c1t:'App neu öffnen', c1b:'Der Tarif greift automatisch. Sonst: ⋮ → Tarif & Nutzung → Käufe wiederherstellen.',
+      c2t:'Beleg', c2b:'Stripe sendet ihn an die angegebene Adresse.',
+      c3t:'Jederzeit kündbar', c3b:'Unter Tarif & Nutzung. Zugriff bis zum Verlängerungstag.',
+      back:'Zur Startseite', ref:'Referenz', period:{monthly:'Monatlich', yearly:'Jährlich'}},
+    pt: {name:'Português', eyebrow:'Pagamento concluído', title:'Obrigado',
+      sub:'Sua assinatura está ativa.', next:'Próximos passos',
+      c1t:'Abra o app de novo', c1b:'O plano é aplicado sozinho. Senão: ⋮ → Plano e uso → Restaurar compras.',
+      c2t:'Recibo', c2b:'A Stripe envia para o e-mail informado.',
+      c3t:'Cancele quando quiser', c3b:'Em Plano e uso. O acesso vai até a renovação.',
+      back:'Voltar ao início', ref:'Referência', period:{monthly:'Mensal', yearly:'Anual'}},
+    ru: {name:'Русский', eyebrow:'Оплата прошла', title:'Спасибо',
+      sub:'Подписка активна.', next:'Что дальше',
+      c1t:'Откройте приложение', c1b:'Тариф применится сам. Если нет: ⋮ → Тариф и расход → Восстановить покупки.',
+      c2t:'Чек', c2b:'Stripe пришлёт его на указанную почту.',
+      c3t:'Отмена в любой момент', c3b:'В разделе «Тариф и расход». Доступ — до даты продления.',
+      back:'На главную', ref:'Номер', period:{monthly:'Ежемесячно', yearly:'Ежегодно'}}
+  };
+
+  var q = new URLSearchParams(location.search);
+  var plan = (q.get('plan') || '').toLowerCase();
+  var period = (q.get('period') || '').toLowerCase();
+  var sid = q.get('session_id') || '';
+  var planName = plan === 'max' ? 'Max' : (plan === 'pro' ? 'Pro' : '');
+
+  function pick() {
+    var saved = null;
+    try { saved = localStorage.getItem('hn_lang'); } catch (e) {}
+    if (saved && T[saved]) return saved;
+    var list = navigator.languages || [navigator.language || 'en'];
+    for (var i = 0; i < list.length; i++) {
+      var code = String(list[i] || '').toLowerCase().split('-')[0];
+      if (T[code]) return code;
     }
-    if (sid) {
-      document.getElementById('ref').textContent = '受付番号: ' + sid;
+    return 'en';
+  }
+
+  function apply(lang) {
+    var t = T[lang] || T.en;
+    document.documentElement.lang = lang;
+    var nodes = document.querySelectorAll('[data-i]');
+    for (var i = 0; i < nodes.length; i++) {
+      var k = nodes[i].getAttribute('data-i');
+      if (t[k]) nodes[i].textContent = t[k];
     }
-  })();
+    // プラン名の帯
+    var chip = document.getElementById('chip');
+    if (planName) {
+      chip.hidden = false;
+      document.getElementById('chip-plan').textContent = planName;
+      var p = t.period[period];
+      document.getElementById('chip-period').textContent = p ? '· ' + p : '';
+    }
+    document.getElementById('ref').textContent = sid ? t.ref + ': ' + sid : '';
+    var btns = document.querySelectorAll('#langbar button');
+    for (var j = 0; j < btns.length; j++) {
+      btns[j].setAttribute('aria-pressed',
+        btns[j].getAttribute('data-l') === lang ? 'true' : 'false');
+    }
+    try { localStorage.setItem('hn_lang', lang); } catch (e) {}
+  }
+
+  var bar = document.getElementById('langbar');
+  Object.keys(T).forEach(function (code) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = T[code].name;
+    b.setAttribute('data-l', code);
+    b.addEventListener('click', function () { apply(code); });
+    bar.appendChild(b);
+  });
+
+  apply(pick());
+})();
 </script>
 
 </body>
