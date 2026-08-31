@@ -4206,3 +4206,31 @@ footer .footer-nav {
 @media (max-width: 720px) {
   body::after { display: none !important; content: none !important; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   お問い合わせボタン (nav-cta) — 文字は見やすい黒、
+   ホバーは背景を変えず「枠だけ」 を金色に光らせる (= ユーザー要望)
+   ★ 既存の多数の上書きに勝つよう、 ファイル末尾でまとめて指定する。
+   ════════════════════════════════════════════════════════════ */
+nav .nav-cta,
+body[data-page="home"] nav .nav-cta,
+body[data-page="home"] nav.scrolled .nav-cta {
+  color: #111 !important;              /* 文字を黒に */
+}
+nav .nav-cta::before,
+body[data-page="home"] nav .nav-cta::before {
+  background-color: #111 !important;   /* (アイコンがある場合も黒に) */
+}
+nav .nav-cta:hover,
+body[data-page="home"] nav .nav-cta:hover,
+body[data-page="home"] nav.scrolled .nav-cta:hover {
+  /* 背景は通常時と同じ金グラデのまま (= 塗りは変えない) */
+  background: linear-gradient(135deg, #FFD98A 0%, #E8B563 50%, #C98F3F 100%) !important;
+  color: #111 !important;
+  /* 枠だけを明るく光らせる (縁取り + ほのかなグロウ) */
+  border-color: rgba(255, 240, 210, 0.95) !important;
+  box-shadow:
+    0 0 0 1.5px rgba(255, 226, 170, 0.95),
+    0 0 16px 2px rgba(255, 210, 130, 0.75) !important;
+  transform: none !important;          /* 浮き上がりは無し (枠の発光だけ) */
+}

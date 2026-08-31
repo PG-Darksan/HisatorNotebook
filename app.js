@@ -381,22 +381,29 @@
       }
 
       try {
-        const formData = new FormData(contactForm);
+        // Cloudflare Worker (/contact) に JSON で送る。 Worker が匿名認証で
+        // Firestore の inquiries/ に書き込み、 アプリの受信箱に届く。
+        const gotcha = contactForm.querySelector('[name="_gotcha"]');
         const response = await fetch(contactForm.action, {
           method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            name: nameValue,
+            email: emailValue,
+            category: categoryInput.value,
+            message: messageValue,
+            _gotcha: gotcha ? gotcha.value : ''
+          })
         });
 
-        if (response.ok) {
+        const data = await response.json().catch(() => null);
+        if (response.ok && data && data.ok) {
           contactPanel.hidden = true;
           thanksPanel.hidden = false;
           thanksPanel.scrollIntoView({ behavior: 'smooth' });
         } else {
-          // Formspree からエラーが返ってきた場合
-          const data = await response.json().catch(() => null);
-          const errMessage = (data && data.errors && data.errors.length > 0)
-            ? data.errors.map(e => e.message).join(', ')
+          const errMessage = (data && data.error)
+            ? '送信に失敗しました。 時間を空けて再度お試しください。'
             : '送信に失敗しました。 時間を空けて再度お試しください。';
           showError(messageInput, errMsg, errMessage);
           if (submitBtn) {
