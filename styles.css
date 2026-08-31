@@ -2540,7 +2540,7 @@ section {
   background: transparent !important;
 }
 .page-hero-title { color: #FFFFFF !important; }
-.page-hero-sub { color: rgba(111, 195, 232,0.85) !important; }
+.page-hero-sub { color: rgba(255, 255, 255,0.88) !important; }
 
 /* ── 一般的なテキストを明るく ── */
 h1, h2, h3, h4, h5, h6,
