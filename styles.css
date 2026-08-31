@@ -4212,10 +4212,18 @@ footer .footer-nav {
    ホバーは背景を変えず「枠だけ」 を金色に光らせる (= ユーザー要望)
    ★ 既存の多数の上書きに勝つよう、 ファイル末尾でまとめて指定する。
    ════════════════════════════════════════════════════════════ */
+/* ★ 現在ページ (contact) では nav-link.active が付き、
+   nav .nav-link.active { color:#6FC3E8 } の方が詳細度が高くて青が勝っていた。
+   nav-link.nav-cta(.active)(:hover) まで名指しして確実に黒で上書きする。 */
 nav .nav-cta,
+nav .nav-cta.active,
+nav .nav-link.nav-cta,
+nav .nav-link.nav-cta.active,
+nav .nav-link.nav-cta:hover,
+nav .nav-link.nav-cta.active:hover,
 body[data-page="home"] nav .nav-cta,
 body[data-page="home"] nav.scrolled .nav-cta {
-  color: #111 !important;              /* 文字を黒に */
+  color: #111 !important;              /* 文字を黒に (ホバー時も黒) */
 }
 nav .nav-cta::before,
 body[data-page="home"] nav .nav-cta::before {
