@@ -48,15 +48,6 @@
     font-size:clamp(30px,5.4vw,46px);line-height:1.25;letter-spacing:.01em;
     color:var(--ink);margin-bottom:14px;
   }
-  .plan-line{font-size:15px;color:var(--ink-soft)}
-  .plan-chip{
-    display:inline-flex;align-items:center;gap:7px;margin-top:18px;
-    padding:7px 16px;border-radius:999px;background:var(--paper);
-    border:1px solid var(--rule);font-size:13.5px;color:var(--accent);
-    box-shadow:0 2px 10px rgba(22,35,44,.05);
-  }
-  .plan-chip b{font-weight:700}
-  .dot{width:7px;height:7px;border-radius:50%;background:var(--accent-soft)}
 
   /* ── 次にすること ── */
   .steps{padding:34px 0 8px}
@@ -140,8 +131,6 @@
       </div>
       <p class="eyebrow" data-i="eyebrow">Payment complete</p>
       <h1 data-i="title">Thank you</h1>
-      <p class="plan-line" data-i="sub">Your subscription is active.</p>
-      <p><span class="plan-chip" id="chip" hidden><span class="dot"></span><b id="chip-plan"></b><span id="chip-period"></span></span></p>
     </div>
   </section>
 
@@ -261,14 +250,6 @@
     for (var i = 0; i < nodes.length; i++) {
       var k = nodes[i].getAttribute('data-i');
       if (t[k]) nodes[i].textContent = t[k];
-    }
-    // プラン名の帯
-    var chip = document.getElementById('chip');
-    if (planName) {
-      chip.hidden = false;
-      document.getElementById('chip-plan').textContent = planName;
-      var p = t.period[period];
-      document.getElementById('chip-period').textContent = p ? '· ' + p : '';
     }
     document.getElementById('ref').textContent = sid ? t.ref + ': ' + sid : '';
     var btns = document.querySelectorAll('#langbar button');
