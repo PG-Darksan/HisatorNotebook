@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HisatorNotebook — マップもノートも動画も 1 つに | Windows / Android</title>
-  <meta name="description" content="マインドマップ・フリーノート・ギャラリー・PDF ビューア・動画編集までを 1 つにまとめた Windows / Android 向けノートアプリ。AI (Gemini / ChatGPT / Claude・API キー不要)、YouTube 整理、PDF へのメモ、共有カレンダー、クラウド同期に対応した HisatorNotebook 公式サイト">
-  <meta name="keywords" content="マインドマップ,アプリ,AI,Gemini,ChatGPT,Claude,YouTube,Windows,Android,Flutter">
+  <meta name="description" content="マインドマップ・フリーノート・PDF・動画編集を 1 つにまとめた Windows / Android 向けノートアプリ。AI は API キー不要で Gemini / ChatGPT / Claude に対応。オートクリッカーや雑学も。">
+  <meta name="keywords" content="マインドマップ,ノートアプリ,AI,Gemini,ChatGPT,Claude,YouTube,PDF,オートクリッカー,Windows,Android">
   <meta name="author" content="HisatorNotebook">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://hisator-notebook.com/">
@@ -13,17 +13,21 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="HisatorNotebook — マップもノートも動画も 1 つに | Windows / Android">
-  <meta property="og:description" content="マインドマップ・フリーノート・ギャラリー・PDF ビューア・動画編集までを 1 つにまとめた Windows / Android 向けノートアプリ。AI (Gemini / ChatGPT / Claude・API キー不要)、YouTube 整理、PDF へのメモ、共有カレンダー、クラウド同期に対応した HisatorNotebook 公式サイト">
+  <meta property="og:description" content="マインドマップ・フリーノート・PDF・動画編集を 1 つにまとめた Windows / Android 向けノートアプリ。AI は API キー不要で Gemini / ChatGPT / Claude に対応。オートクリッカーや雑学も。">
   <meta property="og:url" content="https://hisator-notebook.com/">
   <meta property="og:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="HisatorNotebook のアプリアイコン">
   <meta property="og:site_name" content="HisatorNotebook">
   <meta property="og:locale" content="ja_JP">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HisatorNotebook — マップもノートも動画も 1 つに | Windows / Android">
-  <meta name="twitter:description" content="マインドマップ・フリーノート・ギャラリー・PDF ビューア・動画編集までを 1 つにまとめた Windows / Android 向けノートアプリ。AI (Gemini / ChatGPT / Claude・API キー不要)、YouTube 整理、PDF へのメモ、共有カレンダー、クラウド同期に対応した HisatorNotebook 公式サイト">
+  <meta name="twitter:description" content="マインドマップ・フリーノート・PDF・動画編集を 1 つにまとめた Windows / Android 向けノートアプリ。AI は API キー不要で Gemini / ChatGPT / Claude に対応。オートクリッカーや雑学も。">
   <meta name="twitter:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta name="twitter:image:alt" content="HisatorNotebook のアプリアイコン">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,17 +38,15 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
   <link rel="stylesheet" href="styles.css">
 
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/", "logo": "https://hisator-notebook.com/images/icon.png", "sameAs": ["https://github.com/PG-Darksan/Kamispec"]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "HisatorNotebook", "description": "AI 機能搭載のマインドマップアプリ。Windows / Android 対応。", "applicationCategory": "ProductivityApplication", "operatingSystem": "Windows, Android", "url": "https://hisator-notebook.com/", "image": "https://hisator-notebook.com/images/icon.png", "offers": [{"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Pro", "price": "5.99", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Max", "price": "19.99", "priceCurrency": "USD"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://hisator-notebook.com/"}]}</script>
-  <link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/index.html">
-  <link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/index.html">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/", "logo": "https://hisator-notebook.com/images/icon.png", "sameAs": ["https://github.com/PG-Darksan/HisatorNotebook"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "HisatorNotebook", "description": "マインドマップ・フリーノート・PDF・動画編集を 1 つにまとめた、AI 搭載のノートアプリ。Windows / Android 対応。", "applicationCategory": "ProductivityApplication", "operatingSystem": "Windows, Android", "url": "https://hisator-notebook.com/", "image": "https://hisator-notebook.com/images/icon.png", "offers": [{"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Pro", "price": "5.99", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Max", "price": "19.99", "priceCurrency": "USD"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/", "inLanguage": "ja"}</script>
 </head>
 <body data-page="home">
 
 <nav id="nav">
   <a href="index.html" class="brand">
-    <span class="brand-mark"><img src="images/icon.png" alt="HisatorNotebook" loading="eager" decoding="async">
+    <span class="brand-mark"><img src="images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="eager" decoding="async">
     </span>
     HisatorNotebook
   </a>
@@ -299,6 +301,7 @@
           <div class="hero-right">
             <picture>
               <img src="images/icon.png" alt="HisatorNotebook アプリアイコン" class="hero-icon"
+                   width="512" height="512" style="height:auto"
                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             </picture>
             <div class="hero-icon hero-icon-fallback" style="display:none;" aria-hidden="true">
@@ -380,7 +383,7 @@
             </p>
           </div>
           <div class="hero-right">
-            <video autoplay loop muted playsinline class="hero-video">
+            <video autoplay loop muted playsinline class="hero-video" aria-label="ショートカットキーで直感的にマップを操作する様子">
               <source src="videos/instinct.mp4" type="video/mp4">
             </video>
           </div>
@@ -398,7 +401,7 @@
             </p>
           </div>
           <div class="hero-right">
-            <video autoplay loop muted playsinline class="hero-video">
+            <video autoplay loop muted playsinline class="hero-video" aria-label="AI が説明文と子ノードを自動で生成する様子">
               <source src="videos/AI_questions.mp4" type="video/mp4">
             </video>
           </div>
@@ -414,7 +417,7 @@
             </p>
           </div>
           <div class="hero-right">
-            <video autoplay loop muted playsinline class="hero-video">
+            <video autoplay loop muted playsinline class="hero-video" aria-label="YouTube の動画をマップに取り込んで整理する様子">
               <source src="videos/YouTube.mp4" type="video/mp4">
             </video>
           </div>
@@ -432,7 +435,7 @@
             </p>
           </div>
           <div class="hero-right">
-            <video autoplay loop muted playsinline class="hero-video">
+            <video autoplay loop muted playsinline class="hero-video" aria-label="PDF を要約してマインドマップにまとめる様子">
               <source src="videos/summarize.mp4" type="video/mp4">
             </video>
           </div>
@@ -469,7 +472,7 @@
             <div class="price-sub">forever free</div>
             <div class="price-annual-note">&nbsp;</div>
             <ul class="price-features">
-              <li>マップ / ギャラリー / 文書 など各種類 1 ページずつ</li>
+              <li>ページは何枚でも作成可 (開けるのは一覧の先頭 2 ページまで)</li>
               <li>データは端末の中だけに保存 (クラウド同期は Max のみ)</li>
               <li>基本的な編集機能</li>
               <li>YouTube 埋め込み (mp4 直リンク含む)</li>
@@ -496,7 +499,7 @@
             <div class="price-sub">in-app purchase</div>
             <div class="price-annual-note" data-annual-total="57.48">&nbsp;</div>
             <ul class="price-features">
-              <li>マインドマップ無制限</li>
+              <li>開けるページ数の制限なし</li>
               <li>データは端末の中だけに保存 (クラウド同期は Max のみ)</li>
               <li>用語解説の AI 自動マップ生成</li>
               <li>翻訳・要約・関連動画取得</li>
@@ -524,6 +527,7 @@
             <ul class="price-features">
               <li>Pro の全ての機能</li>
               <li>クラウド同期 25GB アップロード / 100GB ダウンロード</li>
+              <li>ファイル・予定表の共同編集 / マークダウンの Web 公開</li>
               <li>ファイル要約から AI 自動マップ生成</li>
             </ul>
             <a href="pricing.html" class="price-cta" data-page="pricing" style="text-align:center;">詳細を見る →</a>
@@ -546,12 +550,14 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
 </main>
 
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <span class="brand-mark"><img src="images/icon.png" alt="HisatorNotebook" loading="eager" decoding="async">
+      <span class="brand-mark"><img src="images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="lazy" decoding="async">
       </span>
       HisatorNotebook
     </div>
@@ -560,6 +566,9 @@
       <a href="features-windows.html">Windows 版の機能</a>
       <a href="features-android.html">Android 版の機能</a>
       <a href="features.html">ショートカット</a>
+      <a href="ai.html">AI 機能</a>
+      <a href="video.html">動画ハブ</a>
+      <a href="platform.html">プラットフォーム</a>
       <a href="pricing.html">プラン</a>
       <a href="contact.html">お問い合わせ</a>
       <a href="privacy.html">プライバシーポリシー</a>
@@ -576,7 +585,7 @@
   </div>
 </footer>
 
-<script src="app.js"></script>
+<script src="app.js" defer></script>
 
 </body>
 </html>

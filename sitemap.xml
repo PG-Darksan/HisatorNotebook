@@ -4,53 +4,85 @@
   <!-- ホーム -->
   <url>
     <loc>https://hisator-notebook.com/</loc>
-    <priority>1.0</priority>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 
-  <!-- 機能紹介 -->
+  <!-- 機能一覧 (Windows / Android) -->
+  <url>
+    <loc>https://hisator-notebook.com/features-windows.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/features-android.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ショートカットキー一覧 -->
   <url>
     <loc>https://hisator-notebook.com/features.html</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- 料金プラン -->
   <url>
     <loc>https://hisator-notebook.com/pricing.html</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- プライバシーポリシー -->
+  <!-- 機能サブページ -->
   <url>
-    <loc>https://hisator-notebook.com/privacy.html</loc>
-    <priority>0.5</priority>
-    <changefreq>yearly</changefreq>
+    <loc>https://hisator-notebook.com/ai.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
   </url>
-
-  <!-- 利用規約 -->
   <url>
-    <loc>https://hisator-notebook.com/terms.html</loc>
-    <priority>0.5</priority>
-    <changefreq>yearly</changefreq>
+    <loc>https://hisator-notebook.com/video.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/platform.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
   </url>
 
   <!-- お問い合わせ -->
   <url>
     <loc>https://hisator-notebook.com/contact.html</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
-  <!-- 機能サブページ -->
-  <url><loc>https://hisator-notebook.com/ai.html</loc><priority>0.7</priority></url>
-  <url><loc>https://hisator-notebook.com/video.html</loc><priority>0.7</priority></url>
-  <url><loc>https://hisator-notebook.com/platform.html</loc><priority>0.7</priority></url>
+  <!-- プライバシーポリシー / 利用規約 / 特定商取引法に基づく表記 -->
+  <url>
+    <loc>https://hisator-notebook.com/privacy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/terms.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/tokutei.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-  <!-- 特定商取引法に基づく表記 -->
-  <url><loc>https://hisator-notebook.com/tokutei.html</loc><priority>0.6</priority><changefreq>yearly</changefreq></url>
-
-  <url><loc>https://hisator-notebook.com/features-windows.html</loc><priority>0.9</priority></url>
-  <url><loc>https://hisator-notebook.com/features-android.html</loc><priority>0.9</priority></url>
+  <!-- 載せない物: thanks.html (決済後の画面・noindex) / _preview-brandmark.html (確認用・未公開) -->
 </urlset>
