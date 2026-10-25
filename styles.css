@@ -5105,16 +5105,19 @@ kbd {
   object-fit: cover;
 }
 .app-shot-caption {
-  padding: 16px 20px 18px;
+  padding: 13px 18px 14px;
   border-top: 1px solid rgba(111, 195, 232, 0.14);
   flex: 1;
 }
 .app-shot-caption h4 {
   font-family: 'Shippori Mincho B1', serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   color: #FFFFFF !important;
   margin: 0 0 6px;
+}
+.app-shot-caption h4:last-child {
+  margin-bottom: 0;
 }
 .app-shot-caption p {
   font-size: 13.5px;

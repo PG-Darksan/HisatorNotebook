@@ -85,14 +85,12 @@
             <div class="fd-eyebrow">— 01 / Auto Generate &amp; Jev Routing</div>
             <h2 class="fd-title">トピックから、マップが立ち上がる<br>AI 選びは「Jev」におまかせ</h2>
             <p class="fd-desc">
-              書きたいテーマを入力するだけで、AI が説明文と関連する子ノードを自動で展開します。詳細度は <b>「分かり易く / 標準 / 詳しい」</b> から選択可能。<br>
-              さらに自動選択モード <b>「Jev」</b> を選べば、質問の性質（論理推論・長文読解・高速要約・コーディング）に合わせて <b>ChatGPT・Gemini・Claude</b> の中から最適なモデルと思考の深さを自動でルーティングします。
+              テーマを入力するだけで AI が説明文と子ノードを自動展開。自動選択モード <b>「Jev」</b> が質問に合わせて <b>ChatGPT・Gemini・Claude</b> から最適なモデルをルーティングします。
             </p>
             <ul class="fd-points">
-              <li><span><b>Jev (自動 AI 選択)</b>: どの AI を使うか迷わず、常に最適な最新モデルで応答</span></li>
-              <li><span><b>3 段階の詳細度 ＆ 網羅モード</b>: 広いテーマも複数バッチに分割して漏れなくツリー化</span></li>
-              <li><span><b>Web 検索 ＆ 出典 URL 付き回答</b>: 最新ニュースや仕様も Web 検索と組み合わせて正確に回答</span></li>
-              <li><span><b>Free プランから利用可能</b>: API キーの登録なしで、チャージした分だけすぐ使える</span></li>
+              <li><span><b>Jev (自動 AI 選択)</b>: 迷わず常に最適な最新モデルで応答</span></li>
+              <li><span><b>Web 検索 ＆ 出典 URL 付き</b>: 最新情報も根拠付きで回答</span></li>
+              <li><span><b>Free プランから利用可</b>: API キー不要、チャージした分だけすぐ使える</span></li>
             </ul>
           </div>
           <div class="fd-right">
@@ -112,50 +110,23 @@
             <div class="fd-eyebrow">— 02 / 4 AI CLIs &amp; Built-in MCP Server</div>
             <h2 class="fd-title">Claude Code・Codex・Gemini・<br>Antigravity CLI をアプリ内に統合</h2>
             <p class="fd-desc">
-              Windows（ストア外配布版）では、AI アシスタントのパネルから <b>Claude Code・Codex CLI・Gemini CLI・Antigravity CLI</b> を直接起動できます。ご自身のサブスクリプション契約で動作するため、Free プランでも追加のトークン費用なしで利用可能です。
+              Windows 版ではご自身の契約で <b>4大 AI CLI</b> を直接起動可能。内蔵 MCP サーバーにより開いているマップや PDF を直接操作できます。
             </p>
             <ul class="fd-points">
-              <li><span><b>5時間枠・週間枠の使用率表示</b>: <code>/usage</code> 連携により、Gemini や Claude / GPT の残りクォータとリセット日時をリアルタイム表示</span></li>
-              <li><span><b>MCP サーバー内蔵</b>: 「Antigravity 用をコピー」などのワンクリック設定で、外部 AI から現在のページやノードを直接操作</span></li>
-              <li><span><b>プレビュー (dryRun) ＆ Ctrl+Z 巻き戻し</b>: AI が行ったノード追加や文書編集も、差分確認や <kbd>Ctrl</kbd>+<kbd>Z</kbd> で安全に元へ戻せます</span></li>
+              <li><span><b>使用率バー表示</b>: 5時間枠・週間枠の残りクォータをリアルタイム表示</span></li>
+              <li><span><b>MCP サーバー内蔵</b>: ワンクリックで外部 AI と接続（Ctrl+Z 巻き戻し対応）</span></li>
             </ul>
           </div>
           <div class="fd-right">
-            <div class="cli-preview" style="padding:22px; border-radius:16px;" aria-label="4大 AI CLI とクォータ表示のプレビュー">
-              <div class="cli-preview-bar">
-                <span><span class="cli-dots"><span></span><span></span><span></span></span> &nbsp;AI Assistant — Built-in CLI &amp; MCP</span>
-                <span>4 CLIs Ready</span>
+            <div class="app-shot-card">
+              <div class="app-shot-bar">
+                <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                <div class="app-shot-title">AI (API) ＆ Claude Code / Codex CLI / Antigravity CLI</div>
+                <span class="app-shot-badge">AI &amp; CLI</span>
               </div>
-              <div style="margin-bottom:8px;"><span style="color:#FFD98A;">▸ 対応 CLI:</span> Claude Code / Codex CLI / Gemini CLI / Antigravity CLI</div>
-              <div style="margin-bottom:8px;"><span style="color:#6FC3E8;">$</span> hisator-mcp status --auto-context</div>
-              <div style="margin-bottom:14px;"><span style="color:#4ADE80;">✓</span> 開いているマインドマップ・マークダウン・PDF を自動認識中</div>
-              <div class="cli-quota-row">
-                <div class="cli-quota-box">
-                  <div style="display:flex;justify-content:space-between;"><span>5時間枠 (Gemini / Claude)</span><b style="color:#FFD98A;">28%</b></div>
-                  <div class="cli-quota-bar"><div class="cli-quota-fill" style="width:28%;"></div></div>
-                </div>
-                <div class="cli-quota-box">
-                  <div style="display:flex;justify-content:space-between;"><span>週間枠 (リセット日時表示)</span><b style="color:#6FC3E8;">42%</b></div>
-                  <div class="cli-quota-bar"><div class="cli-quota-fill" style="width:42%;"></div></div>
-                </div>
+              <div class="app-shot-media">
+                <img src="images/shot_ai_workspace.png" alt="マインドマップ上で AI (API) と Claude Code / Codex CLI / Antigravity CLI を切り替える実機画面" width="1264" height="681" loading="lazy">
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="app-shot-showcase">
-          <div class="app-shot-card" style="max-width: 960px; margin: 0 auto;">
-            <div class="app-shot-bar">
-              <div class="app-shot-dots"><span></span><span></span><span></span></div>
-              <div class="app-shot-title">AI (API) ＆ Claude Code / Codex CLI / Antigravity CLI 切替画面</div>
-              <span class="app-shot-badge">AI &amp; CLI</span>
-            </div>
-            <div class="app-shot-media">
-              <img src="images/shot_ai_workspace.png" alt="マインドマップ上で AI (API) と Claude Code / Codex CLI / Antigravity CLI を切り替える実機画面" width="1264" height="681" loading="lazy">
-            </div>
-            <div class="app-shot-caption">
-              <h4>実機画面：アプリ内 AI (API) と外部契約 CLI をワンクリックで選択</h4>
-              <p>マインドマップのすぐ隣で、AI 残高を使う内蔵 AI (API) と、ご自身の契約枠を使う Claude Code / Codex CLI / Antigravity CLI をいつでも切り替えられます。</p>
             </div>
           </div>
         </div>
@@ -163,14 +134,6 @@
 
       <!-- 翻訳・要約・学習支援 -->
       <section class="feature-detail-section">
-        <div class="section-header" style="margin-bottom:16px;">
-          <div class="section-label">Learning &amp; Node Operations</div>
-          <h2 class="fd-title" style="margin-bottom:12px;">右クリックから、翻訳・暗記カード・試験対策まで</h2>
-          <p class="fd-desc" style="max-width:760px;">
-            ノードの右クリック操作から、毎日の学習・資格試験・面接対策まで AI が強力にサポートします。
-          </p>
-        </div>
-
         <div class="bento-grid">
           <div class="bento-card">
             <div class="bento-top">
@@ -178,29 +141,23 @@
               <span class="bento-badge">30 LANGUAGES</span>
             </div>
             <h3>30 言語一括翻訳 ＆ 要約</h3>
-            <p>
-              選択したノードやツリー構造全体を保ったまま 30 言語へ一括翻訳。長文メモのワンタップ要約や関連 YouTube 動画の自動取得にも対応しています。
-            </p>
+            <p>ツリー構造を保ったまま30言語へ一括翻訳。長文メモの要約にも対応。</p>
           </div>
           <div class="bento-card accent-gold">
             <div class="bento-top">
               <span class="bento-icon"><img src="images/icons/icon_flashcards.png" alt="" width="58" height="58" loading="lazy"></span>
               <span class="bento-badge gold">FLASHCARDS &amp; QUIZ</span>
             </div>
-            <h3>暗記カード（まとめて採点・会話学習）</h3>
-            <p>
-              マップや PDF（スキャン画像 PDF も対応）・Office 資料から暗記カードと確認テストを自動生成。「まとめて採点」と「即時採点」の切替や、AI が口頭で出題する「会話学習」に対応。
-            </p>
+            <h3>暗記カード ＆ 4択クイズ</h3>
+            <p>マップやPDFから自動生成。「まとめて採点」とAI「会話学習」に対応。</p>
           </div>
           <div class="bento-card accent-gold">
             <div class="bento-top">
               <span class="bento-icon"><img src="images/icons/icon_exam.png" alt="" width="58" height="58" loading="lazy"></span>
-              <span class="bento-badge gold">AI EXAM PREP &amp; INTERVIEW</span>
+              <span class="bento-badge gold">AI EXAM PREP</span>
             </div>
             <h3>AI「試験対策」＆ 会話練習</h3>
-            <p>
-              資格名や学校の科目（高校数学・数3など）から重要用語の収集、分野・難易度別の演習問題生成（LaTeX 数式対応）、過去問からのカード化を実行。面接・語学の音声ロールプレイも可能です。
-            </p>
+            <p>資格名や科目から重要用語・演習問題を自動生成。面接の音声練習も。</p>
           </div>
         </div>
       </section>
@@ -212,14 +169,8 @@
             <div class="fd-eyebrow">— 04 / File summarization · <span style="color:var(--gold);">Max プラン専用</span></div>
             <h2 class="fd-title">長文 PDF・Office 資料から、<br>1分でマップが立ち上がる</h2>
             <p class="fd-desc">
-              PDF（テキスト選択できないスキャン画像 PDF も自動認識）・Word・Excel・PowerPoint・テキスト・コード等のファイルを添付すると、AI がファイル全体を読み込んで<b>要約とともにマインドマップを自動生成</b>します。章立て・要点・関連情報をノードとして整理するため、長尺の論文や仕様書もひと目で全体像を掴めます。
+              PDF（スキャン画像PDFも対応）・Word・Excel・PowerPoint を添付すると、AI が全体を読み込んで<b>マインドマップを自動生成</b>します。
             </p>
-            <ul class="fd-points">
-              <li><span><b>スキャン画像 PDF にも対応</b>: 文字情報がない PDF でも自動で画像認識に切り替えて解析</span></li>
-              <li><span><b>網羅モード連携</b>: 長大なファイルもチャンク分割して漏れなくマップ化</span></li>
-              <li><span><b>元ファイルへの参照を保持</b>: 生成されたマップからいつでも元の資料を参照可能</span></li>
-              <li><span><b>問題集・カード生成は全プラン対応</b>: PDF からのクイズ・暗記カード生成はプリペイドで全プラン利用可</span></li>
-            </ul>
           </div>
           <div class="fd-right">
             <div class="fd-media">
@@ -238,15 +189,8 @@
             <div class="fd-eyebrow">— 05 / Prepaid credit &amp; Cost Transparency</div>
             <h2 class="fd-title">API キーの用意は不要<br>使った分だけの明朗プリペイド</h2>
             <p class="fd-desc">
-              AI はアプリ側で用意したキーで動作するため、面倒な開発者アカウント登録や API キー設定は一切不要です。<b>前払いのクレジットから使った分（API 実費 + 30%）だけ差し引かれる</b>仕組みで、使わない月に AI 料金はかかりません。
+              $10 単位のチャージから使った分（API実費 + 30%）だけ消費。使わない月の AI 料金は ¥0 です。
             </p>
-            <ul class="fd-points">
-              <li><span><b>$10 単位でチャージ</b>: Free プラン（¥0）のままでも、必要なときだけチャージして全 AI を利用可能</span></li>
-              <li><span><b>使った分だけ (実費 + 30%)</b>: 各社の公開 API 単価に 30%（決済・中継手数料）を足した額のみ消費</span></li>
-              <li><span><b>LLM の料金比較タブ搭載</b>: 「性能比較」画面で各モデルの 100 万トークン単価（円換算）をいつでも一覧比較</span></li>
-              <li><span><b>残高と消費額を毎回表示</b>: 応答のたびに消費トークン・概算コスト・残り残高がひと目で分かる</span></li>
-              <li><span><b>端末をまたいで残高共有</b>: 同じアカウントでログインすれば Windows と Android で残高を共通利用</span></li>
-            </ul>
           </div>
           <div class="fd-right">
             <div class="bento-card accent-gold" style="padding:28px;">
@@ -255,19 +199,10 @@
                 <span class="bento-badge gold">PREPAID CREDIT SYSTEM</span>
               </div>
               <h3>3大フロンティア AI をワンタップ切替</h3>
-              <p style="margin-bottom:14px;">
-                応答ごとにモデルを切り替えることも、「Jev」に自動選択させることも可能です。
-              </p>
-              <div class="stat-list-items stat-list-ai" style="max-width:100%;">
-                <span class="stat-chip-ai">ChatGPT (OpenAI 最新モデル)</span>
-                <span class="stat-chip-ai">Gemini (Google 最新モデル)</span>
-                <span class="stat-chip-ai">Claude (Anthropic 最新モデル)</span>
-              </div>
-              <div class="bento-tags" style="margin-top:14px;">
-                <span class="bento-tag">$10 プリペイド</span>
-                <span class="bento-tag">API実費 + 30%</span>
-                <span class="bento-tag">有効期限なし</span>
-                <span class="bento-tag">Freeプラン対応</span>
+              <div class="stat-list-items stat-list-ai" style="max-width:100%; margin-top:12px;">
+                <span class="stat-chip-ai">ChatGPT</span>
+                <span class="stat-chip-ai">Gemini</span>
+                <span class="stat-chip-ai">Claude</span>
               </div>
             </div>
           </div>
