@@ -5187,6 +5187,43 @@ body::before {
   font-size: clamp(24px, 2.7vw, 36px) !important;
   line-height: 1.32 !important;
 }
+.hero-left,
+.hero-right {
+  min-width: 0;
+}
+.hero-block.hero-main {
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.85fr) !important;
+  gap: 48px !important;
+  align-items: center !important;
+}
+.hero-block.hero-main .hero-icon {
+  max-width: 340px !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+.hero-title-main {
+  font-size: clamp(24px, 2.75vw, 36px) !important;
+  line-height: 1.36 !important;
+  letter-spacing: -0.01em !important;
+}
+.hero-title-main .hero-accent-strong {
+  font-size: 1.32em;
+  line-height: 1.25;
+  margin-top: 4px;
+}
+.hero-desc {
+  max-width: 100% !important;
+}
+@media (max-width: 960px) {
+  .hero-block.hero-main {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .hero-block.hero-main .hero-icon {
+    max-width: 240px !important;
+    margin: 0 auto !important;
+  }
+}
 .nowrap {
   white-space: nowrap;
   display: inline-block;
