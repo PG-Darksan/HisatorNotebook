@@ -5183,6 +5183,10 @@ body::before {
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
+.block-title {
+  font-size: clamp(24px, 2.7vw, 36px) !important;
+  line-height: 1.32 !important;
+}
 .nowrap {
   white-space: nowrap;
   display: inline-block;
