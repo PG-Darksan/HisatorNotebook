@@ -252,13 +252,15 @@
               マインドマップ・フリーノート・ギャラリー・PDF・動画編集をひとつのアプリで。
               AI はアプリ側のキーで動くので、API キーの用意は不要です。
             </p>
-            <!-- ── 配布はストア経由に切り替え予定 (= ユーザー要望) ──
-                 GitHub からの直接ダウンロードはブロックされる環境があるため、
-                 Microsoft Store / Google Play へのリンクに置き換える。
-                 公開までは押せない仮置きボタンとして表示しておく。 -->
+            <!-- ── ダウンロード (2026-10-25 b554 から = 利用者の依頼「HP のボタンから
+                 ダウンロードできるように」) ── GitHub のリリース (PG-Darksan/HisatorNotebook)
+                 の成果物へ直に繋ぐ。 版ごとにファイル名が変わるので、 新しい版を上げたら
+                 href と dl-sub の版を書き換える (scratchpad の hp_dl.py)。 2026-08 は
+                 「GitHub からの直接ダウンロードはブロックされる環境がある」 ためストアの
+                 仮置きにしていた。 ストアで公開したらストアのリンクへ。 -->
             <div class="hero-cta hero-cta-dl">
-              <span class="btn-primary btn-dl btn-dl-soon" aria-disabled="true"
-                    role="link" tabindex="-1">
+              <a href="https://github.com/PG-Darksan/HisatorNotebook/releases/download/v1.0.0-554/HisatorNotebook-554-windows.zip"
+                 class="btn-primary btn-dl" rel="noopener" download>
                 <span class="dl-os" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
                     <path d="M3 5.5 L11 4.2 L11 11.3 L3 11.3 Z" fill="currentColor"/>
@@ -268,12 +270,12 @@
                   </svg>
                 </span>
                 <span class="dl-text">
-                  <span class="dl-label">Microsoft Store</span>
-                  <span class="dl-sub">準備中 / Coming soon</span>
+                  <span class="dl-label">Windows 版をダウンロード</span>
+                  <span class="dl-sub">b554 ・ zip 77 MB</span>
                 </span>
-              </span>
-              <span class="btn-primary btn-dl btn-dl-soon" aria-disabled="true"
-                    role="link" tabindex="-1">
+              </a>
+              <a href="https://github.com/PG-Darksan/HisatorNotebook/releases/download/v1.0.0-554/HisatorNotebook-554.apk"
+                 class="btn-primary btn-dl" rel="noopener" download>
                 <span class="dl-os" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="none"
                        stroke="currentColor" stroke-width="1.7"
@@ -291,10 +293,10 @@
                   </svg>
                 </span>
                 <span class="dl-text">
-                  <span class="dl-label">Google Play</span>
-                  <span class="dl-sub">準備中 / Coming soon</span>
+                  <span class="dl-label">Android 版をダウンロード</span>
+                  <span class="dl-sub">b554 ・ apk 148 MB</span>
                 </span>
-              </span>
+              </a>
             </div>
             <p class="hero-sysreq">対応環境：Windows 10 / 11（64bit）／ Android 8.0 以上</p>
           </div>
