@@ -3594,7 +3594,7 @@ body::after {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 14px;
 }
 .feat-item {
@@ -5227,4 +5227,67 @@ body::before {
 .nowrap {
   white-space: nowrap;
   display: inline-block;
+}
+
+/* ── 8. スマホ幅の整え (見出しの改行禁止を解く・カードの帯・余白) ── */
+.app-shot-dots {
+  flex-shrink: 0;
+}
+.app-shot-badge {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.sysreq-item {
+  display: inline-block;
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  /* PC 向けに行の切れ目を固定した span を、狭い画面では普通に折り返させる */
+  .nowrap {
+    display: inline;
+    white-space: normal;
+  }
+  .hero-title,
+  .hero-title-main,
+  .block-title,
+  .hero-desc,
+  .app-shot-title,
+  .app-shot-caption h4 {
+    word-break: keep-all;
+    word-break: auto-phrase;
+    overflow-wrap: anywhere;
+  }
+  .chapter-section {
+    padding: 60px 0;
+  }
+  /* 対応言語の一覧: 長い言語名が列を押し広げて画面からはみ出さないよう、列は等分のまま 2 行に折る */
+  .stat-list-grid-30 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .stat-list-grid-30 .stat-chip {
+    min-width: 0;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 400px) {
+  .stat-list-grid-30 .stat-chip {
+    padding: 0 3px;
+  }
+}
+@media (max-width: 640px) {
+  /* 窓の帯: 1 段目に ●●● と札、2 段目に題名を幅いっぱいで */
+  .app-shot-bar {
+    flex-wrap: wrap;
+    row-gap: 6px;
+    padding: 9px 14px;
+  }
+  .app-shot-title {
+    order: 3;
+    flex: 1 1 100%;
+    text-align: left;
+    line-height: 1.55;
+  }
 }
