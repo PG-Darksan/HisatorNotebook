@@ -239,14 +239,11 @@
 
   /* ── ナビアクティブ判定 ──
      <body data-page="X"> の値で現在ページを判別し、 該当する nav-link に .active を付与。
-     機能サブページ (ai/video/calendar/platform) では「機能」ドロップダウン親もアクティブに。
   */
   const currentPage = document.body.dataset.page || 'home';
-  const featurePages = ['features', 'ai', 'video', 'calendar', 'platform'];
   document.querySelectorAll('.nav-link').forEach(link => {
     const lp = link.dataset.page;
-    let isActive = (lp === currentPage);
-    if (lp === 'features' && featurePages.includes(currentPage)) isActive = true;
+    const isActive = (lp === currentPage);
     link.classList.toggle('active', isActive);
   });
 

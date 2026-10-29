@@ -23,14 +23,6 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- ショートカットキー一覧 -->
-  <url>
-    <loc>https://hisator-notebook.com/features.html</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- 料金プラン -->
   <url>
     <loc>https://hisator-notebook.com/pricing.html</loc>

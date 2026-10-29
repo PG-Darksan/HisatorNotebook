@@ -1177,10 +1177,6 @@
         -webkit-mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 3 3 11v10h6v-6h6v6h6V11z'/%3E%3C/svg%3E");
                 mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 3 3 11v10h6v-6h6v6h6V11z'/%3E%3C/svg%3E");
       }
-      .nav-link[data-page="features"]::before {
-        -webkit-mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z'/%3E%3C/svg%3E");
-                mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z'/%3E%3C/svg%3E");
-      }
       .nav-link[data-page="pricing"]::before {
         -webkit-mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M3 3v9l9 9 9-9-9-9H3zm4.5 5.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z'/%3E%3C/svg%3E");
                 mask-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M3 3v9l9 9 9-9-9-9H3zm4.5 5.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z'/%3E%3C/svg%3E");
@@ -1562,7 +1558,7 @@
       text-transform: uppercase;
     }
 
-    /* ===== Windows ショートカット表 (features.html) ===== */
+    /* ===== キー表示 <kbd> (index.html) ===== */
     /* キーボードキーの見た目を再現する <kbd> 要素。 単体でも複数でも
        使えるよう inline-block + 等幅フォント。 影で物理キーらしい立体感。 */
     kbd {
@@ -1581,130 +1577,6 @@
       box-shadow: 0 1px 0 rgba(0,0,0,0.04);
       white-space: nowrap;
     }
-    /* ショートカット表本体。 feature-matrix と並べて違和感のないトーン。 */
-    .shortcut-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 16px 0 32px;
-      background: var(--paper);
-      border: 1px solid var(--rule);
-      border-radius: 8px;
-      overflow: hidden;
-      font-size: 14px;
-    }
-    .shortcut-table thead th {
-      padding: 14px 16px;
-      text-align: center;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      font-weight: 500;
-      color: var(--ink-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      background: var(--bg-warm);
-      border-bottom: 1px solid var(--rule);
-    }
-    .shortcut-table tbody td {
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--rule);
-      vertical-align: middle;
-      color: var(--ink);
-    }
-    .shortcut-table tbody tr:last-child td { border-bottom: none; }
-    .shortcut-table tbody tr:hover { background: var(--bg-warm); }
-    .shortcut-table .sc-keys {
-      width: 220px;
-      white-space: nowrap;
-    }
-    .shortcut-table .sc-keys .plus {
-      margin: 0 4px;
-      color: var(--ink-muted);
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-    }
-    .shortcut-table .sc-name {
-      font-weight: 500;
-      width: 220px;
-    }
-    .shortcut-table .sc-desc {
-      color: var(--ink-soft);
-      font-size: 13px;
-      line-height: 1.7;
-    }
-    .shortcut-section-title {
-      font-family: 'Shippori Mincho B1', serif;
-      font-size: 22px;
-      font-weight: 600;
-      color: var(--ink);
-      margin: 48px 0 8px;
-      letter-spacing: -0.005em;
-    }
-    .shortcut-section-title:first-of-type { margin-top: 16px; }
-    .shortcut-section-sub {
-      font-size: 13px;
-      color: var(--ink-soft);
-      margin-bottom: 8px;
-      line-height: 1.7;
-    }
-    .shortcut-note {
-      margin-top: 32px;
-      padding: 20px 24px;
-      background: var(--bg-warm);
-      border-left: 3px solid var(--vermillion);
-      border-radius: 0 6px 6px 0;
-      font-size: 13px;
-      color: var(--ink-soft);
-      line-height: 1.8;
-    }
-    .shortcut-note b { color: var(--ink); }
-
-    /* ── ショートカット実践動画 ── */
-    .shortcut-demo {
-      margin-top: 24px;
-      border: 1px solid var(--rule);
-      border-radius: 12px;
-      overflow: hidden;
-      background: var(--paper);
-      box-shadow: 0 8px 24px -12px rgba(22, 35, 44, 0.12);
-    }
-    .shortcut-demo video {
-      display: block;
-      width: 100%;
-      height: auto;
-      background: var(--ink);
-    }
-    .shortcut-demo-caption {
-      padding: 12px 18px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      color: var(--ink-muted);
-      letter-spacing: 0.04em;
-      border-top: 1px solid var(--rule);
-      background: var(--bg-warm);
-    }
-    .shortcut-demo-caption b {
-      color: var(--ink);
-      font-weight: 500;
-    }
-    @media (max-width: 720px) {
-      .shortcut-table { font-size: 12px; }
-      .shortcut-table thead { display: none; }
-      .shortcut-table tbody td {
-        display: block;
-        padding: 8px 14px;
-        border-bottom: none;
-      }
-      .shortcut-table tbody tr {
-        display: block;
-        padding: 10px 0;
-        border-bottom: 1px solid var(--rule);
-      }
-      .shortcut-table tbody tr:last-child { border-bottom: none; }
-      .shortcut-table .sc-keys { width: auto; padding-bottom: 4px; }
-      .shortcut-table .sc-name { width: auto; padding-top: 0; }
-      .shortcut-table .sc-desc { padding-top: 0; }
-    }
-
     /* ===== ナビゲーションフッター (前後のページ案内) ===== */
     .pages-nav {
       padding: 60px 0 100px;
@@ -2523,7 +2395,6 @@ body::before {
 .form-section,
 .page-main,
 .pages-nav,
-.shortcut-section,
 .cta-section,
 .pricing-detail,
 .media-section,
@@ -2549,7 +2420,7 @@ p, li, td, label { color: rgba(214, 228, 239,0.88) !important; }
 .section-label, .fd-eyebrow, .hl-num, .info-icon { color: #6FC3E8 !important; }
 .section-header p, .fd-desc { color: rgba(214, 228, 239,0.78) !important; }
 small, .price-annual-note, .note, .field-group small,
-.shortcut-note, .hero-desc small, .footer-copy { color: rgba(214, 228, 239,0.65) !important; }
+.hero-desc small, .footer-copy { color: rgba(214, 228, 239,0.65) !important; }
 
 /* ── home の Free / Max プランカードは明るい紙背景。
       宇宙テーマの明るい文字色だとタイトル・機能リストが背景に溶けて読めなくなる為、
@@ -2578,20 +2449,10 @@ small, .price-annual-note, .note, .field-group small,
 .matrix-meta { color: var(--ink-soft) !important; }
 .matrix-no { color: var(--ink-muted) !important; }
 
-/* ── ショートカット注記 (shortcut-note) も明るいベージュ背景。 本文が薄クリームで
-      同化する為、 濃い文字に戻す ── */
-.shortcut-note { color: var(--ink-soft) !important; }
-.shortcut-note b { color: var(--ink) !important; }
-.shortcut-note a { color: var(--vermillion) !important; }
-
 /* ── 特商法ページ (tokutei) の強調 <b> が黒 (var(--ink)) のまま宇宙ダーク背景に
       乗って読めない為、 明るい色に戻す ── */
 .tokutei-intro b { color: #FFFFFF !important; }
 .tokutei-table td b { color: #FFFFFF !important; }
-
-/* ── ショートカット注記の本文は <p> で囲まれており、 宇宙テーマの p ルールで
-      薄クリームになる為、 <p> を直接濃い色に戻す ── */
-.shortcut-note p { color: var(--ink-soft) !important; }
 
 /* ── 「対応 AI モデル」「対応言語」等のラベルが暗背景に沈む為、 明るい金に ── */
 .stat-list-label { color: #6FC3E8 !important; }
@@ -2615,7 +2476,6 @@ a:not(.brand):not(.btn-primary):not(.btn-ghost):not(.btn-dl):not(.nav-cta):not(.
 .highlight-card,
 .media-card,
 .use-case-card,
-.shortcut-table,
 .pricing-info-banner,
 .form-panel,
 .result-panel,
@@ -2634,21 +2494,14 @@ a:not(.brand):not(.btn-primary):not(.btn-ghost):not(.btn-dl):not(.nav-cta):not(.
 /* テーブルのセル背景は透明、ヘッダのみアクセント */
 .tokutei-table tr,
 .tokutei-table th,
-.tokutei-table td,
-.shortcut-table tr,
-.shortcut-table th,
-.shortcut-table td {
+.tokutei-table td {
   background: transparent !important;
   border-color: rgba(111, 195, 232, 0.15) !important;
 }
-.tokutei-table th,
-.shortcut-table thead th {
+.tokutei-table th {
   background: rgba(111, 195, 232, 0.08) !important;
   color: #FFFFFF !important;
   border-right-color: rgba(111, 195, 232, 0.15) !important;
-}
-.shortcut-table tbody tr:hover {
-  background: rgba(111, 195, 232, 0.05) !important;
 }
 
 /* ── 朱色のRECOMMENDEDバッジは維持、それ以外のフィーチャー部分を調整 ── */
@@ -4476,16 +4329,6 @@ kbd {
   color: #FFE7C7 !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4) !important;
 }
-.shortcut-note {
-  background: rgba(18, 30, 48, 0.78) !important;
-  border: 1px solid rgba(232, 181, 99, 0.28) !important;
-  border-radius: 12px !important;
-  padding: 20px 24px !important;
-  color: rgba(225, 238, 248, 0.9) !important;
-}
-.shortcut-note p { color: rgba(225, 238, 248, 0.9) !important; }
-.shortcut-note b { color: #FFD98A !important; }
-.shortcut-note a { color: #6FC3E8 !important; }
 .footer-copy .visitor-counter {
   background: rgba(18, 30, 48, 0.85) !important;
   border: 1px solid rgba(232, 181, 99, 0.32) !important;
