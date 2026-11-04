@@ -3527,6 +3527,7 @@ body::after {
 .phone-shots {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 28px;
   margin: 18px 0 26px;
 }
@@ -4093,12 +4094,10 @@ footer .footer-nav {
   }
 }
 
-/* ── ページ最上部の虹のライン: スマホでは出さない ──
-   (= ユーザー要望: 読み込みの所に出る線が気が散るので消して欲しい)。
-   パソコンの広い画面ではそのまま残す。 */
-@media (max-width: 720px) {
-  body::after { display: none !important; content: none !important; }
-}
+/* ── ページ最上部の虹のライン: 出さない ──
+   (= ユーザー要望: スマホで「読み込みの所に出る線が気が散る」、
+   2026-11-04 にパソコンでも「ヘッダーの黄色い線は要らない」)。 */
+body::after { display: none !important; content: none !important; }
 
 /* ════════════════════════════════════════════════════════════
    お問い合わせボタン (nav-cta) — 文字は見やすい黒、
