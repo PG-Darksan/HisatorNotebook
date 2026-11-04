@@ -5227,3 +5227,27 @@ body::before {
   --font-sans: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
 :root:lang(ko) { --font-serif: 'Noto Serif KR', 'AppleMyungjo', serif;
   --font-sans: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
+
+/* ═══ 10. セクションの区切り線は暖色の細い線 (2026-11-04) ═══
+   (= ユーザー要望: 白い薄い線は地味過ぎる。 撤去した最上部の暖色の線を
+   さらに薄くした物に)。 線の太さと位置は元の border のまま、 色だけ
+   border-image で --warm-grad の色を薄くした物にする (両端は消えていく)。 */
+.page-hero,
+.chapter-section,
+.feature-detail-section {
+  border-image: linear-gradient(90deg,
+    rgba(255, 126, 95, 0) 0%,
+    rgba(255, 154, 61, .42) 14%,
+    rgba(255, 196, 107, .50) 50%,
+    rgba(255, 143, 163, .42) 86%,
+    rgba(255, 143, 163, 0) 100%) 1;
+}
+
+/* 見出しを中央に置く機能の塊 (Android 版ならではの機能: 下のスマホの画面に揃える) */
+.feat-group-center .feat-group-title,
+.feat-group-center .feat-group-lead { text-align: center; }
+.feat-group-center .feat-group-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, rgba(111, 195, 232, 0), #6FC3E8, rgba(111, 195, 232, 0));
+}
