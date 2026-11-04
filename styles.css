@@ -5138,3 +5138,15 @@ body::before {
     line-height: 1.55;
   }
 }
+
+/* ── ヒーローのアイコンは丸く ──
+   = ユーザー要望「アイコンの後ろの背景が気になる、 丸縁に合わせて丸い画像に」。
+   画像は images/icon_round.png (icon.png を金の丸縁ぴったりに切り抜いた物)。
+   紺の角丸の台紙・縁・余白を外し、 影とホバーの光も丸になるよう 50% にする。 */
+.hero-block.hero-main .hero-icon,
+.hero-block.hero-main .hero-icon-fallback {
+  border-radius: 50% !important;
+  background: none !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
