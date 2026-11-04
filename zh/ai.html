@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 功能 — Gemini / ChatGPT / Claude，无需 API 密钥 | HisatorNotebook</title>
+  <meta name="description" content="输入主题，AI 即自动生成导图。支持全面模式、翻译、摘要、相关视频获取与文件摘要。无需 API 密钥，采用预付点数，可切换使用 Gemini / ChatGPT / Claude。">
+  <meta name="keywords" content="AI 思维导图,自动生成,Gemini,ChatGPT,Claude,翻译,摘要,全面模式,预付点数,无需API密钥">
+  <meta name="author" content="HisatorNotebook">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hisator-notebook.com/zh/ai.html">
+  <!-- i18n:alternates (_i18n/build.py が書く) -->
+  <link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html">
+  <link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html">
+  <link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html">
+  <link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html">
+  <link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html">
+  <link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html">
+  <link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html">
+  <link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html">
+  <link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html">
+  <!-- /i18n:alternates -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI 功能 — Gemini / ChatGPT / Claude，无需 API 密钥 | HisatorNotebook">
+  <meta property="og:description" content="输入主题，AI 即自动生成导图。支持全面模式、翻译、摘要、相关视频获取与文件摘要。无需 API 密钥，采用预付点数，可切换使用 Gemini / ChatGPT / Claude。">
+  <meta property="og:url" content="https://hisator-notebook.com/zh/ai.html">
+  <meta property="og:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="HisatorNotebook 应用图标">
+  <meta property="og:site_name" content="HisatorNotebook">
+  <meta property="og:locale" content="zh_CN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 功能 — Gemini / ChatGPT / Claude，无需 API 密钥 | HisatorNotebook">
+  <meta name="twitter:description" content="输入主题，AI 即自动生成导图。支持全面模式、翻译、摘要、相关视频获取与文件摘要。无需 API 密钥，采用预付点数，可切换使用 Gemini / ChatGPT / Claude。">
+  <meta name="twitter:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta name="twitter:image:alt" content="HisatorNotebook 应用图标">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/", "logo": "https://hisator-notebook.com/images/icon.png", "sameAs": ["https://github.com/PG-Darksan/HisatorNotebook"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://hisator-notebook.com/zh/"}, {"@type": "ListItem", "position": 2, "name": "AI 功能", "item": "https://hisator-notebook.com/zh/ai.html"}]}</script>
+</head>
+<body data-page="ai">
+
+<nav id="nav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="eager" decoding="async">
+    </span>
+    HisatorNotebook
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link" data-page="home">首页</a>
+    <a href="features-windows.html" class="nav-link" data-page="fwin">Windows 版</a>
+    <a href="features-android.html" class="nav-link" data-page="fand">Android 版</a>
+    <a href="pricing.html" class="nav-link" data-page="pricing">套餐</a>
+        
+    <a href="contact.html" class="nav-link nav-cta" data-page="contact">联系我们</a>
+  </div>
+  <div class="lang-switcher">
+      <button class="lang-toggle" aria-label="Language" aria-haspopup="true">
+        <span>ZH</span><span class="caret">▾</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <a href="../ai.html" hreflang="ja" lang="ja"><span>日本語</span><span class="lang-code">JA</span></a>
+        <a href="../en/ai.html" hreflang="en" lang="en"><span>English</span><span class="lang-code">EN</span></a>
+        <a href="ai.html" class="current" hreflang="zh-Hans" lang="zh-Hans"><span>简体中文</span><span class="lang-code">ZH</span></a>
+        <a href="../ko/ai.html" hreflang="ko" lang="ko"><span>한국어</span><span class="lang-code">KO</span></a>
+        <a href="../es/ai.html" hreflang="es" lang="es"><span>Español</span><span class="lang-code">ES</span></a>
+        <a href="../fr/ai.html" hreflang="fr" lang="fr"><span>Français</span><span class="lang-code">FR</span></a>
+        <a href="../de/ai.html" hreflang="de" lang="de"><span>Deutsch</span><span class="lang-code">DE</span></a>
+        <a href="../pt/ai.html" hreflang="pt" lang="pt-BR"><span>Português</span><span class="lang-code">PT</span></a>
+        <a href="../ru/ai.html" hreflang="ru" lang="ru"><span>Русский</span><span class="lang-code">RU</span></a>
+      </div>
+    </div>
+</nav>
+
+<main class="page-main">
+<section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">AI 功能 ＆ 四大 CLI 集成</h1>
+        <p class="page-hero-sub">— 无需 API 密钥的预付费 ChatGPT、Gemini、Claude，加上四大 AI CLI 集成</p>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- 自動マップ生成 -->
+      <section class="feature-detail-section">
+        <div class="feature-detail-block">
+          <div class="fd-left">
+            <div class="fd-eyebrow">— 01 / Auto Generate Mind Map</div>
+            <h2 class="fd-title">输入主题，导图即刻成形<br>一键接入三大 AI 模型</h2>
+            <p class="fd-desc">
+              只需输入主题，AI 即可自动展开说明文字与子节点<br>可切换 <b>ChatGPT、Gemini、Claude</b>，结果直接呈现在思维导图中
+            </p>
+            <ul class="fd-points">
+              <li><span><b>支持三大 AI</b>：可使用 ChatGPT、Gemini、Claude 的最新模型</span></li>
+              <li><span><b>Web 搜索 ＆ 附出处 URL</b>：最新信息也有据可查</span></li>
+              <li><span><b>Free 套餐即可使用</b>：无需 API 密钥，充值后即可按需使用</span></li>
+            </ul>
+          </div>
+          <div class="fd-right">
+            <div class="fd-media">
+              <video autoplay loop muted playsinline aria-label="AI 自动生成说明文字与子节点的演示">
+                <source src="../videos/AI_questions.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4大 AI CLI 統合 & MCP サーバー -->
+      <section class="feature-detail-section">
+        <div class="feature-detail-block reverse">
+          <div class="fd-left">
+            <div class="fd-eyebrow">— 02 / 4 AI CLIs &amp; Built-in MCP Server</div>
+            <h2 class="fd-title">将 Claude Code、Codex、Gemini、<br>Antigravity CLI 集成到应用中</h2>
+            <p class="fd-desc">
+              Windows 版可凭您自己的订阅直接启动<b>四大 AI CLI</b><br>借助内置 MCP 服务器，可直接操作当前打开的导图与 PDF
+            </p>
+            <ul class="fd-points">
+              <li><span><b>用量条显示</b>：实时显示 5 小时额度与每周额度的剩余配额</span></li>
+              <li><span><b>内置 MCP 服务器</b>：一键连接外部 AI（支持 Ctrl+Z 撤回）</span></li>
+            </ul>
+          </div>
+          <div class="fd-right">
+            <div class="app-shot-card">
+              <div class="app-shot-bar">
+                <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                <div class="app-shot-title">AI (API) ＆ Claude Code / Codex CLI / Antigravity CLI</div>
+                <span class="app-shot-badge">AI &amp; CLI</span>
+              </div>
+              <div class="app-shot-media">
+                <img src="../images/shot_ai_workspace.png" alt="在思维导图上切换 AI (API) 与 Claude Code / Codex CLI / Antigravity CLI 的实机界面" width="1264" height="681" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 翻訳・要約・学習支援 -->
+      <section class="feature-detail-section">
+        <div class="bento-grid">
+          <div class="bento-card">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_globe.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge">30 LANGUAGES</span>
+            </div>
+            <h3>30 种语言批量翻译 ＆ 摘要</h3>
+            <p>保持树状结构不变，一键翻译为 30 种语言，也支持长篇笔记摘要</p>
+          </div>
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_flashcards.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">FLASHCARDS &amp; QUIZ</span>
+            </div>
+            <h3>记忆卡 ＆ 四选一测验</h3>
+            <p>可从导图或 PDF 自动生成，支持「批量评分」与 AI「对话学习」</p>
+          </div>
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_exam.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">AI EXAM PREP</span>
+            </div>
+            <h3>AI「备考」＆ 对话练习</h3>
+            <p>根据资格名称或科目自动生成重点术语与练习题，还支持面试语音练习</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ファイル要約 -->
+      <section class="feature-detail-section">
+        <div class="feature-detail-block">
+          <div class="fd-left">
+            <div class="fd-eyebrow">— 04 / File summarization · <span style="color:var(--gold);">Max 套餐专享</span></div>
+            <h2 class="fd-title">长篇 PDF 与 Office 资料，<br>1 分钟生成导图</h2>
+            <p class="fd-desc">
+              添加 PDF（含扫描图像 PDF）、Word、Excel、PowerPoint 附件后，AI 将通读全文并<b>自动生成思维导图</b>
+            </p>
+          </div>
+          <div class="fd-right">
+            <div class="fd-media">
+              <video autoplay loop muted playsinline aria-label="将 PDF 摘要整理为思维导图的演示">
+                <source src="../videos/summarize.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI プロバイダー選択 -->
+      <section class="feature-detail-section">
+        <div class="feature-detail-block reverse">
+          <div class="fd-left">
+            <div class="fd-eyebrow">— 05 / Prepaid credit &amp; Cost Transparency</div>
+            <h2 class="fd-title">无需准备 API 密钥<br>按用量计费、清晰透明的预付制</h2>
+            <p class="fd-desc">
+              以 $10 为单位充值，仅按实际用量扣费（API 实际费用 + 30%），不使用的月份 AI 费用为 ¥0
+            </p>
+          </div>
+          <div class="fd-right">
+            <div class="bento-card accent-gold" style="padding:28px;">
+              <div class="bento-top">
+                <span class="bento-icon"><img src="../images/icons/icon_ai_jev.png" alt="" width="58" height="58" loading="lazy"></span>
+                <span class="bento-badge gold">PREPAID CREDIT SYSTEM</span>
+              </div>
+              <h3>三大前沿 AI 一键切换</h3>
+              <div class="stat-list-items stat-list-ai" style="max-width:100%; margin-top:12px;">
+                <span class="stat-chip-ai">ChatGPT</span>
+                <span class="stat-chip-ai">Gemini</span>
+                <span class="stat-chip-ai">Claude</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="pages-nav">
+      <div class="container">
+        <div class="pages-nav-grid">
+          <a href="features-windows.html" class="pages-nav-card" data-page="fwin">
+            <span class="pn-label">← 返回</span>
+            <span class="pn-title">Windows 版功能</span>
+          </a>
+          <a href="video.html" class="pages-nav-card next" data-page="video">
+            <span class="pn-label">下一个功能 →</span>
+            <span class="pn-title">视频中心</span>
+          </a>
+        </div>
+      </div>
+    </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="lazy" decoding="async">
+      </span>
+      HisatorNotebook
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">首页</a>
+      <a href="features-windows.html">Windows 版功能</a>
+      <a href="features-android.html">Android 版功能</a>
+      <a href="ai.html">AI 功能</a>
+      <a href="video.html">视频中心</a>
+      <a href="platform.html">平台</a>
+      <a href="pricing.html">套餐</a>
+      <a href="contact.html">联系我们</a>
+      <a href="privacy.html">隐私政策</a>
+      <a href="terms.html">使用条款</a>
+      <a href="../tokutei.html">特定商业交易法相关标示</a>
+    </nav>
+    <p class="footer-copy">
+      &copy; 2026 HisatorNotebook. All rights reserved. <span class="visitor-counter" aria-label="visitor count"> <span class="vc-label">访客</span> <span class="vc-num" id="visitor-count">—</span> </span>
+    </p>
+  </div>
+</footer>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>

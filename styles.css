@@ -20,7 +20,7 @@
     body {
       background: var(--bg);
       color: var(--ink);
-      font-family: 'Zen Kaku Gothic New', -apple-system, sans-serif;
+      font-family: var(--font-sans);
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
@@ -166,7 +166,7 @@
 
     .brand {
       display: flex; align-items: center; gap: 10px;
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-weight: 600; font-size: 19px;
       letter-spacing: 0.02em;
       cursor: pointer;
@@ -339,7 +339,7 @@
     }
 
     .hero-title {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-weight: 600;
       font-size: clamp(44px, 6vw, 84px);
       line-height: 1.05;
@@ -396,7 +396,7 @@
     }
 
     .block-title {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: clamp(28px, 3.5vw, 44px);
       line-height: 1.2;
       font-weight: 600;
@@ -589,7 +589,7 @@
       background: var(--vermillion);
     }
     .section-title {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: clamp(32px, 4.5vw, 56px);
       line-height: 1.15;
       letter-spacing: -0.005em;
@@ -633,7 +633,7 @@
       object-fit: cover;
     }
     .feature-card h3 {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 19px;
       font-weight: 600;
       margin-bottom: 10px;
@@ -739,7 +739,7 @@
     .price-card.max .price-tier { color: var(--gold); }
 
     .price-name {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 28px;
       font-weight: 600;
       margin-bottom: 24px;
@@ -756,7 +756,7 @@
     }
     .price-card.pro .price-amount .currency { color: var(--ink-faint); }
     .price-amount .num {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 56px;
       font-weight: 600;
       line-height: 1;
@@ -773,7 +773,7 @@
     .price-strike {
       display: none;
       align-items: center; gap: 4px;
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       color: var(--ink-faint);
       text-decoration: line-through;
       text-decoration-thickness: 1.5px;
@@ -908,7 +908,7 @@
       border-bottom: 1px solid var(--rule);
     }
     .page-hero-title {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: clamp(40px, 5vw, 64px);
       font-weight: 600;
       letter-spacing: -0.005em;
@@ -936,7 +936,7 @@
       padding: 48px;
     }
     .panel-title {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 26px;
       font-weight: 600;
       margin-bottom: 8px;
@@ -1016,7 +1016,7 @@
       margin-bottom: 16px;
     }
     .result-title {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 32px;
       font-weight: 600;
       margin-bottom: 14px;
@@ -1061,7 +1061,7 @@
       position: relative; z-index: 2;
     }
     .footer-brand {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 19px;
       font-weight: 600;
       display: flex; align-items: center; gap: 10px;
@@ -1253,7 +1253,7 @@
       margin-bottom: 16px;
     }
     .features-index-card h3 {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 26px;
       font-weight: 600;
       margin-bottom: 14px;
@@ -1307,7 +1307,7 @@
       background: var(--vermillion);
     }
     .fd-title {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: clamp(28px, 3.5vw, 40px);
       line-height: 1.2;
       font-weight: 600;
@@ -1387,7 +1387,7 @@
       letter-spacing: 0.04em;
     }
     .highlight-card h4 {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 10px;
@@ -1435,7 +1435,7 @@
       display: flex; align-items: baseline; justify-content: center; gap: 10px;
     }
     .stat-list-count {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 22px;
       font-weight: 600;
       color: var(--vermillion);
@@ -1524,7 +1524,7 @@
       background: var(--paper);
       border: 1px solid var(--rule);
       border-radius: 100px;
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 18px;
       font-weight: 600;
       color: var(--ink);
@@ -1542,7 +1542,7 @@
     }
     .stat-cell:last-child { border-right: none; }
     .stat-cell .stat-num {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 42px;
       font-weight: 600;
       line-height: 1;
@@ -1608,7 +1608,7 @@
       text-transform: uppercase;
     }
     .pages-nav-card .pn-title {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 18px;
       font-weight: 600;
       color: var(--ink);
@@ -1637,7 +1637,7 @@
       margin-top: 2px;
     }
     .pricing-info-banner h4 {
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 16px;
       font-weight: 600;
       margin-bottom: 6px;
@@ -1669,7 +1669,7 @@
       background: var(--bg-warm);
       padding: 18px 16px;
       text-align: center;
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-weight: 600;
       font-size: 15px;
       border-bottom: 1px solid var(--rule);
@@ -1737,7 +1737,7 @@
       cursor: pointer;
       display: flex; align-items: center; justify-content: space-between;
       gap: 24px;
-      font-family: 'Shippori Mincho B1', serif;
+      font-family: var(--font-serif);
       font-size: 17px;
       font-weight: 600;
       color: var(--ink);
@@ -1988,7 +1988,7 @@ nav > .lang-switcher {
   color: var(--ink);
   font-weight: 600;
   border-right: 1px solid var(--rule);
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: var(--font-serif);
 }
 .tokutei-table td b { color: var(--ink); }
 .tokutei-table td .note {
@@ -3518,6 +3518,60 @@ body::after {
   background: linear-gradient(180deg,
     rgba(111, 195, 232, .05), rgba(255, 255, 255, .015));
 }
+/* ── Android 版のスマホ画面 ──────────────────────────────────────
+   Android 版のページが PC 版の録画を流用していて、 縦長のスマホの画面が
+   1 枚も無かった (= ユーザー要望: エミュレーターで撮った画像や動画に)。
+   1080x2400 (9:20) のキャプチャを端末の枠に収めて横に並べる。
+   枠はカードと同じ言語 (暗いガラス + 水色 #6FC3E8 の光) に揃える。
+   ────────────────────────────────────────────────────────── */
+.phone-shots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin: 18px 0 26px;
+}
+.phone-shot {
+  margin: 0;
+  width: 250px;
+  max-width: 100%;
+}
+.phone-frame {
+  padding: 7px;
+  border-radius: 30px;
+  border: 1px solid rgba(111, 195, 232, .28);
+  background: linear-gradient(160deg, #1D2333 0%, #0B0E17 100%);
+  box-shadow:
+    0 14px 38px rgba(0, 0, 0, .45),
+    0 0 26px rgba(111, 195, 232, .14),
+    inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+.phone-frame img,
+.phone-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 20;
+  object-fit: cover;
+  border-radius: 23px;
+  background: #0B0E17;
+}
+.phone-shot figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+  color: rgba(214, 228, 239, .80);
+  word-break: auto-phrase;
+  text-wrap: balance;
+}
+@media (max-width: 600px) {
+  .phone-shots { gap: 16px; justify-content: center; }
+  .phone-shot { width: calc(50% - 8px); }
+  .phone-frame { padding: 5px; border-radius: 22px; }
+  .phone-frame img,
+  .phone-frame video { border-radius: 17px; }
+  .phone-shot figcaption { font-size: 12px; }
+}
 
 
 /* ===== ストア公開までの仮置きボタン (= ユーザー要望: 押せないように) ===== */
@@ -4465,7 +4519,7 @@ kbd {
   margin-bottom: 18px;
 }
 .chapter-title {
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: var(--font-serif);
   font-size: clamp(28px, 3.8vw, 44px);
   font-weight: 600;
   line-height: 1.25;
@@ -4605,7 +4659,7 @@ kbd {
 }
 .bento-card h3,
 .bento-card h4 {
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: var(--font-serif);
   font-size: 20px;
   font-weight: 600;
   line-height: 1.35;
@@ -4743,7 +4797,7 @@ kbd {
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.42);
 }
 .ai-prepaid-banner h3 {
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: var(--font-serif);
   font-size: 22px;
   margin-bottom: 10px;
   color: #FFE7C7 !important;
@@ -4797,7 +4851,7 @@ kbd {
   list-style: none;
   cursor: pointer;
   padding: 20px 24px;
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: var(--font-serif);
   font-size: 18px;
   font-weight: 600;
   color: #FFFFFF;
@@ -4943,7 +4997,7 @@ kbd {
   flex: 1;
 }
 .app-shot-caption h4 {
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: var(--font-serif);
   font-size: 16px;
   font-weight: 700;
   color: #FFFFFF !important;
@@ -5137,3 +5191,40 @@ body::before {
   border: 0 !important;
   padding: 0 !important;
 }
+
+/* ═══ 9. 多言語版の部品 (2026-11-04) ═══ */
+/* Microsoft Store のバッジ (index の hero と Windows 版の page-hero)。 画像は Microsoft 公式の
+   言語別バッジ (images/store/ms-store-<言語>.svg、 _i18n/build.py が言語ごとに差し替える) */
+.hero-store { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.page-hero-store { justify-content: center; margin-top: 24px; }
+.store-badge { display: inline-block; line-height: 0; border-radius: 8px;
+  transition: transform .2s ease, box-shadow .2s ease; }
+.store-badge img { display: block; height: 48px; width: auto; }
+.store-badge:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0, 0, 0, .28); }
+.store-badge:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+@media (max-width: 760px) { .hero-store { justify-content: center; } }
+
+/* ブラウザの言語の版があるときの案内の帯 (app.js が出す。 自動で飛ばさない) */
+.lang-suggest { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 1000;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center;
+  width: max-content; max-width: calc(100% - 32px); padding: 10px 12px 10px 18px;
+  background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .22); font-size: 14px; line-height: 1.5; }
+.lang-suggest-go { font-weight: 600; color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+.lang-suggest-close { border: 0; background: transparent; color: var(--ink-muted); font-size: 20px;
+  line-height: 1; width: 32px; height: 32px; border-radius: 8px; cursor: pointer; }
+.lang-suggest-close:hover { background: rgba(127, 127, 127, .15); color: var(--ink); }
+
+/* 規約類の訳の頭の断り書き */
+.i18n-notice { margin-top: 24px; }
+.i18n-notice p { margin: 0; padding: 12px 16px; border: 1px solid var(--rule); border-left: 3px solid var(--gold);
+  border-radius: 8px; background: rgba(127, 127, 127, .08); font-size: 14px; line-height: 1.7; }
+.i18n-notice a { color: var(--gold); text-decoration: underline; }
+
+/* 本文と見出しの書体。 簡体中文と韓国語は日本語の書体だと字形が混ざる / 足りないので、
+   その言語の Noto に替える (読み込みは _i18n/build.py が各言語版の Google Fonts の URL を差し替える) */
+:root { --font-serif: 'Shippori Mincho B1', serif; --font-sans: 'Zen Kaku Gothic New', -apple-system, sans-serif; }
+:root:lang(zh) { --font-serif: 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  --font-sans: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+:root:lang(ko) { --font-serif: 'Noto Serif KR', 'AppleMyungjo', serif;
+  --font-sans: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube 동영상 허브 — PiP / 고속 재생 / 백그라운드 재생 | HisatorNotebook</title>
+  <meta name="description" content="YouTube URL만 붙여 넣으면 동영상 노드로. 픽처 인 픽처, 배속 조절, 백그라운드 재생, 채널 동영상 연속 재생, 관련 동영상 자동 가져오기로 딴 길로 새지 않는 시청을 실현합니다.">
+  <meta name="keywords" content="YouTube 플레이어,PiP,픽처 인 픽처,백그라운드 재생,고속 재생,채널 대기열">
+  <meta name="author" content="HisatorNotebook">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hisator-notebook.com/ko/video.html">
+  <!-- i18n:alternates (_i18n/build.py が書く) -->
+  <link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html">
+  <link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html">
+  <link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html">
+  <link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html">
+  <link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html">
+  <link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html">
+  <link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html">
+  <link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html">
+  <link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html">
+  <!-- /i18n:alternates -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="YouTube 동영상 허브 — PiP / 고속 재생 / 백그라운드 재생 | HisatorNotebook">
+  <meta property="og:description" content="YouTube URL만 붙여 넣으면 동영상 노드로. 픽처 인 픽처, 배속 조절, 백그라운드 재생, 채널 동영상 연속 재생, 관련 동영상 자동 가져오기로 딴 길로 새지 않는 시청을 실현합니다.">
+  <meta property="og:url" content="https://hisator-notebook.com/ko/video.html">
+  <meta property="og:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="HisatorNotebook 앱 아이콘">
+  <meta property="og:site_name" content="HisatorNotebook">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="YouTube 동영상 허브 — PiP / 고속 재생 / 백그라운드 재생 | HisatorNotebook">
+  <meta name="twitter:description" content="YouTube URL만 붙여 넣으면 동영상 노드로. 픽처 인 픽처, 배속 조절, 백그라운드 재생, 채널 동영상 연속 재생, 관련 동영상 자동 가져오기로 딴 길로 새지 않는 시청을 실현합니다.">
+  <meta name="twitter:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta name="twitter:image:alt" content="HisatorNotebook 앱 아이콘">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/", "logo": "https://hisator-notebook.com/images/icon.png", "sameAs": ["https://github.com/PG-Darksan/HisatorNotebook"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://hisator-notebook.com/ko/"}, {"@type": "ListItem", "position": 2, "name": "동영상 허브", "item": "https://hisator-notebook.com/ko/video.html"}]}</script>
+</head>
+<body data-page="video">
+
+<nav id="nav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="eager" decoding="async">
+    </span>
+    HisatorNotebook
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link" data-page="home">홈</a>
+    <a href="features-windows.html" class="nav-link" data-page="fwin">Windows 버전</a>
+    <a href="features-android.html" class="nav-link" data-page="fand">Android 버전</a>
+    <a href="pricing.html" class="nav-link" data-page="pricing">플랜</a>
+        
+    <a href="contact.html" class="nav-link nav-cta" data-page="contact">문의하기</a>
+  </div>
+  <div class="lang-switcher">
+      <button class="lang-toggle" aria-label="Language" aria-haspopup="true">
+        <span>KO</span><span class="caret">▾</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <a href="../video.html" hreflang="ja" lang="ja"><span>日本語</span><span class="lang-code">JA</span></a>
+        <a href="../en/video.html" hreflang="en" lang="en"><span>English</span><span class="lang-code">EN</span></a>
+        <a href="../zh/video.html" hreflang="zh-Hans" lang="zh-Hans"><span>简体中文</span><span class="lang-code">ZH</span></a>
+        <a href="video.html" class="current" hreflang="ko" lang="ko"><span>한국어</span><span class="lang-code">KO</span></a>
+        <a href="../es/video.html" hreflang="es" lang="es"><span>Español</span><span class="lang-code">ES</span></a>
+        <a href="../fr/video.html" hreflang="fr" lang="fr"><span>Français</span><span class="lang-code">FR</span></a>
+        <a href="../de/video.html" hreflang="de" lang="de"><span>Deutsch</span><span class="lang-code">DE</span></a>
+        <a href="../pt/video.html" hreflang="pt" lang="pt-BR"><span>Português</span><span class="lang-code">PT</span></a>
+        <a href="../ru/video.html" hreflang="ru" lang="ru"><span>Русский</span><span class="lang-code">RU</span></a>
+      </div>
+    </div>
+</nav>
+
+<main class="page-main">
+<section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">동영상·음악·무음 카메라</h1>
+        <p class="page-hero-sub">— 광고 없는 YouTube 학습, PiP 작은 창 재생, 타임라인 동영상 편집, 무음 카메라까지</p>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- YouTube 埋め込み -->
+      <section class="feature-detail-section">
+        <div class="feature-detail-block">
+          <div class="fd-left">
+            <div class="fd-eyebrow">— 01 / Ad-Free YouTube Focus Player</div>
+            <h2 class="fd-title">광고도, 관련 동영상의 유혹도 끊어 내는<br>배움에 몰입하는 YouTube 플레이어</h2>
+            <p class="fd-desc">
+              YouTube URL이나 채널·재생목록을 통째로 가져와 <b>광고 숨김</b>으로 집중 시청<br>동영상 옆에 맵이나 AI를 나란히 놓고 메모를 남길 수 있습니다
+            </p>
+            <ul class="fd-points">
+              <li><span><b>광고 숨김</b>: 동영상 광고와 추천 목록의 유혹을 차단</span></li>
+              <li><span><b>동영상 길이 필터</b>: 원하는 길이의 강의 동영상만 골라내기</span></li>
+              <li><span><b>나란히 메모 &amp; AI 요약</b>: 동영상을 보면서 같은 화면에서 노트 작성</span></li>
+            </ul>
+          </div>
+          <div class="fd-right">
+            <div class="fd-media">
+              <video autoplay loop muted playsinline aria-label="YouTube 동영상을 맵으로 가져와 정리하는 모습">
+                <source src="../videos/YouTube.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PiP プレイヤー & ローカル動画 & 音楽 -->
+      <section class="feature-detail-section">
+        <div class="bento-grid">
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_split_view.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">PICTURE-IN-PICTURE</span>
+            </div>
+            <h3>크기를 자유롭게 조절하는 PiP 작은 창 재생</h3>
+            <p>동영상을 작은 창으로 띄운 채 마인드맵이나 PDF를 편하게 편집</p>
+          </div>
+
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_youtube_focus.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">LOCAL VIDEO PLAYER</span>
+            </div>
+            <h3>로컬 동영상 &amp; 재생 위치 기억</h3>
+            <p>MP4 / MKV 동영상을 매끄럽게 재생하고, 재생 속도와 시청 위치를 자동으로 기억</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_media_player.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge">BACKGROUND &amp; MUSIC</span>
+            </div>
+            <h3>백그라운드 &amp; 음악 재생</h3>
+            <p>화면이 꺼진 상태의 재생과 MP3 / FLAC / WAV 재생목록·크로스페이드 지원</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ビデオエディター & 無音カメラ -->
+      <section class="feature-detail-section">
+        <div class="bento-grid-2">
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_video_editor.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">TIMELINE VIDEO EDITOR</span>
+            </div>
+            <h3>타임라인 방식 ‘비디오 편집기’</h3>
+            <p>동영상 자르기·분할·결합·자막·BGM 합성부터 MP4 내보내기까지 한 번에</p>
+          </div>
+
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_camera.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">SILENT CAMERA + OCR</span>
+            </div>
+            <h3>사진·동영상을 찍는 ‘무음 카메라’ &amp; OCR</h3>
+            <p>셔터음 없이 사진·동영상을 촬영하고, 그 자리에서 OCR 텍스트 추출 &amp; QR 읽기</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="pages-nav">
+      <div class="container">
+        <div class="pages-nav-grid">
+          <a href="ai.html" class="pages-nav-card" data-page="ai">
+            <span class="pn-label">← 돌아가기</span>
+            <span class="pn-title">AI 기능</span>
+          </a>
+          <a href="platform.html" class="pages-nav-card next" data-page="platform">
+            <span class="pn-label">다음 기능 →</span>
+            <span class="pn-title">플랫폼</span>
+          </a>
+        </div>
+      </div>
+    </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="lazy" decoding="async">
+      </span>
+      HisatorNotebook
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">홈</a>
+      <a href="features-windows.html">Windows 버전 기능</a>
+      <a href="features-android.html">Android 버전 기능</a>
+      <a href="ai.html">AI 기능</a>
+      <a href="video.html">동영상 허브</a>
+      <a href="platform.html">플랫폼</a>
+      <a href="pricing.html">플랜</a>
+      <a href="contact.html">문의하기</a>
+      <a href="privacy.html">개인정보 처리방침</a>
+      <a href="terms.html">이용약관</a>
+      <a href="../tokutei.html">특정상거래법에 따른 표기</a>
+    </nav>
+    <p class="footer-copy">
+      &copy; 2026 HisatorNotebook. All rights reserved. <span class="visitor-counter" aria-label="visitor count"> <span class="vc-label">방문자</span> <span class="vc-num" id="visitor-count">—</span> </span>
+    </p>
+  </div>
+</footer>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>

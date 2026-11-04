@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Video Hub — PiP / Fast Playback / Background Playback | HisatorNotebook</title>
+  <meta name="description" content="Paste a YouTube URL to make a video node. Picture-in-picture, speed control, background playback, channel queues, related videos: viewing without detours.">
+  <meta name="keywords" content="YouTube player,PiP,picture-in-picture,background playback,fast playback,channel queue">
+  <meta name="author" content="HisatorNotebook">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hisator-notebook.com/en/video.html">
+  <!-- i18n:alternates (_i18n/build.py が書く) -->
+  <link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html">
+  <link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html">
+  <link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html">
+  <link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html">
+  <link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html">
+  <link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html">
+  <link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html">
+  <link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html">
+  <link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html">
+  <!-- /i18n:alternates -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="YouTube Video Hub — PiP / Fast Playback / Background Playback | HisatorNotebook">
+  <meta property="og:description" content="Paste a YouTube URL to make a video node. Picture-in-picture, speed control, background playback, channel queues, related videos: viewing without detours.">
+  <meta property="og:url" content="https://hisator-notebook.com/en/video.html">
+  <meta property="og:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="HisatorNotebook app icon">
+  <meta property="og:site_name" content="HisatorNotebook">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="YouTube Video Hub — PiP / Fast Playback / Background Playback | HisatorNotebook">
+  <meta name="twitter:description" content="Paste a YouTube URL to make a video node. Picture-in-picture, speed control, background playback, channel queues, related videos: viewing without detours.">
+  <meta name="twitter:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta name="twitter:image:alt" content="HisatorNotebook app icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/", "logo": "https://hisator-notebook.com/images/icon.png", "sameAs": ["https://github.com/PG-Darksan/HisatorNotebook"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://hisator-notebook.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Video hub", "item": "https://hisator-notebook.com/en/video.html"}]}</script>
+</head>
+<body data-page="video">
+
+<nav id="nav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="eager" decoding="async">
+    </span>
+    HisatorNotebook
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link" data-page="home">Home</a>
+    <a href="features-windows.html" class="nav-link" data-page="fwin">Windows</a>
+    <a href="features-android.html" class="nav-link" data-page="fand">Android</a>
+    <a href="pricing.html" class="nav-link" data-page="pricing">Plans</a>
+        
+    <a href="contact.html" class="nav-link nav-cta" data-page="contact">Contact</a>
+  </div>
+  <div class="lang-switcher">
+      <button class="lang-toggle" aria-label="Language" aria-haspopup="true">
+        <span>EN</span><span class="caret">▾</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <a href="../video.html" hreflang="ja" lang="ja"><span>日本語</span><span class="lang-code">JA</span></a>
+        <a href="video.html" class="current" hreflang="en" lang="en"><span>English</span><span class="lang-code">EN</span></a>
+        <a href="../zh/video.html" hreflang="zh-Hans" lang="zh-Hans"><span>简体中文</span><span class="lang-code">ZH</span></a>
+        <a href="../ko/video.html" hreflang="ko" lang="ko"><span>한국어</span><span class="lang-code">KO</span></a>
+        <a href="../es/video.html" hreflang="es" lang="es"><span>Español</span><span class="lang-code">ES</span></a>
+        <a href="../fr/video.html" hreflang="fr" lang="fr"><span>Français</span><span class="lang-code">FR</span></a>
+        <a href="../de/video.html" hreflang="de" lang="de"><span>Deutsch</span><span class="lang-code">DE</span></a>
+        <a href="../pt/video.html" hreflang="pt" lang="pt-BR"><span>Português</span><span class="lang-code">PT</span></a>
+        <a href="../ru/video.html" hreflang="ru" lang="ru"><span>Русский</span><span class="lang-code">RU</span></a>
+      </div>
+    </div>
+</nav>
+
+<main class="page-main">
+<section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">Video, Music &amp; Silent Camera</h1>
+        <p class="page-hero-sub">— Ad-free YouTube learning, PiP mini-window playback, timeline video editing and a silent camera</p>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- YouTube 埋め込み -->
+      <section class="feature-detail-section">
+        <div class="feature-detail-block">
+          <div class="fd-left">
+            <div class="fd-eyebrow">— 01 / Ad-Free YouTube Focus Player</div>
+            <h2 class="fd-title">Cut out the ads and the pull of related videos<br>A YouTube player built for deep learning</h2>
+            <p class="fd-desc">
+              Import YouTube URLs, or entire channels and playlists, and watch with <b>ads hidden</b><br>Keep maps and AI beside the video and take notes as you go
+            </p>
+            <ul class="fd-points">
+              <li><span><b>Ads hidden</b>: no video ads, no tempting recommendations</span></li>
+              <li><span><b>Video length filter</b>: show only lecture videos of the length you want</span></li>
+              <li><span><b>Side-by-side notes &amp; AI summaries</b>: take notes on the same screen while you watch</span></li>
+            </ul>
+          </div>
+          <div class="fd-right">
+            <div class="fd-media">
+              <video autoplay loop muted playsinline aria-label="Importing YouTube videos into a map and organizing them">
+                <source src="../videos/YouTube.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PiP プレイヤー & ローカル動画 & 音楽 -->
+      <section class="feature-detail-section">
+        <div class="bento-grid">
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_split_view.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">PICTURE-IN-PICTURE</span>
+            </div>
+            <h3>Freely resizable PiP mini window</h3>
+            <p>Keep a video floating in a mini window while you comfortably edit mind maps and PDFs</p>
+          </div>
+
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_youtube_focus.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">LOCAL VIDEO PLAYER</span>
+            </div>
+            <h3>Local videos &amp; resume where you left off</h3>
+            <p>Smooth MP4 / MKV playback that automatically remembers your playback speed and position</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_media_player.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge">BACKGROUND &amp; MUSIC</span>
+            </div>
+            <h3>Background &amp; music playback</h3>
+            <p>Playback with the screen off, plus MP3 / FLAC / WAV playlists with crossfade</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ビデオエディター & 無音カメラ -->
+      <section class="feature-detail-section">
+        <div class="bento-grid-2">
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_video_editor.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">TIMELINE VIDEO EDITOR</span>
+            </div>
+            <h3>Timeline-based “Video editor”</h3>
+            <p>Cut, split, join, add captions and mix in BGM, then export to MP4 — all in one place</p>
+          </div>
+
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_camera.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">SILENT CAMERA + OCR</span>
+            </div>
+            <h3>“Silent camera” for photos &amp; videos, with OCR</h3>
+            <p>Take photos and videos without a shutter sound, then transcribe text with OCR and read QR codes on the spot</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="pages-nav">
+      <div class="container">
+        <div class="pages-nav-grid">
+          <a href="ai.html" class="pages-nav-card" data-page="ai">
+            <span class="pn-label">← Back</span>
+            <span class="pn-title">AI features</span>
+          </a>
+          <a href="platform.html" class="pages-nav-card next" data-page="platform">
+            <span class="pn-label">Next feature →</span>
+            <span class="pn-title">Platform</span>
+          </a>
+        </div>
+      </div>
+    </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="lazy" decoding="async">
+      </span>
+      HisatorNotebook
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="features-windows.html">Windows features</a>
+      <a href="features-android.html">Android features</a>
+      <a href="ai.html">AI features</a>
+      <a href="video.html">Video hub</a>
+      <a href="platform.html">Platform</a>
+      <a href="pricing.html">Plans</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="../tokutei.html">Notice under the Specified Commercial Transactions Act</a>
+    </nav>
+    <p class="footer-copy">
+      &copy; 2026 HisatorNotebook. All rights reserved. <span class="visitor-counter" aria-label="visitor count"> <span class="vc-label">Visitors</span> <span class="vc-num" id="visitor-count">—</span> </span>
+    </p>
+  </div>
+</footer>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>

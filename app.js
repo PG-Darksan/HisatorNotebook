@@ -9,54 +9,137 @@
 (function () {
   'use strict';
 
-  /* ── 言語自動検出 (root に居るときだけ動作) ──
-     navigator.language を見て、 ブラウザの言語に対応するサブディレクトリへ
-     リダイレクトする。 ただし以下の条件で動作:
-     - localStorage に "lang_chosen" が無い (= 初回訪問のみ)
-     - 現在の URL が root / または /index.html (= 日本語版)
-     - 検出言語が ja 以外 (en/zh/ko/es)
+  /* ── 言語 ──
+     ページの言語は <html lang> (ja / en / zh-Hans / pt-BR …) の頭の 2 文字。 各言語版は
+     _i18n/build.py が日本語のページから作る (en/ zh/ ko/ es/ fr/ de/ pt/ ru/)。
+     以前はブラウザの言語へ自動で飛ばしていたが、 Google は言語による自動転送を勧めて
+     いない (検索ロボットが日本語のトップを英語版への転送と見なしかねない) ので、
+     ブラウザの言語の版がある時は上に案内の帯を出すだけにした。 言語メニューで選ぶか
+     帯を閉じたら localStorage の "lang_chosen" = "true" で以後は出さない。 */
+  const PAGE_LANG = (document.documentElement.lang || 'ja').toLowerCase().split('-')[0];
+  const HREFLANG = { ja: 'ja', en: 'en', zh: 'zh-Hans', ko: 'ko', es: 'es', fr: 'fr', de: 'de', pt: 'pt', ru: 'ru' };
 
-     ユーザーが明示的に言語を選択 (lang-menu からクリック) したら
-     localStorage に "lang_chosen" = "true" をセットして、 以降の自動切替は止める。 */
-  const SUPPORTED_LANGS = ['ja', 'en', 'zh', 'ko', 'es'];
-  const LANG_DIR_MAP = { ja: '', en: 'en/', zh: 'zh/', ko: 'ko/', es: 'es/' };
+  // 案内の帯の言葉は「案内する先の言語」で書く
+  const SUGGEST = {
+    ja: ['このページは日本語でもご覧いただけます。', '日本語で見る', '閉じる'],
+    en: ['This page is also available in English.', 'View in English', 'Close'],
+    zh: ['本页面也提供简体中文版。', '查看中文版', '关闭'],
+    ko: ['이 페이지는 한국어로도 볼 수 있습니다.', '한국어로 보기', '닫기'],
+    es: ['Esta página también está disponible en español.', 'Ver en español', 'Cerrar'],
+    fr: ['Cette page est aussi disponible en français.', 'Voir en français', 'Fermer'],
+    de: ['Diese Seite gibt es auch auf Deutsch.', 'Auf Deutsch ansehen', 'Schließen'],
+    pt: ['Esta página também está disponível em português.', 'Ver em português', 'Fechar'],
+    ru: ['Эта страница доступна и на русском языке.', 'Открыть на русском', 'Закрыть']
+  };
 
-  function detectBrowserLang() {
-    const raw = (navigator.language || navigator.userLanguage || 'ja').toLowerCase();
-    // ja-JP -> ja, en-US -> en, zh-CN/zh-TW -> zh, ko-KR -> ko, es-ES/es-MX -> es
-    const primary = raw.split('-')[0];
-    if (SUPPORTED_LANGS.includes(primary)) return primary;
-    return 'ja'; // フォールバックは日本語
+  function langChosen() {
+    try { return localStorage.getItem('lang_chosen') === 'true'; } catch (e) { return true; }
+  }
+  function rememberLangChoice() {
+    try { localStorage.setItem('lang_chosen', 'true'); } catch (e) { /* 保存できなくても動く */ }
   }
 
-  function getCurrentLang() {
-    // body の lang 属性 (=html の lang) または URL パスから判定
-    const htmlLang = document.documentElement.lang || 'ja';
-    return SUPPORTED_LANGS.includes(htmlLang) ? htmlLang : 'ja';
-  }
+  (function suggestLanguage() {
+    if (langChosen()) return;
+    const want = (navigator.language || 'ja').toLowerCase().split('-')[0];
+    if (want === PAGE_LANG || !SUGGEST[want]) return;
+    const alt = document.querySelector(`link[rel="alternate"][hreflang="${HREFLANG[want]}"]`);
+    if (!alt || !alt.href) return;
+    const [msg, go, close] = SUGGEST[want];
+    const bar = document.createElement('div');
+    bar.className = 'lang-suggest';
+    bar.setAttribute('role', 'region');
+    bar.setAttribute('lang', HREFLANG[want]);
+    bar.innerHTML = '<span class="lang-suggest-msg"></span><a class="lang-suggest-go"></a>' +
+      '<button type="button" class="lang-suggest-close">×</button>';
+    bar.querySelector('.lang-suggest-msg').textContent = msg;
+    const link = bar.querySelector('.lang-suggest-go');
+    link.textContent = go;
+    link.href = alt.getAttribute('href');
+    link.hreflang = HREFLANG[want];
+    link.addEventListener('click', rememberLangChoice);
+    const x = bar.querySelector('.lang-suggest-close');
+    x.setAttribute('aria-label', close);
+    x.addEventListener('click', () => { rememberLangChoice(); bar.remove(); });
+    document.body.appendChild(bar);
+  })();
 
-  function shouldAutoRedirect() {
-    if (localStorage.getItem('lang_chosen') === 'true') return false;
-    // 既に日本語以外のサブディレクトリに居るなら自動リダイレクトしない
-    const path = window.location.pathname;
-    if (/\/(en|zh|ko|es)\//.test(path)) return false;
-    return true;
-  }
-
-  // 自動リダイレクト実行 (root の HTML にだけ仕込む。 各HTMLは現在ページに対応する
-  // 翻訳版 URL を head の link[rel=alternate] で持っているので、 それを参照する)
-  if (shouldAutoRedirect()) {
-    const browserLang = detectBrowserLang();
-    if (browserLang !== 'ja') {
-      const altLink = document.querySelector(`link[rel="alternate"][hreflang="${browserLang}"]`);
-      if (altLink && altLink.href && altLink.href !== window.location.href) {
-        // 1度だけリダイレクト
-        localStorage.setItem('lang_chosen', 'auto');
-        window.location.replace(altLink.href);
-        return; // 以下のスクリプトは実行しない
-      }
+  // 画面に出す言葉 (ページの言語で)。 無い言語は英語
+  const STR = {
+    ja: {
+      annual: (t, s) => `✓ 年額 $${t} 一括 / 通常より $${s} お得`,
+      name: 'お名前を入力してください。', email: 'メールアドレスを入力してください。',
+      emailBad: '正しいメールアドレスを入力してください。', cat: 'お問い合わせの種類を選択してください。',
+      msg: 'メッセージを入力してください。', msgShort: '10 文字以上入力してください。', sending: '送信中…',
+      fail: '送信に失敗しました。 時間を空けて再度お試しください。',
+      network: '通信エラーが発生しました。 ネットワークをご確認ください。'
+    },
+    en: {
+      annual: (t, s) => `✓ $${t} billed yearly / save $${s}`,
+      name: 'Please enter your name.', email: 'Please enter your email address.',
+      emailBad: 'Please enter a valid email address.', cat: 'Please choose a topic.',
+      msg: 'Please enter a message.', msgShort: 'Please enter at least 10 characters.', sending: 'Sending…',
+      fail: 'Sending failed. Please try again later.',
+      network: 'A network error occurred. Please check your connection.'
+    },
+    zh: {
+      annual: (t, s) => `✓ 按年一次付 $${t} / 比按月节省 $${s}`,
+      name: '请输入您的姓名。', email: '请输入电子邮箱地址。',
+      emailBad: '请输入有效的电子邮箱地址。', cat: '请选择咨询类型。',
+      msg: '请输入留言内容。', msgShort: '请至少输入 10 个字符。', sending: '发送中…',
+      fail: '发送失败，请稍后再试。',
+      network: '网络错误，请检查网络连接。'
+    },
+    ko: {
+      annual: (t, s) => `✓ 연간 $${t} 일시불 / 월간 대비 $${s} 절약`,
+      name: '이름을 입력해 주세요.', email: '이메일 주소를 입력해 주세요.',
+      emailBad: '올바른 이메일 주소를 입력해 주세요.', cat: '문의 유형을 선택해 주세요.',
+      msg: '메시지를 입력해 주세요.', msgShort: '10자 이상 입력해 주세요.', sending: '전송 중…',
+      fail: '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.',
+      network: '통신 오류가 발생했습니다. 네트워크를 확인해 주세요.'
+    },
+    es: {
+      annual: (t, s) => `✓ $${t} al año en un solo pago / ahorras $${s}`,
+      name: 'Escribe tu nombre.', email: 'Escribe tu correo electrónico.',
+      emailBad: 'Escribe un correo electrónico válido.', cat: 'Elige el tipo de consulta.',
+      msg: 'Escribe tu mensaje.', msgShort: 'Escribe al menos 10 caracteres.', sending: 'Enviando…',
+      fail: 'No se pudo enviar. Inténtalo de nuevo más tarde.',
+      network: 'Error de conexión. Revisa tu red.'
+    },
+    fr: {
+      annual: (t, s) => `✓ $${t} facturés une fois par an / $${s} d’économie`,
+      name: 'Veuillez saisir votre nom.', email: 'Veuillez saisir votre adresse e-mail.',
+      emailBad: 'Veuillez saisir une adresse e-mail valide.', cat: 'Veuillez choisir le type de demande.',
+      msg: 'Veuillez saisir votre message.', msgShort: 'Veuillez saisir au moins 10 caractères.', sending: 'Envoi…',
+      fail: 'L’envoi a échoué. Veuillez réessayer plus tard.',
+      network: 'Erreur réseau. Veuillez vérifier votre connexion.'
+    },
+    de: {
+      annual: (t, s) => `✓ $${t} jährlich in einer Zahlung / $${s} gespart`,
+      name: 'Bitte geben Sie Ihren Namen ein.', email: 'Bitte geben Sie Ihre E-Mail-Adresse ein.',
+      emailBad: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.', cat: 'Bitte wählen Sie die Art der Anfrage.',
+      msg: 'Bitte geben Sie eine Nachricht ein.', msgShort: 'Bitte geben Sie mindestens 10 Zeichen ein.', sending: 'Wird gesendet…',
+      fail: 'Senden fehlgeschlagen. Bitte versuchen Sie es später erneut.',
+      network: 'Netzwerkfehler. Bitte prüfen Sie Ihre Verbindung.'
+    },
+    pt: {
+      annual: (t, s) => `✓ $${t} por ano em um só pagamento / economize $${s}`,
+      name: 'Informe seu nome.', email: 'Informe seu e-mail.',
+      emailBad: 'Informe um e-mail válido.', cat: 'Escolha o tipo de contato.',
+      msg: 'Escreva sua mensagem.', msgShort: 'Escreva pelo menos 10 caracteres.', sending: 'Enviando…',
+      fail: 'Falha no envio. Tente novamente mais tarde.',
+      network: 'Erro de conexão. Verifique sua rede.'
+    },
+    ru: {
+      annual: (t, s) => `✓ $${t} за год одним платежом / экономия $${s}`,
+      name: 'Введите ваше имя.', email: 'Введите адрес электронной почты.',
+      emailBad: 'Введите корректный адрес электронной почты.', cat: 'Выберите тему обращения.',
+      msg: 'Введите сообщение.', msgShort: 'Введите не менее 10 символов.', sending: 'Отправка…',
+      fail: 'Не удалось отправить. Повторите попытку позже.',
+      network: 'Ошибка сети. Проверьте подключение.'
     }
-  }
+  };
+  const L = STR[PAGE_LANG] || STR.en;
 
 
   /* ── 全ページ共通の宇宙背景 (home 以外に固定レイヤーを挿入) ──
@@ -230,9 +313,7 @@
       });
       // 言語選択時に localStorage に記録
       langSwitcher.querySelectorAll('.lang-menu a').forEach(a => {
-        a.addEventListener('click', () => {
-          localStorage.setItem('lang_chosen', 'true');
-        });
+        a.addEventListener('click', rememberLangChoice);
       });
     }
   }
@@ -291,7 +372,7 @@
           const monthly = numEl ? parseFloat(numEl.dataset.monthly) : 0;
           const monthlyTotal = monthly * 12;
           const saved = (monthlyTotal - parseFloat(total)).toFixed(2);
-          el.textContent = '✓ 年額 $' + total + ' 一括 / 通常より $' + saved + ' お得';
+          el.textContent = L.annual(total, saved);
         } else {
           el.innerHTML = '&nbsp;';
         }
@@ -338,31 +419,31 @@
 
       const nameValue = cnameInput.value.trim();
       if (nameValue === '') {
-        showError(cnameInput, errCname, 'お名前を入力してください。');
+        showError(cnameInput, errCname, L.name);
         hasError = true;
       } else { clearError(cnameInput, errCname); }
 
       const emailValue = emailInput.value.trim();
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (emailValue === '') {
-        showError(emailInput, errEmail, 'メールアドレスを入力してください。');
+        showError(emailInput, errEmail, L.email);
         hasError = true;
       } else if (!emailPattern.test(emailValue)) {
-        showError(emailInput, errEmail, '正しいメールアドレスを入力してください。');
+        showError(emailInput, errEmail, L.emailBad);
         hasError = true;
       } else { clearError(emailInput, errEmail); }
 
       if (categoryInput.value === '') {
-        showError(categoryInput, errCat, 'お問い合わせの種類を選択してください。');
+        showError(categoryInput, errCat, L.cat);
         hasError = true;
       } else { clearError(categoryInput, errCat); }
 
       const messageValue = messageInput.value.trim();
       if (messageValue === '') {
-        showError(messageInput, errMsg, 'メッセージを入力してください。');
+        showError(messageInput, errMsg, L.msg);
         hasError = true;
       } else if (messageValue.length < 10) {
-        showError(messageInput, errMsg, '10 文字以上入力してください。');
+        showError(messageInput, errMsg, L.msgShort);
         hasError = true;
       } else { clearError(messageInput, errMsg); }
 
@@ -374,7 +455,7 @@
       const originalLabel = submitBtn ? submitBtn.textContent : '';
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.textContent = '送信中…';
+        submitBtn.textContent = L.sending;
       }
 
       try {
@@ -399,10 +480,7 @@
           thanksPanel.hidden = false;
           thanksPanel.scrollIntoView({ behavior: 'smooth' });
         } else {
-          const errMessage = (data && data.error)
-            ? '送信に失敗しました。 時間を空けて再度お試しください。'
-            : '送信に失敗しました。 時間を空けて再度お試しください。';
-          showError(messageInput, errMsg, errMessage);
+          showError(messageInput, errMsg, L.fail);
           if (submitBtn) {
             submitBtn.disabled = false;
             submitBtn.textContent = originalLabel;
@@ -410,7 +488,7 @@
         }
       } catch (err) {
         // ネットワークエラーなど
-        showError(messageInput, errMsg, '通信エラーが発生しました。 ネットワークをご確認ください。');
+        showError(messageInput, errMsg, L.network);
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.textContent = originalLabel;

@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HisatorNotebook — Mapas, notas e vídeos em um só app | Windows / Android</title>
+  <meta name="description" content="Mapa mental, Nota livre, PDF e edição de vídeo em um só app para Windows e Android. IA com Gemini, ChatGPT e Claude sem chave de API, Auto clicker e mais.">
+  <meta name="keywords" content="mapa mental,app de notas,IA,Gemini,ChatGPT,Claude,YouTube,PDF,auto clicker,Windows,Android">
+  <meta name="author" content="HisatorNotebook">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hisator-notebook.com/pt/">
+  <!-- i18n:alternates (_i18n/build.py が書く) -->
+  <link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/">
+  <link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/">
+  <link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/">
+  <link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/">
+  <link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/">
+  <link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/">
+  <link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/">
+  <link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/">
+  <!-- /i18n:alternates -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HisatorNotebook — Mapas, notas e vídeos em um só app | Windows / Android">
+  <meta property="og:description" content="Mapa mental, Nota livre, PDF e edição de vídeo em um só app para Windows e Android. IA com Gemini, ChatGPT e Claude sem chave de API, Auto clicker e mais.">
+  <meta property="og:url" content="https://hisator-notebook.com/pt/">
+  <meta property="og:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="Ícone do app HisatorNotebook">
+  <meta property="og:site_name" content="HisatorNotebook">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HisatorNotebook — Mapas, notas e vídeos em um só app | Windows / Android">
+  <meta name="twitter:description" content="Mapa mental, Nota livre, PDF e edição de vídeo em um só app para Windows e Android. IA com Gemini, ChatGPT e Claude sem chave de API, Auto clicker e mais.">
+  <meta name="twitter:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta name="twitter:image:alt" content="Ícone do app HisatorNotebook">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/icon.png">
+  <link rel="stylesheet" href="../styles.css?v=20261104b">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/", "logo": "https://hisator-notebook.com/images/icon.png", "sameAs": ["https://github.com/PG-Darksan/HisatorNotebook"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "HisatorNotebook", "description": "App de notas com IA que reúne mapa mental, Nota livre, PDF e edição de vídeo em um só lugar. Para Windows e Android.", "applicationCategory": "ProductivityApplication", "operatingSystem": "Windows, Android", "url": "https://hisator-notebook.com/pt/", "image": "https://hisator-notebook.com/images/icon.png", "offers": [{"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Pro", "price": "5.99", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Max", "price": "19.99", "priceCurrency": "USD"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/pt/", "inLanguage": "pt"}</script>
+</head>
+<body data-page="home">
+
+<nav id="nav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="eager" decoding="async">
+    </span>
+    HisatorNotebook
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link" data-page="home">Início</a>
+    <a href="features-windows.html" class="nav-link" data-page="fwin">Versão Windows</a>
+    <a href="features-android.html" class="nav-link" data-page="fand">Versão Android</a>
+    <a href="pricing.html" class="nav-link" data-page="pricing">Planos</a>
+        
+    <a href="contact.html" class="nav-link nav-cta" data-page="contact">Contato</a>
+  </div>
+  <div class="lang-switcher">
+      <button class="lang-toggle" aria-label="Language" aria-haspopup="true">
+        <span>PT</span><span class="caret">▾</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <a href="../index.html" hreflang="ja" lang="ja"><span>日本語</span><span class="lang-code">JA</span></a>
+        <a href="../en/index.html" hreflang="en" lang="en"><span>English</span><span class="lang-code">EN</span></a>
+        <a href="../zh/index.html" hreflang="zh-Hans" lang="zh-Hans"><span>简体中文</span><span class="lang-code">ZH</span></a>
+        <a href="../ko/index.html" hreflang="ko" lang="ko"><span>한국어</span><span class="lang-code">KO</span></a>
+        <a href="../es/index.html" hreflang="es" lang="es"><span>Español</span><span class="lang-code">ES</span></a>
+        <a href="../fr/index.html" hreflang="fr" lang="fr"><span>Français</span><span class="lang-code">FR</span></a>
+        <a href="../de/index.html" hreflang="de" lang="de"><span>Deutsch</span><span class="lang-code">DE</span></a>
+        <a href="index.html" class="current" hreflang="pt" lang="pt-BR"><span>Português</span><span class="lang-code">PT</span></a>
+        <a href="../ru/index.html" hreflang="ru" lang="ru"><span>Русский</span><span class="lang-code">RU</span></a>
+      </div>
+    </div>
+</nav>
+
+<main class="page-main">
+
+    <!-- Hero -->
+    <section class="hero" id="download">
+
+      <!-- 惑星・銀河・天体装飾 (Cosmic Decorations - Realistic) -->
+      <div class="cosmic-deco" aria-hidden="true">
+        <!-- 3つのAIを象徴する回転オービット (AIセクション付近・右側) -->
+        <svg class="ai-orbit ai-orbit-1" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="orbitCore" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#E8F5FD"/>
+              <stop offset="40%" stop-color="#6FC3E8"/>
+              <stop offset="100%" stop-color="#2C6584"/>
+            </radialGradient>
+            <filter id="orbitGlow"><feGaussianBlur stdDeviation="2.2"/></filter>
+          </defs>
+          <!-- 3本の軌道 (それぞれ 0 / 60 / 120 度 = 3種類のAI) -->
+          <g fill="none" stroke-width="1.4">
+            <g transform="rotate(0 150 150)">
+              <ellipse cx="150" cy="150" rx="124" ry="44" stroke="rgba(111, 195, 232,0.62)"/>
+              <circle cx="274" cy="150" r="5.5" fill="#6FC3E8" filter="url(#orbitGlow)"/>
+            </g>
+            <g transform="rotate(60 150 150)">
+              <ellipse cx="150" cy="150" rx="124" ry="44" stroke="rgba(212,140,205,0.5)"/>
+              <circle cx="274" cy="150" r="5" fill="#B08CE0" filter="url(#orbitGlow)"/>
+            </g>
+            <g transform="rotate(120 150 150)">
+              <ellipse cx="150" cy="150" rx="124" ry="44" stroke="rgba(130,160,235,0.5)"/>
+              <circle cx="274" cy="150" r="5" fill="#7C9BF0" filter="url(#orbitGlow)"/>
+            </g>
+          </g>
+          <!-- 中心の発光核 -->
+          <circle cx="150" cy="150" r="20" fill="rgba(111, 195, 232,0.18)" filter="url(#orbitGlow)"/>
+          <circle cx="150" cy="150" r="10" fill="url(#orbitCore)"/>
+          <circle cx="150" cy="150" r="4" fill="#F3FAFE"/>
+        </svg>
+
+        <!-- 星雲 (ガス雲、左下) -->
+        <svg class="nebula nebula-1" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="nebulaPurple" cx="40%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(160,100,200,0.55)"/>
+              <stop offset="40%" stop-color="rgba(120,70,180,0.3)"/>
+              <stop offset="100%" stop-color="rgba(40,20,80,0)"/>
+            </radialGradient>
+            <radialGradient id="nebulaGold" cx="60%" cy="55%" r="40%">
+              <stop offset="0%" stop-color="rgba(111, 195, 232,0.4)"/>
+              <stop offset="60%" stop-color="rgba(94, 140, 166,0.15)"/>
+              <stop offset="100%" stop-color="rgba(120,80,40,0)"/>
+            </radialGradient>
+            <filter id="nebulaBlur"><feGaussianBlur stdDeviation="10"/></filter>
+          </defs>
+          <ellipse cx="160" cy="200" rx="180" ry="140" fill="url(#nebulaPurple)" filter="url(#nebulaBlur)"/>
+          <ellipse cx="240" cy="220" rx="150" ry="100" fill="url(#nebulaGold)" filter="url(#nebulaBlur)"/>
+          <ellipse cx="200" cy="180" rx="100" ry="60" fill="rgba(180,130,200,0.2)" filter="url(#nebulaBlur)" transform="rotate(25 200 180)"/>
+        </svg>
+
+        <!-- 土星 (リアル版 - 多層・大気・縞模様・カッシーニの空隙) -->
+        <svg class="planet planet-saturn" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="satSphere" cx="32%" cy="28%" r="85%">
+              <stop offset="0%" stop-color="#DEF0FB"/>
+              <stop offset="15%" stop-color="#8FD4EF"/>
+              <stop offset="35%" stop-color="#4FA9D4"/>
+              <stop offset="60%" stop-color="#3C6E8A"/>
+              <stop offset="85%" stop-color="#1C3A4C"/>
+              <stop offset="100%" stop-color="#0A141C"/>
+            </radialGradient>
+            <radialGradient id="satShadow" cx="80%" cy="65%" r="60%">
+              <stop offset="40%" stop-color="rgba(0,0,0,0)"/>
+              <stop offset="100%" stop-color="rgba(0,0,0,0.65)"/>
+            </radialGradient>
+            <radialGradient id="satAtmos" cx="50%" cy="50%" r="50%">
+              <stop offset="78%" stop-color="rgba(255,232,176,0)"/>
+              <stop offset="88%" stop-color="rgba(255,232,176,0.18)"/>
+              <stop offset="100%" stop-color="rgba(255,232,176,0)"/>
+            </radialGradient>
+            <linearGradient id="ringFront" x1="0%" y1="50%" x2="100%" y2="50%">
+              <stop offset="0%" stop-color="rgba(150,100,50,0)"/>
+              <stop offset="8%" stop-color="rgba(180,130,70,0.6)"/>
+              <stop offset="20%" stop-color="rgba(111, 195, 232,0.95)"/>
+              <stop offset="35%" stop-color="rgba(199, 233, 250,1)"/>
+              <stop offset="44%" stop-color="rgba(160,110,60,0.45)"/>
+              <stop offset="48%" stop-color="rgba(80,55,30,0.3)"/>
+              <stop offset="52%" stop-color="rgba(80,55,30,0.3)"/>
+              <stop offset="56%" stop-color="rgba(160,110,60,0.45)"/>
+              <stop offset="65%" stop-color="rgba(199, 233, 250,1)"/>
+              <stop offset="80%" stop-color="rgba(111, 195, 232,0.95)"/>
+              <stop offset="92%" stop-color="rgba(180,130,70,0.6)"/>
+              <stop offset="100%" stop-color="rgba(150,100,50,0)"/>
+            </linearGradient>
+            <linearGradient id="ringBack" x1="0%" y1="50%" x2="100%" y2="50%">
+              <stop offset="0%" stop-color="rgba(150,100,50,0)"/>
+              <stop offset="15%" stop-color="rgba(180,130,70,0.35)"/>
+              <stop offset="35%" stop-color="rgba(111, 195, 232,0.5)"/>
+              <stop offset="50%" stop-color="rgba(199, 233, 250,0.55)"/>
+              <stop offset="65%" stop-color="rgba(111, 195, 232,0.5)"/>
+              <stop offset="85%" stop-color="rgba(180,130,70,0.35)"/>
+              <stop offset="100%" stop-color="rgba(150,100,50,0)"/>
+            </linearGradient>
+            <clipPath id="satClip"><circle cx="120" cy="120" r="50"/></clipPath>
+            <filter id="satGlow"><feGaussianBlur stdDeviation="6"/></filter>
+          </defs>
+          <!-- 大気のハロー -->
+          <circle cx="120" cy="120" r="60" fill="url(#satAtmos)" filter="url(#satGlow)"/>
+          <!-- 後ろ側の環 (惑星の上半分) -->
+          <g transform="rotate(-22 120 120)">
+            <path d="M 18 120 Q 120 100 222 120" stroke="url(#ringBack)" stroke-width="4" fill="none"/>
+            <path d="M 26 120 Q 120 104 214 120" stroke="rgba(111, 195, 232,0.4)" stroke-width="1.5" fill="none"/>
+          </g>
+          <!-- 惑星本体 -->
+          <circle cx="120" cy="120" r="50" fill="url(#satSphere)"/>
+          <!-- 縞模様 (clip-pathで球面内に) -->
+          <g clip-path="url(#satClip)" opacity="0.7">
+            <path d="M 70 102 Q 120 96 170 104" stroke="rgba(199, 233, 250,0.45)" stroke-width="2.5" fill="none"/>
+            <path d="M 70 112 Q 120 108 170 114" stroke="rgba(160,110,60,0.5)" stroke-width="2" fill="none"/>
+            <path d="M 70 120 Q 120 116 170 122" stroke="rgba(199, 233, 250,0.35)" stroke-width="3" fill="none"/>
+            <path d="M 70 130 Q 120 126 170 132" stroke="rgba(120,80,40,0.55)" stroke-width="2" fill="none"/>
+            <path d="M 70 138 Q 120 134 170 140" stroke="rgba(199, 233, 250,0.3)" stroke-width="1.8" fill="none"/>
+            <ellipse cx="100" cy="125" rx="8" ry="3" fill="rgba(120,80,40,0.4)"/>
+          </g>
+          <!-- ハイライト -->
+          <ellipse cx="100" cy="100" rx="15" ry="9" fill="rgba(238, 249, 255,0.35)" filter="url(#satGlow)"/>
+          <!-- 影 -->
+          <circle cx="120" cy="120" r="50" fill="url(#satShadow)"/>
+          <!-- 前面の環 (惑星の下半分) -->
+          <g transform="rotate(-22 120 120)">
+            <path d="M 18 120 Q 120 140 222 120" stroke="url(#ringFront)" stroke-width="8" fill="none"/>
+            <path d="M 26 120 Q 120 137 214 120" stroke="rgba(238, 249, 255,0.4)" stroke-width="1.5" fill="none"/>
+            <path d="M 36 120 Q 120 134 204 120" stroke="rgba(80,55,30,0.4)" stroke-width="0.8" fill="none"/>
+          </g>
+        </svg>
+<!-- 星座 (オリオン風 右上) -->
+        <svg class="constellation constellation-1" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+          <line x1="20" y1="40" x2="60" y2="20" stroke="rgba(111, 195, 232,0.4)" stroke-width="0.7"/>
+          <line x1="60" y1="20" x2="110" y2="50" stroke="rgba(111, 195, 232,0.4)" stroke-width="0.7"/>
+          <line x1="110" y1="50" x2="150" y2="35" stroke="rgba(111, 195, 232,0.4)" stroke-width="0.7"/>
+          <line x1="110" y1="50" x2="140" y2="95" stroke="rgba(111, 195, 232,0.4)" stroke-width="0.7"/>
+          <line x1="150" y1="35" x2="185" y2="60" stroke="rgba(111, 195, 232,0.4)" stroke-width="0.7"/>
+          <circle cx="20" cy="40" r="2.5" fill="#CFE9F8"/>
+          <circle cx="60" cy="20" r="3" fill="#FFFFFF"/>
+          <circle cx="110" cy="50" r="3.2" fill="#CFE9F8"/>
+          <circle cx="150" cy="35" r="2.7" fill="#FFFFFF"/>
+          <circle cx="185" cy="60" r="2.2" fill="#CFE9F8"/>
+          <circle cx="140" cy="95" r="2.5" fill="#FFFFFF"/>
+        </svg>
+
+        <!-- 星座 (北斗七星風 中下) -->
+        <svg class="constellation constellation-2" viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
+          <line x1="15" y1="30" x2="55" y2="55" stroke="rgba(111, 195, 232,0.35)" stroke-width="0.7"/>
+          <line x1="55" y1="55" x2="90" y2="40" stroke="rgba(111, 195, 232,0.35)" stroke-width="0.7"/>
+          <line x1="90" y1="40" x2="130" y2="70" stroke="rgba(111, 195, 232,0.35)" stroke-width="0.7"/>
+          <line x1="55" y1="55" x2="80" y2="85" stroke="rgba(111, 195, 232,0.35)" stroke-width="0.7"/>
+          <circle cx="15" cy="30" r="2.2" fill="#CFE9F8"/>
+          <circle cx="55" cy="55" r="3" fill="#FFFFFF"/>
+          <circle cx="90" cy="40" r="2.5" fill="#CFE9F8"/>
+          <circle cx="130" cy="70" r="2.7" fill="#FFFFFF"/>
+          <circle cx="80" cy="85" r="2.2" fill="#CFE9F8"/>
+        </svg>
+
+        <!-- 流れ星 -->
+        <div class="shooting-star shooting-star-1"></div>
+        <div class="shooting-star shooting-star-2"></div>
+        <div class="shooting-star shooting-star-3"></div>
+
+      </div>
+
+      <div class="container">
+
+        <!-- Block 1: Title + icon -->
+        <div class="hero-block hero-main">
+          <div class="hero-left">
+            <div class="hero-eyebrow">ALL-IN-ONE AI WORKSPACE</div>
+            <h1 class="hero-title hero-title-main">
+              <span class="nowrap">Mais fácil de usar do que qualquer outro</span><br>
+              <span class="nowrap"><span class="hero-accent-strong">O NoteBook definitivo</span></span>
+              <span class="hero-title-sub">— HisatorNotebook for Windows &amp; Android</span>
+            </h1>
+            <p class="hero-desc">
+              <span class="nowrap">Mapa mental, notas, PDF, Office, vídeo e IA integrados em um só lugar</span><br>
+              <span class="nowrap">Um espaço de trabalho completo e intuitivo que acelera o seu raciocínio</span>
+            </p>
+            <div class="hero-cta hero-cta-dl">
+              <a href="https://github.com/PG-Darksan/HisatorNotebook/releases/download/v1.0.0-582/HisatorNotebook-582-windows.zip"
+                 class="btn-primary btn-dl" rel="noopener" download>
+                <span class="dl-os" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                    <path d="M3 5.5 L11 4.2 L11 11.3 L3 11.3 Z" fill="currentColor"/>
+                    <path d="M12 4.05 L21 2.6 L21 11.3 L12 11.3 Z" fill="currentColor"/>
+                    <path d="M3 12.7 L11 12.7 L11 19.8 L3 18.5 Z" fill="currentColor"/>
+                    <path d="M12 12.7 L21 12.7 L21 21.4 L12 19.95 Z" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span class="dl-text">
+                  <span class="dl-label">Baixar para Windows</span>
+                  <span class="dl-sub">b582 · zip 80 MB</span>
+                </span>
+              </a>
+              <a href="https://github.com/PG-Darksan/HisatorNotebook/releases/download/v1.0.0-584/HisatorNotebook-584.apk"
+                 class="btn-primary btn-dl" rel="noopener" download>
+                <span class="dl-os" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                       stroke="currentColor" stroke-width="1.7"
+                       stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="6.8" y1="4.2" x2="8.6" y2="6.6"/>
+                    <line x1="17.2" y1="4.2" x2="15.4" y2="6.6"/>
+                    <path d="M5.5 11.5 a6.5 6.5 0 0 1 13 0 Z" fill="currentColor" stroke="none"/>
+                    <circle cx="9.2" cy="9.5" r="0.7" fill="var(--paper)" stroke="none"/>
+                    <circle cx="14.8" cy="9.5" r="0.7" fill="var(--paper)" stroke="none"/>
+                    <rect x="6.5" y="12.5" width="11" height="6.5" rx="1.4" fill="currentColor" stroke="none"/>
+                    <rect x="3.5" y="12.5" width="2" height="5" rx="1" fill="currentColor" stroke="none"/>
+                    <rect x="18.5" y="12.5" width="2" height="5" rx="1" fill="currentColor" stroke="none"/>
+                    <rect x="8.5" y="19" width="2" height="3.5" rx="0.9" fill="currentColor" stroke="none"/>
+                    <rect x="13.5" y="19" width="2" height="3.5" rx="0.9" fill="currentColor" stroke="none"/>
+                  </svg>
+                </span>
+                <span class="dl-text">
+                  <span class="dl-label">Baixar para Android</span>
+                  <span class="dl-sub">b584 · apk 157 MB</span>
+                </span>
+              </a>
+            </div>
+            <p class="hero-sysreq"><span class="sysreq-item">Windows 10 / 11 (64 bits)</span> · <span class="sysreq-item">Android 8.0 ou superior</span> · <span class="sysreq-item">Interface em 30 idiomas</span></p>
+            <!-- Microsoft Store (公開中: 9N1TW1JD747L)。 hp_dl.py が書き換えるのは hero-cta-dl から hero-sysreq の手前までなので、 その外に置く -->
+            <div class="hero-store"><a href="https://apps.microsoft.com/detail/9N1TW1JD747L?referrer=appbadge&amp;mode=direct" class="store-badge" target="_blank" rel="noopener"><img src="../images/store/ms-store-pt-br.svg" alt="Obtenha na Microsoft Store" width="161" height="44" decoding="async"></a></div>
+          </div>
+          <div class="hero-right">
+            <picture>
+              <img src="../images/icon_round.png" alt="Ícone do app HisatorNotebook" class="hero-icon"
+                   width="498" height="498" style="height:auto"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            </picture>
+            <div class="hero-icon hero-icon-fallback" style="display:none;" aria-hidden="true">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFFFFF"/>
+                    <stop offset="100%" stop-color="#E1EAF3"/>
+                  </linearGradient>
+                </defs>
+                <rect width="200" height="200" rx="40" fill="url(#bgGrad)"/>
+                <circle cx="100" cy="100" r="20" fill="#16232C"/>
+                <circle cx="40" cy="50" r="10" fill="none" stroke="#16232C" stroke-width="3"/>
+                <circle cx="160" cy="56" r="10" fill="#2C6584"/>
+                <circle cx="36" cy="150" r="10" fill="none" stroke="#16232C" stroke-width="3"/>
+                <circle cx="164" cy="156" r="10" fill="none" stroke="#16232C" stroke-width="3"/>
+                <path d="M82 92 L52 56 M118 92 L155 60 M82 110 L48 145 M118 108 L155 145"
+                      stroke="#16232C" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             MIND MAP & 6 PAGE TYPES
+             ═══════════════════════════════════════════════════════════ -->
+        <div id="ch-mindmap" class="chapter-section">
+          <div class="hero-block reverse" style="margin-bottom: 32px;">
+            <div class="hero-left">
+              <div class="chapter-badge">MIND MAP &amp; WORKSPACE</div>
+              <h2 class="block-title"><span class="nowrap">Uso intuitivo!</span><br><span class="nowrap">Alterne livremente entre 6 tipos de página</span></h2>
+              <p class="hero-desc">
+                <span class="nowrap"><kbd>Enter</kbd> cria um nó irmão, <kbd>Tab</kbd> um nó filho e <kbd>Space</kbd> entra na edição</span><br>
+                <span class="nowrap">Expanda a árvore na velocidade do pensamento e alterne entre os 6 tipos de página quando quiser</span>
+              </p>
+            </div>
+            <div class="hero-right">
+              <video autoplay loop muted playsinline class="hero-video" aria-label="Demonstração do uso intuitivo do mapa com atalhos de teclado">
+                <source src="../videos/instinct.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <!-- 実機スクリーンショット & デモ動画ショーケース -->
+          <div class="app-shot-showcase reveal" style="margin-top: 0; margin-bottom: 16px;">
+            <div class="app-shot-grid">
+              <div class="app-shot-card">
+                <div class="app-shot-bar">
+                  <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                  <div class="app-shot-title">Mapa mental — nós hierárquicos e minimapa de visão geral</div>
+                  <span class="app-shot-badge">MIND MAP</span>
+                </div>
+                <div class="app-shot-media">
+                  <img src="../images/shot_mindmap_blueprint.png" alt="Tela do mapa mental (nós hierárquicos, molduras de grupo e minimapa de visão geral)" width="1264" height="681" loading="lazy">
+                </div>
+                <div class="app-shot-caption">
+                  <h4>Nós hierárquicos + minimapa de visão geral: veja o todo num relance</h4>
+                </div>
+              </div>
+
+              <div class="app-shot-card">
+                <div class="app-shot-bar">
+                  <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                  <div class="app-shot-title">Mapa mental — molduras de grupo e árvores por tema</div>
+                  <span class="app-shot-badge">VISUAL CANVAS</span>
+                </div>
+                <div class="app-shot-media">
+                  <img src="../images/shot_mindmap_applogo.png" alt="Tela do mapa mental com árvores organizadas por tema" width="1264" height="681" loading="lazy">
+                </div>
+                <div class="app-shot-caption">
+                  <h4>Alinhamento automático e molduras de grupo para estruturar suas ideias com elegância</h4>
+                </div>
+              </div>
+
+              <div class="app-shot-card">
+                <div class="app-shot-bar">
+                  <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                  <div class="app-shot-title">Galeria — estante em grade 2D para materiais, vídeos e cartões</div>
+                  <span class="app-shot-badge">GALLERY VIEW</span>
+                </div>
+                <div class="app-shot-media">
+                  <img src="../images/shot_gallery_blueprint.png" alt="Tela da página Galeria em grade 2D" width="1264" height="681" loading="lazy">
+                </div>
+                <div class="app-shot-caption">
+                  <h4>Organize visualmente materiais, imagens e vídeos em uma grade 2D</h4>
+                </div>
+              </div>
+
+              <div class="app-shot-card">
+                <div class="app-shot-bar">
+                  <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                  <div class="app-shot-title">Vídeo de demonstração — troca de páginas e tela dividida em 4</div>
+                  <span class="app-shot-badge">LIVE DEMO MP4</span>
+                </div>
+                <div class="app-shot-media">
+                  <video autoplay loop muted playsinline controls preload="metadata" aria-label="Vídeo de demonstração real com mapa mental, Galeria e tela dividida em 4">
+                    <source src="../videos/demo_blueprint_applogo.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="app-shot-caption">
+                  <h4>Do mapa para a Galeria e a tela dividida em 4, sem interrupções</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             AI Generation & 4 CLI Integration
+             ═══════════════════════════════════════════════════════════ -->
+        <div id="ch-ai" class="chapter-section">
+          <div class="hero-block" style="margin-bottom: 32px;">
+            <div class="hero-left">
+              <div class="chapter-badge">FRONTIER AI &amp; 4 CLI INTEGRATION</div>
+              <h2 class="block-title"><span class="nowrap">Conexão imediata com as 3 grandes IAs</span><br><span class="nowrap">E as 4 grandes CLIs de IA integradas</span></h2>
+              <p class="hero-desc">
+                <span class="nowrap">Use <b>ChatGPT, Gemini e Claude</b> na hora, sem chave de API</span><br>
+                <span class="nowrap">Inicie também <b>Claude Code / Codex / Gemini / Antigravity CLI</b> direto do app</span>
+              </p>
+            </div>
+            <div class="hero-right">
+              <video autoplay loop muted playsinline class="hero-video" aria-label="Alternando entre a IA e as 4 grandes CLIs para expandir o mapa">
+                <source src="../videos/AI_questions.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <!-- 実機スクリーンショット (AI & 4大CLI選択) -->
+          <div class="app-shot-showcase reveal" style="margin-top: 0; margin-bottom: 16px;">
+            <div class="app-shot-card" style="max-width: 1020px; margin: 0 auto;">
+              <div class="app-shot-bar">
+                <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                <div class="app-shot-title">Inicializador integrado: IA (API) + Claude Code / Codex CLI / Antigravity CLI</div>
+                <span class="app-shot-badge">AI &amp; 4 CLI LAUNCHER</span>
+              </div>
+              <div class="app-shot-media">
+                <img src="../images/shot_ai_workspace.png" alt="Tela real escolhendo entre IA (API) e Claude Code / Codex CLI / Antigravity CLI sobre o mapa mental" width="1264" height="681" loading="lazy">
+              </div>
+              <div class="app-shot-caption">
+                <h4>Alterne com um clique entre a IA embutida (API) e as 4 grandes CLIs de IA que você já assina</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             Research, Benchmarks & Exam Prep Hub
+             ═══════════════════════════════════════════════════════════ -->
+        <div id="ch-research" class="chapter-section">
+          <div class="chapter-header reveal" style="margin-bottom: 28px;">
+            <div class="chapter-badge">RESEARCH, BENCHMARKS &amp; EXAM PREP</div>
+            <h2 class="chapter-title">Pesquise, compare, aprenda<br>Um <span class="nowrap">hub de informações</span> completo, sem sair do app</h2>
+          </div>
+
+          <!-- 実機スクリーンショット & デモ動画 (性能比較 & 試験対策) -->
+          <div class="app-shot-showcase reveal" style="margin-top: 0; margin-bottom: 16px;">
+            <div class="app-shot-grid-3">
+              <div class="app-shot-card">
+                <div class="app-shot-bar">
+                  <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                  <div class="app-shot-title">Comparar desempenho — CPU / celular / GPU / IA (LLM)</div>
+                  <span class="app-shot-badge">BENCHMARKS</span>
+                </div>
+                <div class="app-shot-media">
+                  <img src="../images/shot_benchmarks.png" alt="Tela de comparação de desempenho de CPU, celular, tablet, GPU, IA (LLM), preços de LLM e navegadores" width="1264" height="681" loading="lazy">
+                </div>
+                <div class="app-shot-caption">
+                  <h4>Compare desempenho e preço de CPU, GPU, celulares e LLMs de uma só vez</h4>
+                </div>
+              </div>
+
+              <div class="app-shot-card">
+                <div class="app-shot-bar">
+                  <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                  <div class="app-shot-title">Preparação para exames — mapa + banco de questões com IA e coleta de termos</div>
+                  <span class="app-shot-badge">AI EXAM PREP</span>
+                </div>
+                <div class="app-shot-media">
+                  <img src="../images/shot_exam_prep.png" alt="Captura de tela real com a Preparação para exames ao lado do mapa mental" width="1264" height="681" loading="lazy">
+                </div>
+                <div class="app-shot-caption">
+                  <h4>Datas de 317 exames de certificação + painel de IA “Preparação para exames”</h4>
+                </div>
+              </div>
+
+              <div class="app-shot-card">
+                <div class="app-shot-bar">
+                  <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                  <div class="app-shot-title">Vídeo de demonstração — tela dividida em 4 + Preparação para exames + Comparar desempenho</div>
+                  <span class="app-shot-badge">WORKFLOW MP4</span>
+                </div>
+                <div class="app-shot-media">
+                  <video autoplay loop muted playsinline controls preload="metadata" aria-label="Vídeo de demonstração real alternando da tela dividida em 4 para a IA integrada, a Preparação para exames e a comparação de desempenho">
+                    <source src="../videos/demo_workspace_research.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="app-shot-caption">
+                  <h4>Vídeo contínuo: da tela dividida em 4 à pesquisa e à Preparação para exames</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             PDF, Office & Markdown
+             ═══════════════════════════════════════════════════════════ -->
+        <div id="ch-files" class="chapter-section">
+          <div class="hero-block" style="margin-bottom: 16px;">
+            <div class="hero-left">
+              <div class="chapter-badge">PDF, OFFICE &amp; MARKDOWN</div>
+              <h2 class="block-title"><span class="nowrap">Escreva direto no PDF</span><br><span class="nowrap">E edite Word, Excel e PPT diretamente</span></h2>
+              <p class="hero-desc">
+                <span class="nowrap">Salve anotações a caneta no PDF e edite Office e Markdown sem programas externos</span><br>
+                <span class="nowrap">Transforme documentos longos e PDFs diretamente em mapas mentais estruturados</span>
+              </p>
+            </div>
+            <div class="hero-right">
+              <video autoplay loop muted playsinline class="hero-video" aria-label="Especificações em Markdown, mapa mental e Preparação para exames trabalhando juntos">
+                <source src="../videos/summarize.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             Video, Audio & Silent Camera
+             ═══════════════════════════════════════════════════════════ -->
+        <div id="ch-video" class="chapter-section">
+          <div class="hero-block reverse" style="margin-bottom: 16px;">
+            <div class="hero-left">
+              <div class="chapter-badge">FOCUS VIDEO PLAYER &amp; MEDIA</div>
+              <h2 class="block-title"><span class="nowrap">Chega de distrações</span><br><span class="nowrap">Estudo com vídeos sem anúncios e reprodução de mídia</span></h2>
+              <p class="hero-desc">
+                <span class="nowrap">Assista a playlists e canais do YouTube <b>sem anúncios</b>, com total foco</span><br>
+                <span class="nowrap">Da edição de vídeo em linha do tempo à organização na Galeria, tudo em uma só tela</span>
+              </p>
+            </div>
+            <div class="hero-right">
+              <video autoplay loop muted playsinline class="hero-video" aria-label="Galeria, edição de vídeo em linha do tempo e tela dividida em 4 trabalhando juntas">
+                <source src="../videos/YouTube.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             Mouse Gestures, Split Screen & Automation
+             ═══════════════════════════════════════════════════════════ -->
+        <div id="ch-automation" class="chapter-section">
+          <div class="hero-block" style="margin-bottom: 32px;">
+            <div class="hero-left">
+              <div class="chapter-badge">MOUSE GESTURES, SPLIT VIEW &amp; AUTOMATION</div>
+              <h2 class="block-title"><span class="nowrap">Um traço com o botão direito, e pronto</span><br><span class="nowrap">Tela dividida e automação de tarefas</span></h2>
+              <p class="hero-desc">
+                <span class="nowrap"><b>Gestos do mouse com 12 formas</b>: segure o botão direito e desenhe o traço</span><br>
+                <span class="nowrap"><b>Tela dividida em 2 ou 4</b> à vontade e um <b>Auto clicker</b> que encadeia cartões</span>
+              </p>
+            </div>
+            <div class="hero-right">
+              <video autoplay loop muted playsinline controls preload="metadata" class="hero-video" aria-label="Vídeo de demonstração: gestos do mouse com o botão direito para trocar de página, abrir a IA e dividir a tela em 4 na hora">
+                <source src="../videos/mouse_gesture.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <!-- 実機スクリーンショット (2×2 4画面分割ビュー) -->
+          <div class="app-shot-showcase reveal" style="margin-top: 0; margin-bottom: 16px;">
+            <div class="app-shot-card" style="max-width: 1020px; margin: 0 auto;">
+              <div class="app-shot-bar">
+                <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                <div class="app-shot-title">Tela dividida em 4 (2×2, Quad Split View) — mapa mental + Galeria + especificação em Markdown</div>
+                <span class="app-shot-badge">4-PANE QUAD SPLIT</span>
+              </div>
+              <div class="app-shot-media">
+                <img src="../images/shot_split_quad.png" alt="Tela real com dois mapas mentais, uma Galeria e uma especificação em Markdown exibidos juntos na tela dividida em 4 (2×2)" width="1264" height="681" loading="lazy">
+              </div>
+              <div class="app-shot-caption">
+                <h4>4 páginas especializadas lado a lado em uma só janela (troque arrastando ou transforme em minijanela)</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="pricing-header reveal">
+          <div class="section-label">Pricing</div>
+          <h2 class="section-title" style="margin-bottom:12px;">3 planos</h2>
+          <p class="section-sub" style="margin: 0 auto 24px; max-width: 640px; color: rgba(225,238,248,0.82);">
+            Os 6 tipos de página, a edição de PDF/Office, a pesquisa e a IA (pré-paga) podem ser usados de graça, para sempre, já no <b>plano Free (¥0)</b>
+          </p>
+
+          <div class="billing-toggle" role="tablist" aria-label="Ciclo de cobrança">
+            <button type="button" class="billing-option active" data-billing="monthly">Mensal</button>
+            <button type="button" class="billing-option" data-billing="annual">
+              Anual <span class="save-badge">20% OFF</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Free -->
+          <div class="price-card free reveal">
+            <div class="price-tier">— Free</div>
+            <h3 class="price-name">Free</h3>
+            <div class="price-amount">
+              <span class="currency">¥</span>
+              <span class="num">0</span>
+            </div>
+            <div class="price-sub">Grátis para sempre · sem cartão de crédito</div>
+            <div class="price-annual-note">&nbsp;</div>
+            <ul class="price-features">
+              <li>Crie quantas páginas quiser (abre as 2 primeiras da lista; reordene à vontade)</li>
+              <li>6 tipos de página · escrita direta no PDF · edição de 3 formatos Office</li>
+              <li>Busca · Tendências · Curiosidades · Comparar desempenho · preparação para 317 exames · busca de produtos</li>
+              <li>Gestos do mouse · YouTube sem anúncios · Câmera silenciosa</li>
+              <li>IA pré-paga e 4 grandes CLIs de IA · proteção de dados em 3 camadas</li>
+            </ul>
+            <a href="pricing.html" class="price-cta" style="text-align:center;">Ver comparação de planos →</a>
+          </div>
+
+          <!-- Pro -->
+          <div class="price-card pro reveal">
+            <div class="price-tier">— Pro</div>
+            <h3 class="price-name">Pro</h3>
+            <span class="discount-badge">★ Desconto anual de 20% aplicado</span>
+            <div class="price-strike">
+              <span class="strike-currency">$</span>
+              <span class="strike-num">5.99</span>
+              <span style="font-size:11px;">/mês</span>
+            </div>
+            <div class="price-amount">
+              <span class="currency">$</span>
+              <span class="num" data-monthly="5.99" data-annual="4.79">5.99</span>
+              <span class="period">/mês</span>
+            </div>
+            <div class="price-sub">O plano padrão para usar sem limites</div>
+            <div class="price-annual-note" data-annual-total="57.48">&nbsp;</div>
+            <ul class="price-features">
+              <li><b>Sem limite de páginas abertas (ilimitado)</b></li>
+              <li><b>Tela dividida em 2 e em 4 e Bloqueio de foco ilimitados</b></li>
+              <li><b>Automação web · PDF com encadernação à direita via rolagem automática</b></li>
+              <li><b>Multimonitor: salto do cursor sempre ativo (Windows)</b></li>
+              <li>Armazenamento local-first · IA pré-paga e 4 grandes CLIs</li>
+            </ul>
+            <a href="pricing.html" class="price-cta" data-page="pricing" style="text-align:center;">Ver detalhes →</a>
+          </div>
+
+          <!-- Max -->
+          <div class="price-card max reveal">
+            <div class="price-tier">— Max</div>
+            <h3 class="price-name">Max</h3>
+            <span class="discount-badge">★ Desconto anual de 20% aplicado</span>
+            <div class="price-strike">
+              <span class="strike-currency">$</span>
+              <span class="strike-num">19.99</span>
+              <span style="font-size:11px;">/mês</span>
+            </div>
+            <div class="price-amount">
+              <span class="currency">$</span>
+              <span class="num" data-monthly="19.99" data-annual="15.99">19.99</span>
+              <span class="period">/mês</span>
+            </div>
+            <div class="price-sub">Sincronização entre dispositivos, coedição e até resumo de arquivos</div>
+            <div class="price-annual-note" data-annual-total="191.88">&nbsp;</div>
+            <ul class="price-features">
+              <li><b>Todos os recursos do Pro</b></li>
+              <li><b>Sincronização na nuvem (mesclagem automática 3-Way · 25 GB de upload / 100 GB de download por mês)</b></li>
+              <li><b>Coedição em tempo real com código de convite</b></li>
+              <li><b>Links de publicação na web para páginas Markdown</b></li>
+              <li><b>Geração automática de mapas com IA a partir de PDFs e documentos Office</b></li>
+            </ul>
+            <a href="pricing.html" class="price-cta" data-page="pricing" style="text-align:center;">Ver detalhes →</a>
+          </div>
+        </div>
+
+        <!-- AI プリペイド & CLI 案内バナー -->
+        <div class="ai-prepaid-banner reveal">
+          <div>
+            <div class="chapter-badge" style="margin-bottom:10px;">AI PRICING · NO API KEY REQUIRED</div>
+            <h3>IA pré-paga: você paga só o que usar — disponível desde o plano Free</h3>
+            <p>
+              Carregue <b>$10</b> no app e consuma só o que usar (custo real da API + 30%); nos meses sem uso, a IA custa ¥0.<br> Na versão Windows, você também conecta diretamente o <b>Claude Code / Codex / Gemini / Antigravity CLI</b> das suas próprias assinaturas, sem custo adicional.
+            </p>
+          </div>
+          <div class="ai-prepaid-points">
+            <div><span>✓</span> <span>Uso imediato <b>sem chave de API</b></span></div>
+            <div><span>✓</span> <span>Compatível com <b>ChatGPT / Gemini / Claude</b></span></div>
+            <div><span>✓</span> <span>Disponível desde o <b>plano Free (¥0)</b></span></div>
+            <div><span>✓</span> <span><b>4 grandes CLIs de IA</b> integradas</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="lazy" decoding="async">
+      </span>
+      HisatorNotebook
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Início</a>
+      <a href="features-windows.html">Recursos da versão Windows</a>
+      <a href="features-android.html">Recursos da versão Android</a>
+      <a href="ai.html">Recursos de IA</a>
+      <a href="video.html">Hub de vídeo</a>
+      <a href="platform.html">Plataforma</a>
+      <a href="pricing.html">Planos</a>
+      <a href="contact.html">Contato</a>
+      <a href="privacy.html">Política de Privacidade</a>
+      <a href="terms.html">Termos de Uso</a>
+      <a href="../tokutei.html">Aviso legal (Lei de Transações Comerciais Específicas)</a>
+    </nav>
+    <p class="footer-copy">
+      &copy; 2026 HisatorNotebook. Todos os direitos reservados. <span class="visitor-counter" aria-label="visitor count"> <span class="vc-label">Visitantes</span> <span class="vc-num" id="visitor-count">—</span> </span>
+    </p>
+  </div>
+</footer>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>

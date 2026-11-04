@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>요금 플랜 — Free / Pro $5.99 / Max $19.99 | HisatorNotebook</title>
+  <meta name="description" content="HisatorNotebook 요금 플랜. Free는 무료(처음 2페이지까지 열람), Pro는 월 $5.99로 페이지 수 무제한, Max는 월 $19.99로 클라우드 동기화·공동 편집·파일 기반 AI 맵 생성. 연간 결제 시 20% 할인.">
+  <meta name="keywords" content="요금,플랜,가격,Free,Pro,Max,구독,Stripe">
+  <meta name="author" content="HisatorNotebook">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hisator-notebook.com/ko/pricing.html">
+  <!-- i18n:alternates (_i18n/build.py が書く) -->
+  <link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/pricing.html">
+  <link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/pricing.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/pricing.html">
+  <link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/pricing.html">
+  <link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/pricing.html">
+  <link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/pricing.html">
+  <link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/pricing.html">
+  <link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/pricing.html">
+  <link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/pricing.html">
+  <link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/pricing.html">
+  <!-- /i18n:alternates -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="요금 플랜 — Free / Pro $5.99 / Max $19.99 | HisatorNotebook">
+  <meta property="og:description" content="HisatorNotebook 요금 플랜. Free는 무료(처음 2페이지까지 열람), Pro는 월 $5.99로 페이지 수 무제한, Max는 월 $19.99로 클라우드 동기화·공동 편집·파일 기반 AI 맵 생성. 연간 결제 시 20% 할인.">
+  <meta property="og:url" content="https://hisator-notebook.com/ko/pricing.html">
+  <meta property="og:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="HisatorNotebook 앱 아이콘">
+  <meta property="og:site_name" content="HisatorNotebook">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="요금 플랜 — Free / Pro $5.99 / Max $19.99 | HisatorNotebook">
+  <meta name="twitter:description" content="HisatorNotebook 요금 플랜. Free는 무료(처음 2페이지까지 열람), Pro는 월 $5.99로 페이지 수 무제한, Max는 월 $19.99로 클라우드 동기화·공동 편집·파일 기반 AI 맵 생성. 연간 결제 시 20% 할인.">
+  <meta name="twitter:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta name="twitter:image:alt" content="HisatorNotebook 앱 아이콘">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/", "logo": "https://hisator-notebook.com/images/icon.png", "sameAs": ["https://github.com/PG-Darksan/HisatorNotebook"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://hisator-notebook.com/ko/"}, {"@type": "ListItem", "position": 2, "name": "요금 플랜", "item": "https://hisator-notebook.com/ko/pricing.html"}]}</script>
+</head>
+<body data-page="pricing">
+
+<nav id="nav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="eager" decoding="async">
+    </span>
+    HisatorNotebook
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link" data-page="home">홈</a>
+    <a href="features-windows.html" class="nav-link" data-page="fwin">Windows 버전</a>
+    <a href="features-android.html" class="nav-link" data-page="fand">Android 버전</a>
+    <a href="pricing.html" class="nav-link" data-page="pricing">플랜</a>
+        
+    <a href="contact.html" class="nav-link nav-cta" data-page="contact">문의하기</a>
+  </div>
+  <div class="lang-switcher">
+      <button class="lang-toggle" aria-label="Language" aria-haspopup="true">
+        <span>KO</span><span class="caret">▾</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <a href="../pricing.html" hreflang="ja" lang="ja"><span>日本語</span><span class="lang-code">JA</span></a>
+        <a href="../en/pricing.html" hreflang="en" lang="en"><span>English</span><span class="lang-code">EN</span></a>
+        <a href="../zh/pricing.html" hreflang="zh-Hans" lang="zh-Hans"><span>简体中文</span><span class="lang-code">ZH</span></a>
+        <a href="pricing.html" class="current" hreflang="ko" lang="ko"><span>한국어</span><span class="lang-code">KO</span></a>
+        <a href="../es/pricing.html" hreflang="es" lang="es"><span>Español</span><span class="lang-code">ES</span></a>
+        <a href="../fr/pricing.html" hreflang="fr" lang="fr"><span>Français</span><span class="lang-code">FR</span></a>
+        <a href="../de/pricing.html" hreflang="de" lang="de"><span>Deutsch</span><span class="lang-code">DE</span></a>
+        <a href="../pt/pricing.html" hreflang="pt" lang="pt-BR"><span>Português</span><span class="lang-code">PT</span></a>
+        <a href="../ru/pricing.html" hreflang="ru" lang="ru"><span>Русский</span><span class="lang-code">RU</span></a>
+      </div>
+    </div>
+</nav>
+
+<main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">요금 플랜</h1>
+        <p class="page-hero-sub">— Free / Pro / Max 중 나에게 맞는 플랜을</p>
+      </div>
+    </section>
+
+    <section class="pricing-detail">
+      <div class="container">
+
+        <!-- アプリ内購入の案内 -->
+        <div class="pricing-info-banner">
+          <div class="info-icon">💳</div>
+          <div>
+            <h4>유료 플랜 가입은 앱에서</h4>
+            <p>
+              HisatorNotebook Pro / Max 플랜 가입은 앱을 실행한 뒤 오른쪽 위 ⋮ → 플랜 / 사용량 → 업그레이드에서 할 수 있습니다 결제 처리는 <b>Stripe</b>가 안전하게 관리합니다<br> 가입·플랜 변경·해지는 앱에서 할 수 있지만, <b>결제 화면과 계약 관리 화면은 외부 브라우저에서 열립니다</b><br> 법인 결제나 특별 캠페인의 <b>쿠폰 코드</b>도 앱 안의 입력란에서 적용해 주세요<br> <em style="font-size:13px;color:var(--ink-muted);"> ※ 구매 전에 <a href="../tokutei.html" style="color:var(--vermillion);text-decoration:underline;text-underline-offset:3px;">특정상거래법에 따른 표기</a>를 확인해 주세요 </em>
+            </p>
+          </div>
+        </div>
+
+        <!-- 支払いサイクル切替 (月額 / 年額) -->
+        <div style="text-align:center;">
+          <div class="billing-toggle" role="tablist" aria-label="결제 주기">
+            <button type="button" class="billing-option active" data-billing="monthly">월간</button>
+            <button type="button" class="billing-option" data-billing="annual">
+              연간 <span class="save-badge">20% 할인</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 料金カード (再掲) -->
+        <div class="pricing-grid">
+          <div class="price-card free">
+            <div class="price-tier">— Free</div>
+            <h3 class="price-name">Free</h3>
+            <div class="price-amount">
+              <span class="currency">¥</span>
+              <span class="num">0</span>
+            </div>
+            <div class="price-sub">계속 무료 · 신용카드 필요 없음</div>
+            <div class="price-annual-note">&nbsp;</div>
+            <ul class="price-features">
+              <li>페이지는 몇 개든 만들 수 있음(열 수 있는 것은 목록의 처음 2페이지까지, 순서 변경 &amp; 고정 자유)</li>
+              <li>6가지 페이지 유형·PDF 직접 필기·Word / Excel / PPT 편집</li>
+              <li>리서치·트렌드·잡학·성능 비교·317개 자격시험 대비·4대 쇼핑몰 상품 검색</li>
+              <li>마우스 제스처(12가지 모양)·YouTube 광고 숨김·동영상 &amp; 음악 플레이어·무음 카메라</li>
+              <li>AI는 선불($10 충전)로 이용 가능(API 키 불필요·ChatGPT / Gemini / Claude)</li>
+              <li>Claude Code / Codex / Gemini / Antigravity CLI는 본인 구독으로 이용 가능(Windows)</li>
+              <li>화면 분할은 2회까지 / 집중 잠금·화면 잠금은 1회까지</li>
+              <li>3단계 데이터 보호(자동 저장·휴지통 보관·복원 센터)</li>
+            </ul>
+            <a href="index.html" class="price-cta" style="text-align:center;">홈으로</a>
+          </div>
+
+          <div class="price-card pro">
+            <div class="price-tier">— Pro</div>
+            <h3 class="price-name">Pro</h3>
+            <span class="discount-badge">★ 연간 20% 할인 적용 중</span>
+            <div class="price-strike">
+              <span class="strike-currency">$</span>
+              <span class="strike-num">5.99</span>
+              <span style="font-size:11px;">/월</span>
+            </div>
+            <div class="price-amount">
+              <span class="currency">$</span>
+              <span class="num" data-monthly="5.99" data-annual="4.79">5.99</span>
+              <span class="period">/월</span>
+            </div>
+            <div class="price-sub">제한 없이 마음껏 쓰는 스탠다드 플랜</div>
+            <div class="price-annual-note" data-annual-total="57.48">&nbsp;</div>
+            <ul class="price-features">
+              <li><b>열 수 있는 페이지 수 제한 없음(무제한)</b></li>
+              <li><b>화면 분할(2분할·4분할)·집중 잠금·화면 잠금 무제한</b></li>
+              <li><b>Web 자동 조작(탭 / 스와이프 / 스크린샷 / 자동 스크롤 우철 PDF 변환)</b></li>
+              <li><b>멀티 모니터·마우스 워프 &amp; 커서 설정 상시 유지(Windows)</b></li>
+              <li>로컬 퍼스트 저장(데이터를 기기 안에서만 안전하게 관리)</li>
+              <li>선불 AI &amp; 4대 AI CLI 통합(Claude Code / Codex / Gemini / Antigravity)</li>
+            </ul>
+            <span class="price-cta" style="text-align:center;cursor:default;">앱에서 구매</span>
+          </div>
+
+          <div class="price-card max">
+            <div class="price-tier">— Max</div>
+            <h3 class="price-name">Max</h3>
+            <span class="discount-badge">★ 연간 20% 할인 적용 중</span>
+            <div class="price-strike">
+              <span class="strike-currency">$</span>
+              <span class="strike-num">19.99</span>
+              <span style="font-size:11px;">/월</span>
+            </div>
+            <div class="price-amount">
+              <span class="currency">$</span>
+              <span class="num" data-monthly="19.99" data-annual="15.99">19.99</span>
+              <span class="period">/월</span>
+            </div>
+            <div class="price-sub">여러 기기 동기화·공동 편집·대용량 파일 요약까지</div>
+            <div class="price-annual-note" data-annual-total="191.88">&nbsp;</div>
+            <ul class="price-features">
+              <li><b>Pro의 모든 기능</b></li>
+              <li><b>클라우드 동기화(3-Way 자동 병합·월 25GB 업로드 / 100GB 다운로드)</b></li>
+              <li><b>초대 코드로 실시간 공동 편집(파일·일정표·페이지 공유)</b></li>
+              <li><b>마크다운 페이지의 Web 공개 링크 발행</b></li>
+              <li><b>PDF·Office 파일로 AI가 마인드맵을 자동 생성</b></li>
+            </ul>
+            <span class="price-cta" style="text-align:center;cursor:default;">앱에서 구매</span>
+          </div>
+        </div>
+
+        <!-- 機能比較表 -->
+        <div style="overflow-x:auto;">
+        <table class="feature-matrix">
+          <thead>
+            <tr>
+              <th>기능</th>
+              <th>Free</th>
+              <th class="col-pro">Pro</th>
+              <th class="col-max">Max</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>열 수 있는 페이지 수(생성·순서 변경·고정은 모든 플랜에서 자유)</td>
+              <td><span class="matrix-meta">목록의 처음 2페이지</span></td>
+              <td><span class="matrix-meta">무제한</span></td>
+              <td><span class="matrix-meta">무제한</span></td>
+            </tr>
+            <tr>
+              <td>6가지 페이지 유형(맵·갤러리·프리 노트·문서·MD·동영상 편집) &amp; 튜토리얼</td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>PDF 직접 펜 필기·Word / Excel(수식 지원) / PowerPoint 편집</td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>마우스 제스처(총 12가지 모양·스크린샷·페이지 이동·기능 실행)</td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>YouTube 광고 숨김·길이 필터·로컬 동영상 &amp; 음악 재생·무음 카메라</td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>트렌드·잡학·성능 비교(LLM 요금 비교 포함)·317개 자격시험 대비·4대 쇼핑몰 상품 검색</td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>3단계 데이터 보호(자동 저장·Windows 휴지통 보관·복원 센터) &amp; 30개 언어 UI</td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>AI 이용(ChatGPT / Gemini / Claude·API 키 없는 선불제)</td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>용어 해설·주제 기반 AI 맵 자동 생성 / 번역·요약·퀴즈·암기 카드 생성</td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>Claude Code / Codex / Gemini / Antigravity CLI &amp; MCP 서버(Windows)</td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>화면 분할(2분할 / 4분할·패널 드래그 교체) &amp; 집중 잠금·화면 잠금</td>
+              <td><span class="matrix-meta">2회까지(잠금 1회)</span></td>
+              <td><span class="matrix-meta">무제한</span></td>
+              <td><span class="matrix-meta">무제한</span></td>
+            </tr>
+            <tr>
+              <td>Web 자동 조작(탭 / 스와이프 / 자동 스크롤 촬영·우철 PDF 변환)</td>
+              <td><span class="matrix-no">—</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>멀티 모니터·마우스 워프 &amp; 커서 설정 상시 유지(Windows)</td>
+              <td><span class="matrix-meta">실행 중 체험</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>PDF·Office 파일 기반 AI 맵 자동 생성</td>
+              <td><span class="matrix-no">—</span></td>
+              <td><span class="matrix-no">—</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td>클라우드 동기화(3-Way 자동 병합·업로드 / 월)</td>
+              <td><span class="matrix-no">—</span></td>
+              <td><span class="matrix-no">—</span></td>
+              <td><span class="matrix-meta">25 GB</span></td>
+            </tr>
+            <tr>
+              <td>클라우드 동기화(다운로드 / 월)</td>
+              <td><span class="matrix-no">—</span></td>
+              <td><span class="matrix-no">—</span></td>
+              <td><span class="matrix-meta">100 GB</span></td>
+            </tr>
+            <tr>
+              <td>실시간 공동 편집(파일·일정표·페이지 공유) &amp; 마크다운 Web 공개</td>
+              <td><span class="matrix-no">—</span></td>
+              <td><span class="matrix-no">—</span></td>
+              <td><span class="matrix-yes">✓</span></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <!-- AI プリペイド & CLI 案内バナー -->
+        <div class="ai-prepaid-banner">
+          <div>
+            <div class="chapter-badge" style="margin-bottom:10px;">AI PRICING · NO API KEY REQUIRED</div>
+            <h3>AI는 ‘쓴 만큼만’ 내는 선불 방식 — Free 플랜에서도 모든 AI를 쓸 수 있습니다</h3>
+            <p>
+              ChatGPT·Gemini·Claude 이용 요금은 월간 플랜과 별개인 <b>선불 크레딧 방식</b>입니다<br> 앱에서 <b>$10</b>를 충전하면 <b>각 AI의 API 실비 + 30%(결제·중계 수수료)만</b> 차감되며, 쓰지 않은 달에는 AI 비용이 전혀 들지 않습니다
+            </p>
+          </div>
+          <div class="ai-prepaid-points">
+            <div><span>✓</span> <span><b>API 키 불필요</b>(앱 측 키로 즉시 동작)</span></div>
+            <div><span>✓</span> <span><b>ChatGPT / Gemini / Claude</b> 지원</span></div>
+            <div><span>✓</span> <span><b>Free 플랜(¥0)</b> 그대로도 충전해서 이용 가능</span></div>
+            <div><span>✓</span> <span><b>4대 AI CLI</b>(Claude Code / Codex / Gemini / Antigravity) 지원</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="lazy" decoding="async">
+      </span>
+      HisatorNotebook
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">홈</a>
+      <a href="features-windows.html">Windows 버전 기능</a>
+      <a href="features-android.html">Android 버전 기능</a>
+      <a href="ai.html">AI 기능</a>
+      <a href="video.html">동영상 허브</a>
+      <a href="platform.html">플랫폼</a>
+      <a href="pricing.html">플랜</a>
+      <a href="contact.html">문의하기</a>
+      <a href="privacy.html">개인정보 처리방침</a>
+      <a href="terms.html">이용약관</a>
+      <a href="../tokutei.html">특정상거래법에 따른 표기</a>
+    </nav>
+    <p class="footer-copy">
+      &copy; 2026 HisatorNotebook. All rights reserved. <span class="visitor-counter" aria-label="visitor count"> <span class="vc-label">방문자</span> <span class="vc-num" id="visitor-count">—</span> </span>
+    </p>
+  </div>
+</footer>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>

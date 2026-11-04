@@ -1,73 +1,1418 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- ホーム -->
+<!-- _i18n/build.py が生成。 lastmod などは日本語の URL の行を直せば、 次の生成で他の言語にも写る -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hisator-notebook.com/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/"/>
   </url>
-
-  <!-- 機能一覧 (Windows / Android) -->
+  <url>
+    <loc>https://hisator-notebook.com/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/zh/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ko/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/es/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/fr/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/de/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/pt/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ru/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/"/>
+  </url>
   <url>
     <loc>https://hisator-notebook.com/features-windows.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-windows.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/en/features-windows.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-windows.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/zh/features-windows.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-windows.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ko/features-windows.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-windows.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/es/features-windows.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-windows.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/fr/features-windows.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-windows.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/de/features-windows.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-windows.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/pt/features-windows.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-windows.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ru/features-windows.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-windows.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-windows.html"/>
   </url>
   <url>
     <loc>https://hisator-notebook.com/features-android.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-android.html"/>
   </url>
-
-  <!-- 料金プラン -->
+  <url>
+    <loc>https://hisator-notebook.com/en/features-android.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-android.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/zh/features-android.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-android.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ko/features-android.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-android.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/es/features-android.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-android.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/fr/features-android.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-android.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/de/features-android.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-android.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/pt/features-android.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-android.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ru/features-android.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/features-android.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/features-android.html"/>
+  </url>
   <url>
     <loc>https://hisator-notebook.com/pricing.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/pricing.html"/>
   </url>
-
-  <!-- 機能サブページ -->
+  <url>
+    <loc>https://hisator-notebook.com/en/pricing.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/zh/pricing.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ko/pricing.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/es/pricing.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/fr/pricing.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/de/pricing.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/pt/pricing.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/pricing.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ru/pricing.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/pricing.html"/>
+  </url>
   <url>
     <loc>https://hisator-notebook.com/ai.html</loc>
     <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/en/ai.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/zh/ai.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ko/ai.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/es/ai.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/fr/ai.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/de/ai.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/pt/ai.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ru/ai.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html"/>
   </url>
   <url>
     <loc>https://hisator-notebook.com/video.html</loc>
     <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/en/video.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/zh/video.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ko/video.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/es/video.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/fr/video.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/de/video.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/pt/video.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ru/video.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/video.html"/>
   </url>
   <url>
     <loc>https://hisator-notebook.com/platform.html</loc>
     <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/platform.html"/>
   </url>
-
-  <!-- お問い合わせ -->
+  <url>
+    <loc>https://hisator-notebook.com/en/platform.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/platform.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/zh/platform.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/platform.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ko/platform.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/platform.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/es/platform.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/platform.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/fr/platform.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/platform.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/de/platform.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/platform.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/pt/platform.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/platform.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ru/platform.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/platform.html"/>
+  </url>
   <url>
     <loc>https://hisator-notebook.com/contact.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/contact.html"/>
   </url>
-
-  <!-- プライバシーポリシー / 利用規約 / 特定商取引法に基づく表記 -->
+  <url>
+    <loc>https://hisator-notebook.com/en/contact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/zh/contact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ko/contact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/es/contact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/fr/contact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/de/contact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/pt/contact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ru/contact.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/contact.html"/>
+  </url>
   <url>
     <loc>https://hisator-notebook.com/privacy.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/en/privacy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/zh/privacy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ko/privacy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/es/privacy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/fr/privacy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/de/privacy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/pt/privacy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ru/privacy.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/privacy.html"/>
   </url>
   <url>
     <loc>https://hisator-notebook.com/terms.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/en/terms.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/zh/terms.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ko/terms.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/es/terms.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/fr/terms.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/de/terms.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/pt/terms.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hisator-notebook.com/ru/terms.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/terms.html"/>
   </url>
   <url>
     <loc>https://hisator-notebook.com/tokutei.html</loc>
@@ -75,6 +1420,4 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- 載せない物: thanks.html (決済後の画面・noindex) / _preview-brandmark.html (確認用・未公開) -->
 </urlset>

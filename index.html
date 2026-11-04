@@ -9,6 +9,18 @@
   <meta name="author" content="HisatorNotebook">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://hisator-notebook.com/">
+  <!-- i18n:alternates (_i18n/build.py が書く) -->
+  <link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/">
+  <link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/">
+  <link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/">
+  <link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/">
+  <link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/">
+  <link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/">
+  <link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/">
+  <link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/">
+  <!-- /i18n:alternates -->
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -63,7 +75,15 @@
         <span>JA</span><span class="caret">▾</span>
       </button>
       <div class="lang-menu" role="menu">
-        <a href="index.html" class="current" hreflang="ja"><span>日本語</span><span class="lang-code">JA</span></a>
+        <a href="index.html" class="current" hreflang="ja" lang="ja"><span>日本語</span><span class="lang-code">JA</span></a>
+        <a href="en/index.html" hreflang="en" lang="en"><span>English</span><span class="lang-code">EN</span></a>
+        <a href="zh/index.html" hreflang="zh-Hans" lang="zh-Hans"><span>简体中文</span><span class="lang-code">ZH</span></a>
+        <a href="ko/index.html" hreflang="ko" lang="ko"><span>한국어</span><span class="lang-code">KO</span></a>
+        <a href="es/index.html" hreflang="es" lang="es"><span>Español</span><span class="lang-code">ES</span></a>
+        <a href="fr/index.html" hreflang="fr" lang="fr"><span>Français</span><span class="lang-code">FR</span></a>
+        <a href="de/index.html" hreflang="de" lang="de"><span>Deutsch</span><span class="lang-code">DE</span></a>
+        <a href="pt/index.html" hreflang="pt" lang="pt-BR"><span>Português</span><span class="lang-code">PT</span></a>
+        <a href="ru/index.html" hreflang="ru" lang="ru"><span>Русский</span><span class="lang-code">RU</span></a>
       </div>
     </div>
 </nav>
@@ -292,6 +312,8 @@
               </a>
             </div>
             <p class="hero-sysreq"><span class="sysreq-item">Windows 10 / 11（64bit）</span>・<span class="sysreq-item">Android 8.0 以上</span> ・ <span class="sysreq-item">30言語対応</span></p>
+            <!-- Microsoft Store (公開中: 9N1TW1JD747L)。 hp_dl.py が書き換えるのは hero-cta-dl から hero-sysreq の手前までなので、 その外に置く -->
+            <div class="hero-store"><a href="https://apps.microsoft.com/detail/9N1TW1JD747L?referrer=appbadge&amp;mode=direct" class="store-badge" target="_blank" rel="noopener"><img src="images/store/ms-store-ja.svg" alt="Microsoft Store から入手" width="161" height="44" decoding="async"></a></div>
           </div>
           <div class="hero-right">
             <picture>

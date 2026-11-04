@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 기능 — Gemini / ChatGPT / Claude·API 키 불필요 | HisatorNotebook</title>
+  <meta name="description" content="주제만 알려 주면 AI가 맵을 자동 생성. 망라 모드, 번역·요약, 관련 동영상 가져오기, 파일 요약까지. API 키 없는 선불 크레딧으로 Gemini / ChatGPT / Claude를 골라 씁니다.">
+  <meta name="keywords" content="AI 마인드맵,자동 생성,Gemini,ChatGPT,Claude,번역,요약,망라 모드,선불 크레딧,API 키 불필요">
+  <meta name="author" content="HisatorNotebook">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hisator-notebook.com/ko/ai.html">
+  <!-- i18n:alternates (_i18n/build.py が書く) -->
+  <link rel="alternate" hreflang="ja" href="https://hisator-notebook.com/ai.html">
+  <link rel="alternate" hreflang="en" href="https://hisator-notebook.com/en/ai.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://hisator-notebook.com/zh/ai.html">
+  <link rel="alternate" hreflang="ko" href="https://hisator-notebook.com/ko/ai.html">
+  <link rel="alternate" hreflang="es" href="https://hisator-notebook.com/es/ai.html">
+  <link rel="alternate" hreflang="fr" href="https://hisator-notebook.com/fr/ai.html">
+  <link rel="alternate" hreflang="de" href="https://hisator-notebook.com/de/ai.html">
+  <link rel="alternate" hreflang="pt" href="https://hisator-notebook.com/pt/ai.html">
+  <link rel="alternate" hreflang="ru" href="https://hisator-notebook.com/ru/ai.html">
+  <link rel="alternate" hreflang="x-default" href="https://hisator-notebook.com/en/ai.html">
+  <!-- /i18n:alternates -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI 기능 — Gemini / ChatGPT / Claude·API 키 불필요 | HisatorNotebook">
+  <meta property="og:description" content="주제만 알려 주면 AI가 맵을 자동 생성. 망라 모드, 번역·요약, 관련 동영상 가져오기, 파일 요약까지. API 키 없는 선불 크레딧으로 Gemini / ChatGPT / Claude를 골라 씁니다.">
+  <meta property="og:url" content="https://hisator-notebook.com/ko/ai.html">
+  <meta property="og:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="HisatorNotebook 앱 아이콘">
+  <meta property="og:site_name" content="HisatorNotebook">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 기능 — Gemini / ChatGPT / Claude·API 키 불필요 | HisatorNotebook">
+  <meta name="twitter:description" content="주제만 알려 주면 AI가 맵을 자동 생성. 망라 모드, 번역·요약, 관련 동영상 가져오기, 파일 요약까지. API 키 없는 선불 크레딧으로 Gemini / ChatGPT / Claude를 골라 씁니다.">
+  <meta name="twitter:image" content="https://hisator-notebook.com/images/icon.png">
+  <meta name="twitter:image:alt" content="HisatorNotebook 앱 아이콘">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/", "logo": "https://hisator-notebook.com/images/icon.png", "sameAs": ["https://github.com/PG-Darksan/HisatorNotebook"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://hisator-notebook.com/ko/"}, {"@type": "ListItem", "position": 2, "name": "AI 기능", "item": "https://hisator-notebook.com/ko/ai.html"}]}</script>
+</head>
+<body data-page="ai">
+
+<nav id="nav">
+  <a href="index.html" class="brand">
+    <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="eager" decoding="async">
+    </span>
+    HisatorNotebook
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link" data-page="home">홈</a>
+    <a href="features-windows.html" class="nav-link" data-page="fwin">Windows 버전</a>
+    <a href="features-android.html" class="nav-link" data-page="fand">Android 버전</a>
+    <a href="pricing.html" class="nav-link" data-page="pricing">플랜</a>
+        
+    <a href="contact.html" class="nav-link nav-cta" data-page="contact">문의하기</a>
+  </div>
+  <div class="lang-switcher">
+      <button class="lang-toggle" aria-label="Language" aria-haspopup="true">
+        <span>KO</span><span class="caret">▾</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <a href="../ai.html" hreflang="ja" lang="ja"><span>日本語</span><span class="lang-code">JA</span></a>
+        <a href="../en/ai.html" hreflang="en" lang="en"><span>English</span><span class="lang-code">EN</span></a>
+        <a href="../zh/ai.html" hreflang="zh-Hans" lang="zh-Hans"><span>简体中文</span><span class="lang-code">ZH</span></a>
+        <a href="ai.html" class="current" hreflang="ko" lang="ko"><span>한국어</span><span class="lang-code">KO</span></a>
+        <a href="../es/ai.html" hreflang="es" lang="es"><span>Español</span><span class="lang-code">ES</span></a>
+        <a href="../fr/ai.html" hreflang="fr" lang="fr"><span>Français</span><span class="lang-code">FR</span></a>
+        <a href="../de/ai.html" hreflang="de" lang="de"><span>Deutsch</span><span class="lang-code">DE</span></a>
+        <a href="../pt/ai.html" hreflang="pt" lang="pt-BR"><span>Português</span><span class="lang-code">PT</span></a>
+        <a href="../ru/ai.html" hreflang="ru" lang="ru"><span>Русский</span><span class="lang-code">RU</span></a>
+      </div>
+    </div>
+</nav>
+
+<main class="page-main">
+<section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">AI 기능 &amp; 4대 CLI 통합</h1>
+        <p class="page-hero-sub">— ChatGPT·Gemini·Claude를 API 키 없는 선불제와 4대 AI CLI 통합으로</p>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- 自動マップ生成 -->
+      <section class="feature-detail-section">
+        <div class="feature-detail-block">
+          <div class="fd-left">
+            <div class="fd-eyebrow">— 01 / Auto Generate Mind Map</div>
+            <h2 class="fd-title">주제만 주면 맵이 완성<br>3대 AI 모델에 원탭으로 연결</h2>
+            <p class="fd-desc">
+              주제를 입력하기만 하면 AI가 설명문과 자식 노드를 자동으로 펼칩니다<br><b>ChatGPT·Gemini·Claude</b>를 전환해 그대로 마인드맵에 반영할 수 있습니다
+            </p>
+            <ul class="fd-points">
+              <li><span><b>3대 AI 지원</b>: ChatGPT·Gemini·Claude의 최신 모델 이용 가능</span></li>
+              <li><span><b>Web 검색 &amp; 출처 URL 포함</b>: 최신 정보도 근거와 함께 답변</span></li>
+              <li><span><b>Free 플랜부터 이용 가능</b>: API 키 없이 충전한 만큼 바로 사용</span></li>
+            </ul>
+          </div>
+          <div class="fd-right">
+            <div class="fd-media">
+              <video autoplay loop muted playsinline aria-label="AI가 설명문과 자식 노드를 자동 생성하는 모습">
+                <source src="../videos/AI_questions.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4大 AI CLI 統合 & MCP サーバー -->
+      <section class="feature-detail-section">
+        <div class="feature-detail-block reverse">
+          <div class="fd-left">
+            <div class="fd-eyebrow">— 02 / 4 AI CLIs &amp; Built-in MCP Server</div>
+            <h2 class="fd-title">Claude Code·Codex·Gemini·<br>Antigravity CLI를 앱 안에 통합</h2>
+            <p class="fd-desc">
+              Windows 버전에서는 본인 구독으로 <b>4대 AI CLI</b>를 직접 실행할 수 있습니다<br>내장 MCP 서버로 열려 있는 맵이나 PDF를 직접 조작할 수 있습니다
+            </p>
+            <ul class="fd-points">
+              <li><span><b>사용률 바 표시</b>: 5시간 한도·주간 한도의 남은 할당량을 실시간 표시</span></li>
+              <li><span><b>MCP 서버 내장</b>: 클릭 한 번으로 외부 AI와 연결(Ctrl+Z 되돌리기 지원)</span></li>
+            </ul>
+          </div>
+          <div class="fd-right">
+            <div class="app-shot-card">
+              <div class="app-shot-bar">
+                <div class="app-shot-dots"><span></span><span></span><span></span></div>
+                <div class="app-shot-title">AI (API) ＆ Claude Code / Codex CLI / Antigravity CLI</div>
+                <span class="app-shot-badge">AI &amp; CLI</span>
+              </div>
+              <div class="app-shot-media">
+                <img src="../images/shot_ai_workspace.png" alt="마인드맵에서 AI (API)와 Claude Code / Codex CLI / Antigravity CLI를 전환하는 실제 화면" width="1264" height="681" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 翻訳・要約・学習支援 -->
+      <section class="feature-detail-section">
+        <div class="bento-grid">
+          <div class="bento-card">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_globe.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge">30 LANGUAGES</span>
+            </div>
+            <h3>30개 언어 일괄 번역 &amp; 요약</h3>
+            <p>트리 구조를 유지한 채 30개 언어로 일괄 번역하고, 긴 메모 요약도 지원</p>
+          </div>
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_flashcards.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">FLASHCARDS &amp; QUIZ</span>
+            </div>
+            <h3>암기 카드 &amp; 4지선다 퀴즈</h3>
+            <p>맵이나 PDF로 자동 생성, ‘일괄 채점’과 AI ‘대화 학습’ 지원</p>
+          </div>
+          <div class="bento-card accent-gold">
+            <div class="bento-top">
+              <span class="bento-icon"><img src="../images/icons/icon_exam.png" alt="" width="58" height="58" loading="lazy"></span>
+              <span class="bento-badge gold">AI EXAM PREP</span>
+            </div>
+            <h3>AI ‘시험 대비’ &amp; 회화 연습</h3>
+            <p>자격증 이름이나 과목으로 핵심 용어·연습 문제를 자동 생성하고, 면접 음성 연습도 지원</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ファイル要約 -->
+      <section class="feature-detail-section">
+        <div class="feature-detail-block">
+          <div class="fd-left">
+            <div class="fd-eyebrow">— 04 / File summarization · <span style="color:var(--gold);">Max 플랜 전용</span></div>
+            <h2 class="fd-title">긴 PDF·Office 자료로<br>1분 만에 맵 완성</h2>
+            <p class="fd-desc">
+              PDF(스캔 이미지 PDF 포함)·Word·Excel·PowerPoint를 첨부하면 AI가 전체를 읽고 <b>마인드맵을 자동 생성</b>합니다
+            </p>
+          </div>
+          <div class="fd-right">
+            <div class="fd-media">
+              <video autoplay loop muted playsinline aria-label="PDF를 요약해 마인드맵으로 정리하는 모습">
+                <source src="../videos/summarize.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI プロバイダー選択 -->
+      <section class="feature-detail-section">
+        <div class="feature-detail-block reverse">
+          <div class="fd-left">
+            <div class="fd-eyebrow">— 05 / Prepaid credit &amp; Cost Transparency</div>
+            <h2 class="fd-title">API 키를 준비할 필요 없이<br>쓴 만큼만 내는 투명한 선불제</h2>
+            <p class="fd-desc">
+              $10 단위 충전으로 쓴 만큼(API 실비 + 30%)만 차감(쓰지 않은 달의 AI 요금은 ¥0)
+            </p>
+          </div>
+          <div class="fd-right">
+            <div class="bento-card accent-gold" style="padding:28px;">
+              <div class="bento-top">
+                <span class="bento-icon"><img src="../images/icons/icon_ai_jev.png" alt="" width="58" height="58" loading="lazy"></span>
+                <span class="bento-badge gold">PREPAID CREDIT SYSTEM</span>
+              </div>
+              <h3>3대 프런티어 AI를 원탭으로 전환</h3>
+              <div class="stat-list-items stat-list-ai" style="max-width:100%; margin-top:12px;">
+                <span class="stat-chip-ai">ChatGPT</span>
+                <span class="stat-chip-ai">Gemini</span>
+                <span class="stat-chip-ai">Claude</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="pages-nav">
+      <div class="container">
+        <div class="pages-nav-grid">
+          <a href="features-windows.html" class="pages-nav-card" data-page="fwin">
+            <span class="pn-label">← 돌아가기</span>
+            <span class="pn-title">Windows 버전 기능</span>
+          </a>
+          <a href="video.html" class="pages-nav-card next" data-page="video">
+            <span class="pn-label">다음 기능 →</span>
+            <span class="pn-title">동영상 허브</span>
+          </a>
+        </div>
+      </div>
+    </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"><img src="../images/icon.png" alt="HisatorNotebook" width="512" height="512" loading="lazy" decoding="async">
+      </span>
+      HisatorNotebook
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">홈</a>
+      <a href="features-windows.html">Windows 버전 기능</a>
+      <a href="features-android.html">Android 버전 기능</a>
+      <a href="ai.html">AI 기능</a>
+      <a href="video.html">동영상 허브</a>
+      <a href="platform.html">플랫폼</a>
+      <a href="pricing.html">플랜</a>
+      <a href="contact.html">문의하기</a>
+      <a href="privacy.html">개인정보 처리방침</a>
+      <a href="terms.html">이용약관</a>
+      <a href="../tokutei.html">특정상거래법에 따른 표기</a>
+    </nav>
+    <p class="footer-copy">
+      &copy; 2026 HisatorNotebook. All rights reserved. <span class="visitor-counter" aria-label="visitor count"> <span class="vc-label">방문자</span> <span class="vc-num" id="visitor-count">—</span> </span>
+    </p>
+  </div>
+</footer>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>
