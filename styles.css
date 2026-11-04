@@ -5243,7 +5243,7 @@ body::before {
     rgba(255, 143, 163, 0) 100%) 1;
 }
 
-/* 見出しを中央に置く機能の塊 (Android 版ならではの機能: 下のスマホの画面に揃える) */
+/* 見出しを中央に置く機能の塊 (Android 版のページの全部の塊: 下のスマホの画面に揃える) */
 .feat-group-center .feat-group-title,
 .feat-group-center .feat-group-lead { text-align: center; }
 .feat-group-center .feat-group-title::after {
