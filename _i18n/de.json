@@ -144,7 +144,6 @@
  "ギャラリー × 2次元グリッド管理": "Galerie × Verwaltung im 2D-Raster",
  "マインドマップ": "Mindmap",
  "画像・動画・PDF・表・数式を格納・自動整列・集中モード・プレゼン・3D地球儀ビューに対応": "Bilder, Videos, PDFs, Tabellen und Formeln einbetten; automatische Ausrichtung, Fokusmodus, Präsentation und 3D-Globus-Ansicht",
- "ギャラリー (本棚)": "Galerie (Bücherregal)",
  "動画・PDF・画像をタイルに並べる2次元グリッド・タグ絞り込みや連続再生に対応": "2D-Raster mit Kacheln für Videos, PDFs und Bilder; Filtern nach Tags und fortlaufende Wiedergabe",
  "フリーノート ＆ 文書": "Freie Notiz &amp; Dokument",
  "手書きペン・図形・付箋の自由キャンバスと、アウトライン目次付きのリッチ文書ページ": "Freie Leinwand mit Stift, Formen und Haftnotizen sowie reichhaltige Dokumentseiten mit Gliederung als Inhaltsverzeichnis",
@@ -516,5 +515,6 @@
  "プリペイド AI ＆ 3大 AI CLI 統合 (Claude Code / Codex / Antigravity)": "Prepaid-KI &amp; Integration der 3 großen KI-CLIs (Claude Code / Codex / Antigravity)",
  "データ保護 (自動保存・Windows ごみ箱退避・復元センター) ＆ 30言語 UI": "Datensicherung (automatisches Speichern, Auslagerung in den Windows-Papierkorb, Wiederherstellungscenter) &amp; Oberfläche in 30 Sprachen",
  "Claude Code / Codex / Antigravity CLI ＆ MCP サーバー (Windows)": "Claude Code / Codex / Antigravity CLI &amp; MCP-Server (Windows)",
- "<t0>3大 AI CLI</t0>（Claude Code / Codex / Antigravity）対応": "Unterstützt <t0>die 3 großen KI-CLIs</t0> (Claude Code / Codex / Antigravity)"
+ "<t0>3大 AI CLI</t0>（Claude Code / Codex / Antigravity）対応": "Unterstützt <t0>die 3 großen KI-CLIs</t0> (Claude Code / Codex / Antigravity)",
+ "ギャラリー": "Galerie"
 }

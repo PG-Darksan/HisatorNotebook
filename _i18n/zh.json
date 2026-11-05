@@ -144,7 +144,6 @@
  "ギャラリー × 2次元グリッド管理": "图库 × 二维网格管理",
  "マインドマップ": "思维导图",
  "画像・動画・PDF・表・数式を格納・自動整列・集中モード・プレゼン・3D地球儀ビューに対応": "可容纳图片、视频、PDF、表格、公式，支持自动排列、专注模式、演示及 3D 地球仪视图",
- "ギャラリー (本棚)": "图库（书架）",
  "動画・PDF・画像をタイルに並べる2次元グリッド・タグ絞り込みや連続再生に対応": "将视频、PDF、图片平铺成二维网格，支持标签筛选与连续播放",
  "フリーノート ＆ 文書": "自由笔记 ＆ 文档",
  "手書きペン・図形・付箋の自由キャンバスと、アウトライン目次付きのリッチ文書ページ": "可用手写笔、图形、便签自由创作的画布，以及带大纲目录的富文本文档页面",
@@ -516,5 +515,6 @@
  "プリペイド AI ＆ 3大 AI CLI 統合 (Claude Code / Codex / Antigravity)": "预付费 AI ＆ 三大 AI CLI 集成（Claude Code / Codex / Antigravity）",
  "データ保護 (自動保存・Windows ごみ箱退避・復元センター) ＆ 30言語 UI": "数据保护（自动保存、移入 Windows 回收站、恢复中心）＆ 30 种语言界面",
  "Claude Code / Codex / Antigravity CLI ＆ MCP サーバー (Windows)": "Claude Code / Codex / Antigravity CLI ＆ MCP 服务器（Windows）",
- "<t0>3大 AI CLI</t0>（Claude Code / Codex / Antigravity）対応": "支持<t0>三大 AI CLI</t0>（Claude Code / Codex / Antigravity）"
+ "<t0>3大 AI CLI</t0>（Claude Code / Codex / Antigravity）対応": "支持<t0>三大 AI CLI</t0>（Claude Code / Codex / Antigravity）",
+ "ギャラリー": "图库"
 }
