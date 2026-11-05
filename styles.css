@@ -5251,3 +5251,9 @@ body::before {
   transform: translateX(-50%);
   background: linear-gradient(90deg, rgba(111, 195, 232, 0), #6FC3E8, rgba(111, 195, 232, 0));
 }
+
+/* 機能一覧の大項目の間を空ける (前の塊のカードと次の見出しが詰まって見えた) */
+.feat-group + .feat-group { margin-top: 36px; }
+@media (max-width: 760px) {
+  .feat-group + .feat-group { margin-top: 18px; }
+}
