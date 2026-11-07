@@ -5257,3 +5257,35 @@ body::before {
 @media (max-width: 760px) {
   .feat-group + .feat-group { margin-top: 18px; }
 }
+
+/* ═══ 11. 日本語の見出しと説明は文節の所で折る (2026-11-07) ═══
+   (= 利用者の報告: スマホで「機能一覧」 の「覧」 だけ・「ロック」 の「ク」 だけ・
+   「下さい」 の「い」 だけが次の行へ落ちて見栄えが悪い)。 日本語はどの字の間でも
+   折れるので、 幅が足りない所でそのまま切れていた。
+   ・auto-phrase (Chrome / Edge 119〜) = 文節 (「機能一覧」 「ロックまで」 「お送り下さい」)
+     の切れ目でだけ折る。 対応していないブラウザは前の行の keep-all が効き、 空白・
+     句読点・「・」 の所でだけ折る。 それでも 1 行に収まらない長い塊だけ
+     overflow-wrap で字の間でも折る (画面の外へはみ出さない)。
+   ・副題と h2・h3 は text-wrap: balance で行の長さをそろえ、 最後の行に 1〜2 字だけ
+     残らないようにする。 ページの題 (h1) と説明文は pretty (最後の行に 1 つだけ落とさない)。
+   ・日本語のページ (lang="ja") だけ。 他の言語は今までどおり。 */
+:is(h1, h2, h3, h4,
+    .page-hero-sub, .feat-group-lead, .feat-name, .feat-desc,
+    .fd-desc, .hero-desc, .section-sub, .result-sub,
+    .app-shot-caption, .phone-shot figcaption):lang(ja) {
+  word-break: keep-all;
+  word-break: auto-phrase;
+  overflow-wrap: anywhere;
+}
+:is(h2, h3, .page-hero-sub):lang(ja) {
+  text-wrap: balance;
+}
+/* ページの題 (h1) は pretty: balance だと「Windows / 版の機能一覧」 と前が短くなる。
+   pretty なら「Windows 版の / 機能一覧」 のまま、 最後の行に 1 つだけ残る時だけ直す。 */
+h1:lang(ja) {
+  text-wrap: pretty;
+}
+:is(.feat-group-lead, .feat-desc, .fd-desc, .hero-desc,
+    .section-sub, .result-sub):lang(ja) {
+  text-wrap: pretty;
+}
