@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>アカウントとデータの削除 / Delete your account and data — Hisator Notebook</title>
+  <meta name="description" content="Hisator Notebook のアカウントとサーバーのデータを消す方法。 アプリの中での消し方と、 アプリが無い時の依頼のしかた / How to delete your Hisator Notebook account and server data, in the app or by request.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hisator-notebook.com/account-deletion.html">
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <style>
+    :root {
+      --bg: #f5fafb;
+      --card: #ffffff;
+      --text: #15333a;
+      --muted: #526d75;
+      --accent: #0e5f69;
+      --accent-soft: #eaf4f6;
+      --line: #d3e5e9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 28px 16px 56px;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.8 system-ui, -apple-system, "Segoe UI", "Yu Gothic UI", Meiryo, sans-serif;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header.hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 26px 28px;
+      margin-bottom: 20px;
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 1.55rem;
+      line-height: 1.4;
+      color: var(--accent);
+      margin: 0 0 8px;
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .nav-bar a {
+      text-decoration: none;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid var(--line);
+      padding: 4px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    .nav-bar a:hover {
+      background: #dceef2;
+    }
+    section.card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 18px;
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: var(--accent);
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    h3 {
+      font-size: 1.04rem;
+      color: var(--text);
+      margin: 1.4em 0 0.45em;
+    }
+    p { margin: 0.6em 0; }
+    ul {
+      margin: 0.5em 0 0.8em;
+      padding-left: 1.35em;
+    }
+    li { margin: 0.35em 0; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.9em;
+      background: var(--accent-soft);
+      padding: 1px 6px;
+      border-radius: 5px;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .tag {
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: #f1f7f8;
+      border: 1px solid var(--line);
+      padding: 2px 9px;
+      border-radius: 6px;
+    }
+    .app-note {
+      font-size: 0.9rem;
+      color: var(--muted);
+      background: #f8fcfd;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin-top: 14px;
+    }
+    hr.lang-divider {
+      border: 0;
+      border-top: 2px dashed var(--line);
+      margin: 36px 0 28px;
+    }
+    a { color: var(--accent); }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 28px;
+    }
+    @media (max-width: 600px) {
+      header.hero, section.card { padding: 18px 18px; }
+      h1 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- ==================== 日本語 ==================== -->
+  <header class="hero" id="ja">
+    <span class="eyebrow">Hisator Notebook — Account</span>
+    <h1>アカウントとデータの削除</h1>
+    <p class="subtitle">制定日: 2026年11月7日</p>
+
+    <nav class="nav-bar" aria-label="目次">
+      <a href="#in-app-ja">アプリの中で消す</a>
+      <a href="#request-ja">アプリが無い時</a>
+      <a href="#deleted-ja">消えるデータ</a>
+      <a href="#kept-ja">残るデータ</a>
+      <a href="#en" lang="en">English Version ↓</a>
+    </nav>
+
+    <p class="app-note">
+      ※本ページは Hisator Notebook (Android / Windows のアプリ) のアカウントと、 サーバーに置いてあるデータを消す方法の案内です。
+    </p>
+  </header>
+
+  <section class="card" id="in-app-ja">
+    <h2>1. アプリの中で消す</h2>
+    <ol>
+      <li>アプリの <strong>設定 → アカウント → Google アカウント</strong> を開きます。</li>
+      <li>窓の下の <strong>「アカウントを削除」</strong> を押します。</li>
+      <li>消える物を確かめて <strong>「元に戻せない事を理解しました」</strong> に印を付け、 <strong>「削除する」</strong> を押します。 Google でログインしている人は、 本人確認のためにもう一度ログインします。</li>
+    </ol>
+    <p><strong>Google Play の定期購入は、 アカウントを消しても止まりません。</strong> 先に Google Play アプリの <strong>お支払いと定期購入 → 定期購入</strong> で解約してください。</p>
+    <p>ログインしていない (名前の無い) アカウントも同じ手順で消せます。</p>
+  </section>
+
+  <section class="card" id="request-ja">
+    <h2>2. アプリを消してしまった・開けない時</h2>
+    <p><a href="https://hisator-notebook.com/contact.html">お問い合わせフォーム</a> または <code>hisatasan1@gmail.com</code> に、 件名か本文へ <strong>「アカウント削除の依頼」</strong> と書いて送ってください。 次のどちらかを書き添えてください。</p>
+    <ul>
+      <li>ログインに使った Google アカウントのメールアドレス</li>
+      <li>アプリの「Google アカウント」 の窓に出ている利用者 ID</li>
+    </ul>
+    <p>本人であることを確かめた上で、 受け付けから 30 日以内に下の「消えるデータ」 を消し、 その旨を返信します。</p>
+  </section>
+
+  <section class="card" id="deleted-ja">
+    <h2>3. 消えるデータ</h2>
+    <ul>
+      <li>アカウント (ログインの記録)</li>
+      <li>グループの名簿の自分の行と、 自分の予定。 自分しか居ないグループは、 アップロードしたページと添付も</li>
+      <li>API クレジットの残高と使用履歴 (残高は払い戻されません)</li>
+      <li>Web に公開したページ</li>
+      <li>カードで払っている有料プランは、 その場で解約します (残りの期間の払い戻しはありません)</li>
+    </ul>
+  </section>
+
+  <section class="card" id="kept-ja">
+    <h2>4. 残るデータ</h2>
+    <ul>
+      <li><strong>端末に保存したページ</strong>: アプリの中に残ります。 消す時はアプリをアンインストールしてください。</li>
+      <li><strong>他の人と使っているグループのページ</strong>: 他の参加者のデータでもあるため残ります。 必要な時はお問い合わせください。</li>
+      <li><strong>決済の記録</strong> (Stripe・Google Play・課金の管理に使う RevenueCat の取引の記録): 法令 (税法など) で定められた期間、 保管します。</li>
+      <li><strong>お問い合わせと AI の返事の報告</strong>: 対応の記録として残ります。 消してほしい時はお問い合わせで依頼してください。</li>
+    </ul>
+  </section>
+
+  <section class="card" id="contact-ja">
+    <h2>お問い合わせ</h2>
+    <ul>
+      <li><strong>提供者</strong>：Hisator Notebook（久田 浩靖）</li>
+      <li><strong>Web サイト</strong>：<a href="https://hisator-notebook.com/">https://hisator-notebook.com/</a></li>
+      <li><strong>お問い合わせ窓口</strong>：<a href="https://hisator-notebook.com/contact.html">お問い合わせフォーム</a> または <code>hisatasan1@gmail.com</code></li>
+      <li><strong>プライバシーポリシー</strong>：<a href="https://hisator-notebook.com/privacy.html">https://hisator-notebook.com/privacy.html</a></li>
+    </ul>
+  </section>
+
+  <hr class="lang-divider">
+
+  <!-- ==================== English ==================== -->
+  <div lang="en">
+    <header class="hero" id="en">
+      <span class="eyebrow">Hisator Notebook — Account</span>
+      <h1>Delete your account and data</h1>
+      <p class="subtitle">Effective: November 7, 2026</p>
+
+      <nav class="nav-bar" aria-label="Table of contents">
+        <a href="#in-app-en">In the app</a>
+        <a href="#request-en">Without the app</a>
+        <a href="#deleted-en">What is deleted</a>
+        <a href="#kept-en">What is kept</a>
+        <a href="#ja" lang="ja">日本語版 ↑</a>
+      </nav>
+
+      <p class="app-note">
+        This page explains how to delete your Hisator Notebook account (Android / Windows app) and the data stored on our servers.
+      </p>
+    </header>
+
+    <section class="card" id="in-app-en">
+      <h2>1. Delete in the app</h2>
+      <ol>
+        <li>Open <strong>Settings → Account → Google account</strong> in the app.</li>
+        <li>Tap <strong>Delete account</strong> at the bottom of the window.</li>
+        <li>Review what will be deleted, check <strong>“I understand this cannot be undone”</strong>, and tap <strong>Delete</strong>. If you signed in with Google, you sign in once more to confirm it is you.</li>
+      </ol>
+      <p><strong>Deleting your account does not stop Google Play subscriptions.</strong> Cancel first in the Google Play Store app under <strong>Payments &amp; subscriptions → Subscriptions</strong>.</p>
+      <p>Accounts that never signed in (anonymous accounts) can be deleted the same way.</p>
+    </section>
+
+    <section class="card" id="request-en">
+      <h2>2. If you removed the app or cannot open it</h2>
+      <p>Send a message titled <strong>“Account deletion request”</strong> through the <a href="https://hisator-notebook.com/contact.html">contact page</a> or to <code>hisatasan1@gmail.com</code>, with one of the following:</p>
+      <ul>
+        <li>The email address of the Google account you signed in with</li>
+        <li>The user ID shown in the app’s “Google account” window</li>
+      </ul>
+      <p>After confirming it is you, we delete the data listed under “What is deleted” within 30 days of receiving the request and reply to let you know.</p>
+    </section>
+
+    <section class="card" id="deleted-en">
+      <h2>3. What is deleted</h2>
+      <ul>
+        <li>Your account (sign-in record)</li>
+        <li>Your entry and calendar in each group. For groups where you are the only member, the uploaded pages and attachments too</li>
+        <li>Your API credit balance and usage history (the balance is not refunded)</li>
+        <li>Pages you published on the web</li>
+        <li>A paid plan paid by card is canceled immediately (no refund for the rest of the period)</li>
+      </ul>
+    </section>
+
+    <section class="card" id="kept-en">
+      <h2>4. What is kept</h2>
+      <ul>
+        <li><strong>Pages saved on your device</strong> stay in the app. Uninstall the app to remove them.</li>
+        <li><strong>Pages in groups you share with others</strong> are kept because they also belong to the other members. Contact us if you need them removed.</li>
+        <li><strong>Payment records</strong> (transaction records at Stripe, Google Play and RevenueCat, which manages billing) are kept for the period required by law (such as tax law).</li>
+        <li><strong>Inquiries and reports about AI replies</strong> are kept as support records. Contact us if you want them deleted.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="contact-en">
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Publisher</strong>: Hisator Notebook (Hiroyasu Hisada)</li>
+        <li><strong>Website</strong>: <a href="https://hisator-notebook.com/">https://hisator-notebook.com/</a></li>
+        <li><strong>Contact</strong>: <a href="https://hisator-notebook.com/contact.html">Contact page</a> or <code>hisatasan1@gmail.com</code></li>
+        <li><strong>Privacy policy</strong>: <a href="https://hisator-notebook.com/privacy.html">https://hisator-notebook.com/privacy.html</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2026 Hisator Notebook. All rights reserved.
+  </footer>
+
+</main>
+</body>
+</html>
