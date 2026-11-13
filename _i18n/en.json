@@ -553,5 +553,9 @@
  "当方が公開するすべてのブラウザー拡張機能は、閲覧履歴・URL・ページ本文・視聴履歴などのデータを一切収集せず、外部サーバーとの通信も行いません。変更した設定値はお使いのブラウザー内のみに保存されます。詳細は <t0>ブラウザー拡張機能 プライバシーポリシー</t0> をご覧ください。": "All browser extensions we publish collect zero browsing history, URLs, page content, or viewing history, and never communicate with external servers. Your settings are saved solely inside your browser. See our <t0>Browser Extensions Privacy Policy</t0> for details.",
  "<t0>Google Chrome / Edge / Firefox</t0> 対応": "Supports <t0>Google Chrome / Edge / Firefox</t0>",
  "<t0>外部サーバー通信ゼロ</t0>（完全ローカル動作）": "<t0>Zero external server calls</t0> (runs 100% locally)",
- "広告・トラッキング一切なし": "No ads or tracking of any kind"
+ "広告・トラッキング一切なし": "No ads or tracking of any kind",
+ "個人情報の収集ゼロ・外部送信ゼロ": "Zero Data Collection · Zero External Transmission",
+ "<b>トラッキング・アクセス解析一切なし</b>": "<b>Zero tracking or analytics</b>",
+ "— Google Chrome・Microsoft Edge・Mozilla Firefox 向けの軽量・外部送信ゼロの拡張機能": "— Lightweight, zero-telemetry browser extensions for Google Chrome, Microsoft Edge, and Mozilla Firefox",
+ "トラッキング・アクセス解析一切なし": "Zero tracking or analytics"
 }
