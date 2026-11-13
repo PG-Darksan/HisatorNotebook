@@ -56,11 +56,11 @@ FONTS = {
 # 訳すページ。 tokutei.html (特定商取引法) は日本の法律の表記なので日本語だけ。
 # extensions-privacy.html (ブラウザー拡張) は元から日英 2 か国語の 1 枚なので触らない
 PAGES = ['index.html', 'features-windows.html', 'features-android.html', 'ai.html',
-         'video.html', 'platform.html', 'pricing.html', 'contact.html', 'privacy.html',
+         'platform.html', 'pricing.html', 'extensions.html', 'contact.html', 'privacy.html',
          'terms.html']
 LEGAL = {'privacy.html', 'terms.html'}
 SITEMAP_PAGES = ['index.html', 'features-windows.html', 'features-android.html',
-                 'pricing.html', 'ai.html', 'video.html', 'platform.html', 'contact.html',
+                 'pricing.html', 'ai.html', 'platform.html', 'extensions.html', 'contact.html',
                  'privacy.html', 'terms.html', 'tokutei.html']
 
 # 規約類の訳の頭に置く断り書き ({ja} = 日本語の原文への相対リンク)
