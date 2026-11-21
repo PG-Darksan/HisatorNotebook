@@ -176,7 +176,7 @@
               <ul>
                 <li>Synchronisation des paramètres, du plan et du solde IA entre appareils</li>
                 <li>Fourniture des fonctions de partage en groupe, de coédition et de publication web</li>
-                <li>Exécution des fonctions IA et calcul de la facturation en fonction de l’utilisation</li>
+                <li>Exécution des fonctions IA (y compris le calcul de l’utilisation lorsqu’il subsiste un solde de crédits IA achetés précédemment)</li>
                 <li>Traitement des paiements, des résiliations et des remboursements des plans payants</li>
                 <li>Réponse aux demandes de contact</li>
                 <li>Prévention des utilisations abusives (limitation du nombre d’envois, etc.)</li>
@@ -190,14 +190,14 @@
           <tr>
             <th>Fonctions IA</th>
             <td>
-              Lorsque les fonctions IA sont utilisées, le texte saisi, le contenu des pages, le texte extrait des PDF et les images jointes transitent par un <b>serveur relais que nous exploitons</b> (api.hisator-notebook.com, sur l’infrastructure de Cloudflare, Inc.) et sont envoyés, au moyen d’<b>une clé API à notre nom</b>, à l’un des services suivants.
+              Lorsque les fonctions IA sont utilisées, le texte saisi, le contenu des pages, le texte extrait des PDF et les images jointes sont envoyés directement, au moyen de <b>la clé API configurée par l’utilisateur lui-même</b> et <b>sans transiter par nos serveurs</b>, à l’un des services suivants. En cas d’utilisation de Claude Code, Codex ou Antigravity CLI, l’envoi est effectué par chaque CLI au moyen du propre compte de l’utilisateur (son abonnement auprès de chaque fournisseur).
               <ul>
                 <li><b>Google LLC</b>（Gemini API）</li>
                 <li><b>OpenAI</b></li>
                 <li><b>Anthropic PBC</b></li>
               </ul>
               <span class="note">
-                Le serveur relais <b>ne conserve pas le contenu</b> des données envoyées ni des réponses. Il enregistre uniquement le total de l’utilisation (nombre de jetons et montant) de chaque utilisateur. Le traitement des données par chaque fournisseur d’IA est régi par les conditions de chacune de ces sociétés. Pour utiliser les fonctions IA, l’utilisateur n’a pas besoin de se procurer lui-même une clé API auprès d’un fournisseur d’IA.
+                La clé API est stockée chiffrée uniquement sur l’appareil et ne nous est pas transmise. Le traitement des données par chaque fournisseur d’IA est régi par les conditions de chacune de ces sociétés. Uniquement lorsqu’il subsiste un solde de crédits IA achetés précédemment et qu’aucune clé API n’est configurée, les données sont envoyées, jusqu’à épuisement de ce solde, via le serveur relais que nous exploitons (api.hisator-notebook.com, sur l’infrastructure de Cloudflare, Inc.) au moyen d’une clé API à notre nom. Le serveur relais <b>ne conserve pas le contenu</b> des données envoyées ni des réponses et enregistre uniquement le total de l’utilisation (nombre de jetons et montant) de chaque utilisateur.
               </span>
             </td>
           </tr>

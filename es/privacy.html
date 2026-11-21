@@ -176,7 +176,7 @@
               <ul>
                 <li>Sincronización de la configuración, el plan y el saldo de IA entre dispositivos</li>
                 <li>Prestación de las funciones de grupos compartidos, edición colaborativa y publicación web</li>
-                <li>Ejecución de las funciones de IA y cálculo de la facturación según el uso</li>
+                <li>Ejecución de las funciones de IA (incluido el cálculo del uso cuando quede saldo de créditos de IA adquiridos anteriormente)</li>
                 <li>Tramitación de pagos, cancelaciones y reembolsos de los planes de pago</li>
                 <li>Atención de consultas</li>
                 <li>Prevención del uso indebido (limitación del número de envíos, etc.)</li>
@@ -190,14 +190,14 @@
           <tr>
             <th>Sobre las funciones de IA</th>
             <td>
-              Al utilizar las funciones de IA, el texto introducido, el contenido de las páginas, el texto extraído de PDF y las imágenes adjuntas se envían a uno de los siguientes destinos a través de un <b>servidor intermediario gestionado por nosotros</b> (api.hisator-notebook.com, sobre la infraestructura de Cloudflare, Inc.), utilizando <b>claves de API a nuestro nombre</b>.
+              Al utilizar las funciones de IA, el texto introducido, el contenido de las páginas, el texto extraído de PDF y las imágenes adjuntas se envían directamente a uno de los siguientes destinos utilizando <b>la clave de API configurada por el propio usuario</b>, <b>sin pasar por nuestros servidores</b>. Cuando se utilizan Claude Code, Codex o Antigravity CLI, cada CLI realiza el envío con la cuenta del propio usuario (su contrato con cada proveedor).
               <ul>
                 <li><b>Google LLC</b>（Gemini API）</li>
                 <li><b>OpenAI</b></li>
                 <li><b>Anthropic PBC</b></li>
               </ul>
               <span class="note">
-                El servidor intermediario <b>no guarda el texto</b> del contenido enviado ni de las respuestas. Solo registra el total de uso (número de tokens e importe) de cada usuario. El tratamiento por parte de cada proveedor de IA se rige por las condiciones de cada empresa. Para utilizar las funciones de IA, no es necesario que el usuario disponga de su propia clave de API de un proveedor de IA.
+                Las claves de API se guardan cifradas únicamente en el dispositivo y no se nos envían. El tratamiento por parte de cada proveedor de IA se rige por las condiciones de cada empresa. Únicamente cuando quede saldo de créditos de IA adquiridos anteriormente y no se haya configurado una clave de API, los datos se envían, hasta agotar dicho saldo, a través de un servidor intermediario gestionado por nosotros (api.hisator-notebook.com, sobre la infraestructura de Cloudflare, Inc.), utilizando claves de API a nuestro nombre. El servidor intermediario <b>no guarda el texto</b> del contenido enviado ni de las respuestas, y solo registra el total de uso (número de tokens e importe) de cada usuario.
               </span>
             </td>
           </tr>

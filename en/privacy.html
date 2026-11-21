@@ -176,7 +176,7 @@
               <ul>
                 <li>Syncing settings, plans and AI balances across devices</li>
                 <li>Providing group sharing, co-editing and web publishing features</li>
-                <li>Running AI features and calculating charges based on usage</li>
+                <li>Running AI features (including calculating usage where a balance remains from previously purchased AI credit)</li>
                 <li>Processing payments, cancellations and refunds for paid plans</li>
                 <li>Responding to inquiries</li>
                 <li>Preventing misuse (such as limiting the number of submissions)</li>
@@ -190,14 +190,14 @@
           <tr>
             <th>AI features</th>
             <td>
-              When you use AI features, the text you enter, page content, text extracted from PDFs and attached images are routed through <b>a relay server operated by us</b> (api.hisator-notebook.com, running on the infrastructure of Cloudflare, Inc.) and sent, using <b>an API key held in our name</b>, to one of the following.
+              When you use AI features, the text you enter, page content, text extracted from PDFs and attached images are sent directly to one of the following using <b>the API key you have set yourself</b>, <b>without passing through our servers</b>. When you use Claude Code, Codex or Antigravity CLI, each CLI sends the data using your own account (your subscription with the respective provider).
               <ul>
                 <li><b>Google LLC</b>（Gemini API）</li>
                 <li><b>OpenAI</b></li>
                 <li><b>Anthropic PBC</b></li>
               </ul>
               <span class="note">
-                The relay server <b>does not store the body</b> of submitted content or responses. It records only the total usage (number of tokens and amount) for each user. Handling by each AI provider is governed by that provider's terms. You do not need to provide your own API key from an AI provider to use the AI features.
+                API keys are stored encrypted only on your device and are not sent to us. Handling by each AI provider is governed by that provider's terms. Only where a balance remains from previously purchased AI credit and no API key has been set, data is sent via a relay server operated by us (api.hisator-notebook.com, running on the infrastructure of Cloudflare, Inc.) using an API key held in our name, until that balance is used up. The relay server <b>does not store the body</b> of submitted content or responses, and records only the total usage (number of tokens and amount) for each user.
               </span>
             </td>
           </tr>

@@ -176,7 +176,7 @@
               <ul>
                 <li>Geräteübergreifende Synchronisierung von Einstellungen, Plan und KI-Guthaben</li>
                 <li>Bereitstellung der Funktionen für Gruppenfreigabe, gemeinsame Bearbeitung und Web-Veröffentlichung</li>
-                <li>Ausführung der KI-Funktionen und nutzungsabhängige Berechnung der Gebühren</li>
+                <li>Ausführung der KI-Funktionen (einschließlich der Berechnung der Nutzung, sofern ein Restguthaben aus zuvor erworbenen KI-Credits vorhanden ist)</li>
                 <li>Abwicklung von Zahlung, Kündigung und Erstattung kostenpflichtiger Pläne</li>
                 <li>Bearbeitung von Anfragen</li>
                 <li>Verhinderung missbräuchlicher Nutzung (z. B. Begrenzung der Anzahl von Übermittlungen)</li>
@@ -190,14 +190,14 @@
           <tr>
             <th>Zu den KI-Funktionen</th>
             <td>
-              Bei Nutzung der KI-Funktionen werden eingegebener Text, Seiteninhalte, aus PDFs extrahierter Text und angehängte Bilder über einen <b>von uns betriebenen Relay-Server</b> (api.hisator-notebook.com, auf der Infrastruktur von Cloudflare, Inc.) unter Verwendung <b>eines auf uns lautenden API-Schlüssels</b> an einen der folgenden Anbieter übermittelt.
+              Bei Nutzung der KI-Funktionen werden eingegebener Text, Seiteninhalte, aus PDFs extrahierter Text und angehängte Bilder unter Verwendung <b>des vom Nutzer selbst eingerichteten API-Schlüssels</b> <b>ohne Umweg über unsere Server</b> direkt an einen der folgenden Anbieter übermittelt. Bei Verwendung von Claude Code, Codex oder Antigravity CLI erfolgt die Übermittlung durch das jeweilige CLI über das eigene Konto des Nutzers (dessen Vertrag mit dem jeweiligen Anbieter).
               <ul>
                 <li><b>Google LLC</b>（Gemini API）</li>
                 <li><b>OpenAI</b></li>
                 <li><b>Anthropic PBC</b></li>
               </ul>
               <span class="note">
-                Der Relay-Server <b>speichert den Inhalt der übermittelten Daten und der Antworten nicht.</b> Erfasst wird lediglich die Gesamtnutzung je Nutzer (Anzahl der Tokens und Betrag). Für die Verarbeitung bei den jeweiligen KI-Anbietern gelten deren Bedingungen. Für die Nutzung der KI-Funktionen müssen Nutzer keinen eigenen API-Schlüssel eines KI-Anbieters bereitstellen.
+                Der API-Schlüssel wird ausschließlich verschlüsselt auf dem Gerät gespeichert und nicht an uns übermittelt. Für die Verarbeitung bei den jeweiligen KI-Anbietern gelten deren Bedingungen. Nur sofern ein Restguthaben aus zuvor erworbenen KI-Credits vorhanden ist und kein API-Schlüssel eingerichtet wurde, erfolgt die Übermittlung bis zum Verbrauch des Guthabens über einen von uns betriebenen Relay-Server (api.hisator-notebook.com, auf der Infrastruktur von Cloudflare, Inc.) unter Verwendung eines auf uns lautenden API-Schlüssels. Der Relay-Server <b>speichert den Inhalt der übermittelten Daten und der Antworten nicht</b> und erfasst lediglich die Gesamtnutzung je Nutzer (Anzahl der Tokens und Betrag).
               </span>
             </td>
           </tr>
