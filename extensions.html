@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>その他の製作物 — Chrome / Edge / Firefox ブラウザー拡張機能 | HisatorNotebook</title>
-  <meta name="description" content="HisatorNotebook 開発者による Google Chrome・Microsoft Edge・Mozilla Firefox 向けブラウザー拡張機能「マウスジェスチャー・タブ操作 (Mouse Gestures – Tab Control)」と「動画再生速度変更 (Tempo – Video Playback Speed)」の紹介・追加ページです。">
-  <meta name="keywords" content="ブラウザー拡張機能,マウスジェスチャー,タブ操作,動画再生速度変更,Tempo,Chrome拡張機能,Edgeアドオン,Firefoxアドオン,HisatorNotebook">
+  <meta name="description" content="HisatorNotebook 開発者による Google Chrome・Microsoft Edge・Mozilla Firefox 向けブラウザー拡張機能「マウスジェスチャー・タブ操作」「動画再生速度変更 (Tempo)」「Side Memo（サイドメモ）」の紹介・追加ページです。">
+  <meta name="keywords" content="ブラウザー拡張機能,マウスジェスチャー,タブ操作,動画再生速度変更,Tempo,Side Memo,サイドメモ,サイドパネル,メモ,Chrome拡張機能,Edgeアドオン,Firefoxアドオン,HisatorNotebook">
   <meta name="author" content="HisatorNotebook">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://hisator-notebook.com/extensions.html">
@@ -25,7 +25,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="その他の製作物 — Chrome / Edge / Firefox ブラウザー拡張機能 | HisatorNotebook">
-  <meta property="og:description" content="HisatorNotebook 開発者による Google Chrome・Microsoft Edge・Mozilla Firefox 向けブラウザー拡張機能「マウスジェスチャー・タブ操作 (Mouse Gestures – Tab Control)」と「動画再生速度変更 (Tempo – Video Playback Speed)」の紹介・追加ページです。">
+  <meta property="og:description" content="HisatorNotebook 開発者による Google Chrome・Microsoft Edge・Mozilla Firefox 向けブラウザー拡張機能「マウスジェスチャー・タブ操作」「動画再生速度変更 (Tempo)」「Side Memo（サイドメモ）」の紹介・追加ページです。">
   <meta property="og:url" content="https://hisator-notebook.com/extensions.html">
   <meta property="og:image" content="https://hisator-notebook.com/images/icon.png">
   <meta property="og:image:width" content="512">
@@ -37,7 +37,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="その他の製作物 — Chrome / Edge / Firefox ブラウザー拡張機能 | HisatorNotebook">
-  <meta name="twitter:description" content="HisatorNotebook 開発者による Google Chrome・Microsoft Edge・Mozilla Firefox 向けブラウザー拡張機能「マウスジェスチャー・タブ操作 (Mouse Gestures – Tab Control)」と「動画再生速度変更 (Tempo – Video Playback Speed)」の紹介・追加ページです。">
+  <meta name="twitter:description" content="HisatorNotebook 開発者による Google Chrome・Microsoft Edge・Mozilla Firefox 向けブラウザー拡張機能「マウスジェスチャー・タブ操作」「動画再生速度変更 (Tempo)」「Side Memo（サイドメモ）」の紹介・追加ページです。">
   <meta name="twitter:image" content="https://hisator-notebook.com/images/icon.png">
   <meta name="twitter:image:alt" content="HisatorNotebook のアプリアイコン">
 
@@ -48,7 +48,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/icon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png">
-  <link rel="stylesheet" href="styles.css?v=20261122a">
+  <link rel="stylesheet" href="styles.css?v=20261122b">
 
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HisatorNotebook", "url": "https://hisator-notebook.com/", "logo": "https://hisator-notebook.com/images/icon.png", "sameAs": ["https://github.com/PG-Darksan/HisatorNotebook"]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://hisator-notebook.com/"}, {"@type": "ListItem", "position": 2, "name": "その他の製作物", "item": "https://hisator-notebook.com/extensions.html"}]}</script>
@@ -307,6 +307,111 @@
       </div>
     </section>
 
+    <!-- 03: Side Memo -->
+    <section class="feature-detail-section" id="side-memo">
+      <div class="feature-detail-block">
+        <div class="fd-left">
+          <div class="fd-eyebrow">— 03 / Side Memo</div>
+          <div class="ext-title-row">
+            <img src="images/ext_side_memo_icon.png" alt="Side Memo" class="ext-app-icon" width="56" height="56" loading="lazy">
+            <div>
+              <h2 class="fd-title" style="margin-bottom:4px;">Side Memo（サイドメモ）</h2>
+              <div class="ext-en-sub">Side Memo</div>
+            </div>
+          </div>
+          <p class="fd-desc">
+            Web ページを見ながら、ブラウザーのサイドパネル（Firefox ではサイドバー）にメモを残せる拡張機能です。集めたメモはフォルダーで整理し、必要な分だけ選んで検索や AI への入力にそのまま使えます。
+          </p>
+          <ul class="fd-points">
+            <li><span><b>ドラッグ ＆ 右クリックで引用元つき保存</b>: ページの文章・リンク・画像をパネルへ取り込み、引用元のページ URL とタイトルも一緒に記録</span></li>
+            <li><span><b>最大 16 階層のフォルダー整理 ＆ 一括操作</b>: ドラッグで並び替えや移動ができ、複数選択からの Google・YouTube 検索や TXT / Markdown / JSON 書き出しに対応</span></li>
+            <li><span><b>ChatGPT / Gemini / Claude の入力欄へ書き込み</b>: API キー不要で選んだメモと共通の「前提条件」を記入でき、送信ボタンは自分で確認してから実行</span></li>
+          </ul>
+
+          <div class="ext-store-heading">各ブラウザーのストアから追加（無料）</div>
+          <div class="ext-store-grid">
+            <div class="ext-store-btn is-coming-soon" aria-disabled="true">
+              <div class="ext-store-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                  <circle cx="12" cy="12" r="4" fill="currentColor"/>
+                  <path d="M12 8h8.5M8.5 14L4.2 6.5M15.5 14l-4.3 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="ext-store-text">
+                <div class="ext-store-label">Chrome</div>
+                <div class="ext-store-sub">準備中</div>
+              </div>
+            </div>
+
+            <a href="https://microsoftedge.microsoft.com/addons/detail/mpghnkgifoadeineafhfjkjcgabcpnii" target="_blank" rel="noopener noreferrer" class="ext-store-btn">
+              <div class="ext-store-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                  <path d="M20.2 14.8c-.9 3.7-4.3 6.2-8.2 6.2-4.8 0-8.6-3.8-8.6-8.5 0-4.6 3.7-8.4 8.4-8.5 4.4 0 8.1 3.1 8.4 7.3.1 1.4-.8 2.4-2.3 2.4h-6.6c.2 1.9 1.8 3.2 3.8 3.2 1.6 0 3.1-.7 4.1-2.1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="ext-store-text">
+                <div class="ext-store-label">Edge に追加</div>
+                <div class="ext-store-sub">Microsoft Edge Add-ons ↗</div>
+              </div>
+            </a>
+
+            <div class="ext-store-btn is-coming-soon" aria-disabled="true">
+              <div class="ext-store-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                  <path d="M12 2.5c5.2 0 9.5 4.3 9.5 9.5s-4.3 9.5-9.5 9.5S2.5 17.2 2.5 12c0-2.8 1.2-5.3 3.1-7.1.8 2.1 2.6 3.1 4.6 3.1 2.5 0 4.3 1.7 4.3 4 0 2.2-1.8 4-4 4-1.8 0-3.3-1.1-3.8-2.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="ext-store-text">
+                <div class="ext-store-label">Firefox</div>
+                <div class="ext-store-sub">準備中</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fd-right">
+          <div class="app-shot-card">
+            <div class="app-shot-bar">
+              <div class="app-shot-dots"><span></span><span></span><span></span></div>
+              <div class="app-shot-title">Side Memo — 紹介動画</div>
+              <span class="app-shot-badge badge-cyan">DEMO VIDEO</span>
+            </div>
+            <div class="app-shot-media">
+              <video autoplay loop muted playsinline controls poster="images/ext_side_memo_1.png" aria-label="Side Memo の紹介動画">
+                <source src="videos/ext_side_memo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-shot-showcase">
+        <div class="app-shot-grid">
+          <div class="app-shot-card">
+            <div class="app-shot-bar">
+              <div class="app-shot-dots"><span></span><span></span><span></span></div>
+              <div class="app-shot-title">一括検索 ＆ AI 入力 — 選んだメモを ChatGPT・Gemini・Claude へ</div>
+              <span class="app-shot-badge">SEARCH &amp; AI</span>
+            </div>
+            <div class="app-shot-media">
+              <img src="images/ext_side_memo_2.png" alt="Side Memo で選んだメモをまとめて検索・AI の入力欄へ書き込む画面" width="1280" height="800" loading="lazy">
+            </div>
+          </div>
+          <div class="app-shot-card">
+            <div class="app-shot-bar">
+              <div class="app-shot-dots"><span></span><span></span><span></span></div>
+              <div class="app-shot-title">暗い配色と 24 色のアクセント — キーワード検索 ＆ 各種書き出し</div>
+              <span class="app-shot-badge">DARK THEME</span>
+            </div>
+            <div class="app-shot-media">
+              <img src="images/ext_side_memo_3.png" alt="Side Memo の暗い配色・24 色のアクセントと検索画面" width="1280" height="800" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 共通プライバシー設計 -->
     <section class="feature-detail-section">
       <div class="ai-prepaid-banner" style="margin-top:0;">
@@ -314,7 +419,7 @@
           <div class="chapter-badge" style="margin-bottom:10px;">PRIVACY FIRST · ZERO TELEMETRY</div>
           <h3>個人情報の収集ゼロ・外部送信ゼロ</h3>
           <p>
-            当方が公開するすべてのブラウザー拡張機能は、閲覧履歴・URL・ページ本文・視聴履歴などのデータを一切収集せず、外部サーバーとの通信も行いません。変更した設定値はお使いのブラウザー内のみに保存されます。詳細は <a href="extensions-privacy.html">ブラウザー拡張機能 プライバシーポリシー</a> をご覧ください。
+            当方が公開するすべてのブラウザー拡張機能は、閲覧履歴・URL・ページ本文・視聴履歴・メモ内容などのデータを一切収集せず、当方や第三者のサーバーへ自動送信することはありません。設定値や保存したメモはお使いのブラウザー内のみに保存されます（検索や AI への入力は、利用者がボタンを押した時だけ各サイトを開きます）。詳細は <a href="extensions-privacy.html">ブラウザー拡張機能 プライバシーポリシー</a> をご覧ください。
           </p>
         </div>
         <div class="ai-prepaid-points">

@@ -5400,6 +5400,39 @@ h1:lang(ja) {
   line-height: 1.2;
   white-space: nowrap;
 }
+.ext-store-btn.is-coming-soon {
+  opacity: 0.68;
+  cursor: default;
+  user-select: none;
+  border-style: dashed;
+  border-color: rgba(160, 190, 215, 0.3);
+  background: linear-gradient(160deg, rgba(15, 24, 38, 0.72) 0%, rgba(10, 16, 26, 0.82) 100%);
+  box-shadow: none;
+}
+.ext-store-btn.is-coming-soon:hover {
+  transform: none;
+  border-color: rgba(160, 190, 215, 0.3);
+  background: linear-gradient(160deg, rgba(15, 24, 38, 0.72) 0%, rgba(10, 16, 26, 0.82) 100%);
+  box-shadow: none;
+}
+.ext-store-btn.is-coming-soon .ext-store-icon,
+.ext-store-btn.is-coming-soon:hover .ext-store-icon {
+  color: rgba(176, 200, 220, 0.72);
+  border-color: rgba(160, 190, 215, 0.24);
+  background: rgba(160, 190, 215, 0.08);
+}
+.ext-store-btn.is-coming-soon .ext-store-label {
+  color: rgba(226, 238, 248, 0.88);
+}
+.ext-store-btn.is-coming-soon .ext-store-sub {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: rgba(255, 217, 138, 0.9);
+}
+.page-main > .hero:last-child {
+  margin-bottom: 0;
+}
 @media (max-width: 720px) {
   .ext-store-grid {
     grid-template-columns: 1fr;
