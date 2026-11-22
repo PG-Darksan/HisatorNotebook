@@ -160,13 +160,14 @@
   <header class="hero" id="ja">
     <span class="eyebrow">Hisator Notebook — Browser Extensions</span>
     <h1>ブラウザー拡張機能 プライバシーポリシー</h1>
-    <p class="subtitle">制定日: 2026年10月23日 ／ 最終更新日: 2026年11月3日</p>
+    <p class="subtitle">制定日: 2026年10月23日 ／ 最終更新日: 2026年11月22日</p>
 
     <nav class="nav-bar" aria-label="目次">
       <a href="extensions.html">← 拡張機能紹介ページへ</a>
       <a href="#common-ja">共通方針</a>
       <a href="#mouse-gesture">1. マウスジェスチャー・タブ操作</a>
       <a href="#tempo">2. 動画再生速度変更 (Tempo)</a>
+      <a href="#side-memo">3. Side Memo</a>
       <a href="#contact-ja">お問い合わせ</a>
       <a href="#en" lang="en">English Version ↓</a>
     </nav>
@@ -181,8 +182,8 @@
     <p>Hisator Notebook（以下「当方」）が提供する下記のブラウザー拡張機能は、利用者のプライバシーを尊重し、以下の共通原則に従って設計・運用されています。</p>
     <ul>
       <li><strong>個人情報の非収集</strong>：氏名、メールアドレス、閲覧履歴、閲覧したページの URL、ページ本文、動画の視聴履歴、入力内容などの個人データ・閲覧データを収集しません。</li>
-      <li><strong>外部送信ゼロ</strong>：取得・操作した情報を外部サーバーへ送信することはありません。独自サーバー、アカウント機能、アクセス解析（Google Analytics 等）、外部スクリプト（リモートコード）は一切使用していません。</li>
-      <li><strong>端末内のみでの設定保存</strong>：利用者が変更した設定値のみを、お使いのブラウザー内（<code>chrome.storage.local</code>）に保存します。拡張機能をアンインストールすると設定も削除されます。</li>
+      <li><strong>外部送信ゼロ</strong>：取得・操作した情報を当方や第三者のサーバーへ送信することはありません。独自サーバー、アカウント機能、アクセス解析（Google Analytics 等）、外部スクリプト（リモートコード）は一切使用していません（利用者がボタンを押して検索サイトや AI サイトを開く操作については、各拡張機能の節に記載します）。</li>
+      <li><strong>端末内のみでの保存</strong>：利用者が変更した設定値と、利用者が自分で保存したメモ（Side Memo）だけを、お使いのブラウザー内（<code>chrome.storage.local</code>）に保存します。拡張機能をアンインストールするとこれらも削除されます。</li>
       <li><strong>データの利用制限（Chrome ウェブストア ユーザーデータポリシー準拠）</strong>：
         <ul>
           <li>利用者データを第三者へ販売・譲渡・提供することはありません。</li>
@@ -247,6 +248,44 @@
     </ul>
   </section>
 
+  <section class="card" id="side-memo">
+    <div class="badge-row">
+      <span class="tag">拡張機能 3</span>
+      <span class="tag">英語名: Side Memo</span>
+    </div>
+    <h2>3. Side Memo（サイドメモ）</h2>
+    <p>Web ページを見ながらブラウザーのサイドパネル（Firefox ではサイドバー）にメモを残し、フォルダーで整理して、選んだメモを検索や AI への入力に使える拡張機能です。</p>
+
+    <h3>収集する情報</h3>
+    <p>個人情報、閲覧履歴、メモの内容、ページの内容を収集せず、当方や第三者のサーバーへ送信しません。</p>
+
+    <h3>拡張機能の中で扱う情報（端末内のみ）</h3>
+    <ul>
+      <li><strong>メモ（<code>chrome.storage.local</code>）</strong>：利用者が書いたメモの本文とコメント、利用者が保存したページの文章や画像、その引用元のページの URL とタイトル、フォルダー。ブラウザー内にのみ保存し、同期やクラウドへの保存はしません。拡張機能を削除すると消えます。</li>
+      <li><strong>設定（<code>chrome.storage.local</code>）</strong>：配色、選んだ AI サイト、AI の前提条件、フォルダーの開閉などをブラウザー内にのみ保存します。</li>
+      <li><strong>ドラッグの記録（<code>chrome.storage.session</code>）</strong>：Web ページで利用者がドラッグを始めた文章・リンク・画像と、そのページの URL・タイトルを、パネルへドロップした時に正しい引用元を付けるためだけに最長 60 秒保持し、使った時点で破棄します。ページの読み込み時に内容を集めることはありません。</li>
+      <li><strong>タブの情報</strong>：メモを保存した時の引用元（今のタブの URL とタイトル）の記録と、検索や AI のタブを開く・選ぶためだけに参照します。</li>
+    </ul>
+
+    <h3>利用者の操作による通信</h3>
+    <ul>
+      <li><strong>画像の保存</strong>：利用者が Web ページの画像をメモへ保存した時、その画像の URL から画像を取得します（Cookie などの資格情報とリファラーは送りません）。</li>
+      <li><strong>検索</strong>：利用者が検索ボタンを押した時だけ、選んだメモの文字を検索語として Google または YouTube の検索ページを新しいタブで開きます。</li>
+      <li><strong>AI への入力</strong>：利用者が AI ボタンを押した時だけ、利用者が選んだ AI サイト（ChatGPT・Gemini・Claude）を開き、その入力欄へメモの文字を書き込みます。送信ボタンは利用者自身が押します。これらのサイトでの扱いは、各サービスのプライバシーポリシーに従います。</li>
+    </ul>
+
+    <h3>使用する権限と目的</h3>
+    <ul>
+      <li><code>sidePanel</code>：メモの画面をサイドパネルに表示し、ツールバーのアイコンや右クリックでの保存の後に開くため。</li>
+      <li><code>storage</code> / <code>unlimitedStorage</code>：メモ、保存した画像（1 枚 4 MB まで）、設定をブラウザー内に保存するため。</li>
+      <li><code>contextMenus</code>：右クリックの「選択したテキストを Side Memo に保存」「画像を Side Memo に保存」のため。</li>
+      <li><code>tabs</code>：引用元の記録、検索や AI のタブを開くこと、開いている AI のタブの再利用のため。</li>
+      <li><code>clipboardWrite</code>：利用者が押したコピーボタンでメモをクリップボードへ書くため。</li>
+      <li><code>scripting</code>：利用者が AI ボタンを押した時に、選んだ AI サイトの入力欄にだけ文字を書き込むため。また右クリックで保存する時に、選択範囲の改行を保つため。</li>
+      <li>ホスト権限（<code>http://*/*</code>、<code>https://*/*</code>）：どのサイトのページからでもドラッグでメモへ取り込めるようにするため（ドラッグの開始だけを確認します）、保存する画像の取得、AI サイトへの書き込みのため。</li>
+    </ul>
+  </section>
+
   <!-- 新しい拡張機能を追加する場合は、ここに <section class="card" id="..."> を追加してください -->
 
   <section class="card" id="contact-ja">
@@ -266,13 +305,14 @@
     <header class="hero" id="en">
       <span class="eyebrow">Hisator Notebook — Browser Extensions</span>
       <h1>Privacy Policy for Browser Extensions</h1>
-      <p class="subtitle">Effective: October 23, 2026 / Last updated: November 3, 2026</p>
+      <p class="subtitle">Effective: October 23, 2026 / Last updated: November 22, 2026</p>
 
       <nav class="nav-bar" aria-label="Table of contents">
         <a href="en/extensions.html">← Back to Extensions</a>
         <a href="#common-en">Common Principles</a>
         <a href="#mouse-gesture-en">1. Mouse Gestures – Tab Control</a>
         <a href="#tempo-en">2. Tempo – Video Playback Speed</a>
+        <a href="#side-memo-en">3. Side Memo</a>
         <a href="#contact-en">Contact</a>
         <a href="#ja" lang="ja">日本語版 ↑</a>
       </nav>
@@ -287,8 +327,8 @@
       <p>All browser extensions listed on this page follow these strict privacy principles:</p>
       <ul>
         <li><strong>No Data Collection</strong>: We do not collect personal information, browsing history, visited URLs, page content, video viewing history, or user inputs.</li>
-        <li><strong>Zero External Transmission</strong>: No information is ever sent to external servers. Our extensions use no backend servers, accounts, analytics, crash reporting, or remote code.</li>
-        <li><strong>Local-Only Settings</strong>: Only your preferences are saved locally in your browser via <code>chrome.storage.local</code> and are removed when the extension is uninstalled.</li>
+        <li><strong>Zero External Transmission</strong>: No information is ever sent to our servers or any third-party servers. Our extensions use no backend servers, accounts, analytics, crash reporting, or remote code. (Opening a search or AI site when you press a button is described in each extension's section.)</li>
+        <li><strong>Local-Only Storage</strong>: Only your preferences and the notes you choose to save (Side Memo) are stored locally in your browser via <code>chrome.storage.local</code>, and they are removed when the extension is uninstalled.</li>
         <li><strong>Limited Use Disclosure</strong>:
           <ul>
             <li>We do not sell or transfer user data to third parties.</li>
@@ -350,6 +390,44 @@
         <li><code>storage</code>: Keeps your settings locally in the browser.</li>
         <li><code>activeTab</code>: Checks whether the active tab needs reloading when you open the popup and reloads that tab upon request.</li>
         <li>Content scripts on web pages (<code>http://*/*</code>, <code>https://*/*</code>, <code>file:///*</code>, including embedded frames): Finds <code>&lt;video&gt;</code> elements, changes their playback speed, and displays the on-video controller.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="side-memo-en">
+      <div class="badge-row">
+        <span class="tag">Extension 3</span>
+        <span class="tag">Japanese title: Side Memo (サイドメモ)</span>
+      </div>
+      <h2>3. Side Memo</h2>
+      <p>A browser extension for taking notes in the browser side panel (the sidebar in Firefox) while you read web pages, organizing them into folders, and using selected notes for searches or AI prompts.</p>
+
+      <h3>Information We Collect</h3>
+      <p>This extension does not collect personal information, browsing history, note contents, or page content, and does not send them to our servers or any third-party servers.</p>
+
+      <h3>Information Handled Locally in Your Browser</h3>
+      <ul>
+        <li><strong>Notes (<code>chrome.storage.local</code>)</strong>: The text and comments you write, the text and images you save from web pages, the URL and title of the page they came from, and your folders. Stored only in your browser; never synced or uploaded. Removed when the extension is uninstalled.</li>
+        <li><strong>Settings (<code>chrome.storage.local</code>)</strong>: Theme, chosen AI site, AI instructions, which folders are collapsed, and similar preferences.</li>
+        <li><strong>Drag record (<code>chrome.storage.session</code>)</strong>: When you start dragging text, a link, or an image on a web page, that item and the page's URL and title are kept for up to 60 seconds, only to attach the correct source when you drop it into the panel, and discarded once used. Page content is never collected when pages load.</li>
+        <li><strong>Tab information</strong>: Used only to record the source (URL and title of the current tab) of notes you save, and to open or choose search and AI tabs.</li>
+      </ul>
+
+      <h3>Network Access Started by You</h3>
+      <ul>
+        <li><strong>Saving images</strong>: When you save an image from a web page, the extension downloads it from its URL (without cookies, credentials, or a referrer).</li>
+        <li><strong>Search</strong>: Only when you press a search button, Google or YouTube search opens in a new tab with the text of the selected notes as the query.</li>
+        <li><strong>AI prompts</strong>: Only when you press an AI button, the AI site you chose (ChatGPT, Gemini, or Claude) opens and the note text is written into its input box. You press send yourself. Those sites handle the text under their own privacy policies.</li>
+      </ul>
+
+      <h3>Permissions Used</h3>
+      <ul>
+        <li><code>sidePanel</code>: Shows the notes UI in the side panel and opens it from the toolbar icon or after a right-click save.</li>
+        <li><code>storage</code> / <code>unlimitedStorage</code>: Stores notes, saved images (up to 4 MB each), and settings locally in the browser.</li>
+        <li><code>contextMenus</code>: Adds “Save selected text to Side Memo” and “Save image to Side Memo” to the context menu.</li>
+        <li><code>tabs</code>: Records the source of saved notes, opens search and AI tabs, and reuses an open AI tab.</li>
+        <li><code>clipboardWrite</code>: Copies notes to the clipboard when you press Copy.</li>
+        <li><code>scripting</code>: Writes the prompt only into the input box of the AI site you chose when you press the AI button, and keeps line breaks when saving selected text from the context menu.</li>
+        <li>Host permissions (<code>http://*/*</code>, <code>https://*/*</code>): Lets you drag text and images into your notes from any site (only the start of a drag is observed), downloads images you save, and writes prompts into AI sites.</li>
       </ul>
     </section>
 
