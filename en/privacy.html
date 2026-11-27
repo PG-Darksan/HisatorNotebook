@@ -133,12 +133,12 @@
               <ul>
                 <li><b>An anonymous ID for each device (Firebase anonymous user ID)</b>: this is not linked to your name or email address.</li>
                 <li><b>IP address</b> (unavoidably transmitted as the address for communications)</li>
-                <li><b>Device country and language settings</b></li>
+                <li><b>Device country and language settings</b> (only if you are signed in with Google)</li>
                 <li><b>Date and time of last use</b></li>
                 <li>Queries for <b>your current plan</b> and your AI usage balance</li>
               </ul>
               <span class="note">
-                <b>We do not collect age, gender or date of birth.</b> We also do not collect location information unless you explicitly operate a feature that uses maps, weather or location information.
+                <b>We do not collect age, gender or date of birth.</b> The App itself never reads your device’s location (such as GPS). How location information is provided to sites you open in the in-app browser is described under “Information sent depending on your use” below.
               </span>
             </td>
           </tr>
@@ -148,12 +148,12 @@
             <td>
               The following information is sent only when you use the corresponding feature.
               <ul>
-                <li><b>If you sign in with Google</b>: email address, display name, profile image and language setting</li>
+                <li><b>If you sign in with Google</b>: email address, display name, profile image, country and language settings, and a per-installation identifier and device list (see “Use of identifiers” below)</li>
                 <li><b>If you use cloud sync, sharing or publishing</b>: page content, memos, schedules, and attached images, PDFs and videos</li>
-                <li><b>If you use AI features</b>: text you enter, page content, text extracted from PDFs, and attached images</li>
+                <li><b>If you use AI features</b>: text you enter, page content, text extracted from PDFs, attached images, audio and video you ask to have transcribed, and text you ask to have read aloud in an AI voice</li>
                 <li><b>If you purchase a paid plan</b>: plan, billing start and end dates, coupon code, and AI usage and amounts</li>
                 <li><b>If you contact us</b>: message body, display name and your current plan</li>
-                <li><b>Location information for the in-app browser</b>: our server returns your approximate location (to about the city, town or village level).</li>
+                <li><b>Location information for the in-app browser</b>: on Android, when a site you open in the in-app browser (such as Google Maps) requests your location, the device’s precise location is passed to that site only after you confirm it for that site in the App and then grant Android’s location permission (it is not sent to us). On Windows, our server returns your approximate location (to about the city, town or village level) estimated from your IP address.</li>
               </ul>
             </td>
           </tr>
@@ -190,11 +190,14 @@
           <tr>
             <th>AI features</th>
             <td>
-              When you use AI features, the text you enter, page content, text extracted from PDFs and attached images are sent directly to one of the following using <b>the API key you have set yourself</b>, <b>without passing through our servers</b>. When you use Claude Code, Codex or Antigravity CLI, each CLI sends the data using your own account (your subscription with the respective provider).
+              When you use AI features, the text you enter, page content, text extracted from PDFs, attached images, audio and video you ask to have transcribed, and text to be read aloud in an AI voice are sent directly from your device, using <b>the API key you have set yourself</b> and <b>without passing through our servers</b>, to whichever of the following providers you choose. When you use Claude Code, Codex or Antigravity CLI, each CLI sends the data using your own account (your subscription with the respective provider).
               <ul>
-                <li><b>Google LLC</b>（Gemini API）</li>
-                <li><b>OpenAI</b></li>
-                <li><b>Anthropic PBC</b></li>
+                <li><b>Google LLC</b> (Gemini API, including transcription and reading aloud)</li>
+                <li><b>OpenAI</b> (including transcription with Whisper and reading aloud)</li>
+                <li><b>Anthropic PBC</b> (Claude)</li>
+                <li><b>xAI</b> (Grok)</li>
+                <li><b>DeepSeek</b></li>
+                <li><b>OpenRouter, Inc.</b></li>
               </ul>
               <span class="note">
                 API keys are stored encrypted only on your device and are not sent to us. Handling by each AI provider is governed by that provider's terms. Only where a balance remains from previously purchased AI credit and no API key has been set, data is sent via a relay server operated by us (api.hisator-notebook.com, running on the infrastructure of Cloudflare, Inc.) using an API key held in our name, until that balance is used up. The relay server <b>does not store the body</b> of submitted content or responses, and records only the total usage (number of tokens and amount) for each user.
@@ -237,7 +240,8 @@
             <td>
               All of the above businesses are located outside Japan.
               <ul>
-                <li><b>United States</b>: Google LLC, OpenAI, Anthropic PBC, Stripe, Inc., RevenueCat, Inc., Cloudflare, Inc., DuckDuckGo, Inc.</li>
+                <li><b>United States</b>: Google LLC, OpenAI, Anthropic PBC, xAI, OpenRouter, Inc., Stripe, Inc., RevenueCat, Inc., Cloudflare, Inc., DuckDuckGo, Inc.</li>
+                <li><b>People’s Republic of China</b>: DeepSeek</li>
                 <li><b>Germany</b>: DeepL SE</li>
                 <li><b>Switzerland</b>: Open-Meteo</li>
               </ul>
@@ -253,8 +257,9 @@
               <ul>
                 <li><b>Cloud sync (Max plan)</b>: pages and attachments in the cloud are automatically deleted <b>30 days after</b> cancellation (on the Free and Pro plans, data is stored only on your device).</li>
                 <li><b>Pages published to the web</b>: these automatically expire after the period you specify (7 days by default, up to 30 days).</li>
-                <li><b>Account information (anonymous ID, display name, country, language, plan, usage)</b>: retained until you request deletion.</li>
+                <li><b>Account information (anonymous ID, display name, country, language, plan, usage, device list)</b>: retained until you delete your account or request its deletion.</li>
                 <li><b>Inquiry content</b>: retained as a record of our response.</li>
+                <li><b>What remains after account deletion</b>: inquiries and reports about AI replies that you sent (you can ask us to delete them through an inquiry), coupon redemption records, purchase and transaction records kept by Google Play, RevenueCat and Stripe (for the period required by law), pages and other content you placed in shared groups that still have other members, and data saved on your device (removed when you uninstall the App) are not deleted when you delete your account.</li>
               </ul>
             </td>
           </tr>
@@ -262,7 +267,7 @@
           <tr>
             <th>Disclosure, correction and deletion</th>
             <td>
-              If you wish to request the disclosure, correction, deletion or suspension of use of information we hold, please contact us at the contact details above. We will respond after verifying your identity. <span class="note"> <b>At present, the App has no feature for deleting your account.</b> If you wish to have it deleted, please contact us. Note that you can export your own notes (JSON / .hnmap / HTML / PDF, etc.) within the App at any time. </span>
+              If you wish to request the disclosure, correction, deletion or suspension of use of information we hold, please contact us at the contact details above. We will respond after verifying your identity. <span class="note"> <b>You can delete your account yourself at any time with “Delete account” in the window under “Settings → Account → Google account” in the App.</b> What is deleted and what is kept are listed on the <a href="../account-deletion.html">Delete your account and data</a> page. If you have removed the App or cannot open it, you can request deletion by following the steps on the same page. Deleting your account does not stop Google Play subscriptions, so cancel them in Google Play first. Note that you can export your own notes (JSON / .hnmap / HTML / PDF, etc.) within the App at any time. </span>
             </td>
           </tr>
 
@@ -280,6 +285,7 @@
               <ul>
                 <li>An <b>anonymous ID</b> issued for each device (retained until the App is deleted)</li>
                 <li>The same ID, provided to Stripe and RevenueCat in order to match purchases</li>
+                <li>If you are signed in with Google, a <b>random identifier</b> issued for each installation and a <b>device list</b> (device type, such as “Android” or “Windows”, and the date and time of last use). These are stored in your user record and used to limit the number of devices that can be used at the same time and to let you sign out other devices.</li>
                 <li><b>Cookies</b> set by sites you visit in the in-app browser (can be cleared in Settings)</li>
               </ul>
             </td>
@@ -288,7 +294,7 @@
           <tr>
             <th>Use by children</th>
             <td>
-              The App does not verify users' ages and does not intentionally collect personal information from children. The App includes a browser feature that does not perform filtering and features for sharing with other users. If a parent or guardian becomes aware that their child has provided personal information through the App, please contact us at the contact details above. We will verify the matter and delete the information.
+              The App is intended for users aged 13 and over. Children under 13 should not use the App. The App does not verify users' ages and does not intentionally collect personal information from children. The App includes a browser feature that does not perform filtering and features for sharing with other users. If a parent or guardian becomes aware that their child has provided personal information through the App, please contact us at the contact details above. We will verify the matter and delete the information.
             </td>
           </tr>
 
@@ -303,7 +309,7 @@
       </table>
 
       <div class="tokutei-intro" style="margin-top:2rem">
-        Established: August 28, 2026
+        Established: August 28, 2026<br>Last revised: November 27, 2026
       </div>
 
     </div>

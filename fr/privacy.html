@@ -133,12 +133,12 @@
               <ul>
                 <li><b>Identifiant anonyme propre à chaque appareil (identifiant d’utilisateur anonyme Firebase)</b> : il n’est lié ni au nom ni à l’adresse e-mail.</li>
                 <li><b>Adresse IP</b> (transmise de manière inévitable en tant qu’adresse de destination des communications)</li>
-                <li><b>Paramètres de pays et de langue de l’appareil</b></li>
+                <li><b>Paramètres de pays et de langue de l’appareil</b> (uniquement en cas de connexion avec Google)</li>
                 <li><b>Date et heure de la dernière utilisation</b></li>
                 <li><b>Plan souscrit</b> et consultation du solde d’utilisation de l’IA</li>
               </ul>
               <span class="note">
-                <b>L’âge, le sexe et la date de naissance ne sont pas collectés.</b> Les données de localisation ne sont pas non plus collectées, sauf si l’utilisateur actionne expressément une fonction faisant appel à la carte, à la météo ou à la localisation.
+                <b>L’âge, le sexe et la date de naissance ne sont pas collectés.</b> L’Application ne lit jamais d’elle-même la position de l’appareil (GPS, etc.). La communication de la position aux sites ouverts dans le navigateur intégré est décrite plus bas, sous « Informations envoyées selon l’utilisation ».
               </span>
             </td>
           </tr>
@@ -148,12 +148,12 @@
             <td>
               Les informations suivantes ne sont envoyées que lorsque l’utilisateur utilise la fonction concernée.
               <ul>
-                <li><b>En cas de connexion avec Google</b> : adresse e-mail, nom d’affichage, photo de profil, paramètre de langue</li>
+                <li><b>En cas de connexion avec Google</b> : adresse e-mail, nom d’affichage, photo de profil, paramètres de pays et de langue, identifiant propre à chaque installation et liste des appareils (voir « Utilisation d’identifiants » ci-dessous)</li>
                 <li><b>En cas d’utilisation de la synchronisation cloud, du partage ou de la publication</b> : contenu des pages, mémos, événements, images, PDF et vidéos joints</li>
-                <li><b>En cas d’utilisation des fonctions IA</b> : texte saisi, contenu des pages, texte extrait des PDF, images jointes</li>
+                <li><b>En cas d’utilisation des fonctions IA</b> : texte saisi, contenu des pages, texte extrait des PDF, images jointes, audio et vidéos dont vous demandez la transcription, texte que vous demandez de lire à voix haute avec une voix d’IA</li>
                 <li><b>En cas d’achat d’un plan payant</b> : plan, dates de début et de fin de facturation, code promo, volume d’utilisation de l’IA et montant correspondant</li>
                 <li><b>En cas de demande de contact</b> : contenu du message, nom d’affichage, plan souscrit</li>
-                <li><b>Localisation dans le navigateur intégré</b> : notre serveur renvoie une position approximative (de l’ordre de la commune).</li>
+                <li><b>Localisation dans le navigateur intégré</b> : dans la version Android, lorsqu’un site ouvert dans le navigateur intégré (comme Google Maps) demande la position, la position précise de l’appareil n’est transmise à ce site qu’après une confirmation propre à ce site dans l’Application, puis l’octroi de l’autorisation de localisation d’Android (elle ne nous est pas envoyée). Dans la version Windows, notre serveur renvoie une position approximative (de l’ordre de la commune) estimée à partir de l’adresse IP.</li>
               </ul>
             </td>
           </tr>
@@ -190,11 +190,14 @@
           <tr>
             <th>Fonctions IA</th>
             <td>
-              Lorsque les fonctions IA sont utilisées, le texte saisi, le contenu des pages, le texte extrait des PDF et les images jointes sont envoyés directement, au moyen de <b>la clé API configurée par l’utilisateur lui-même</b> et <b>sans transiter par nos serveurs</b>, à l’un des services suivants. En cas d’utilisation de Claude Code, Codex ou Antigravity CLI, l’envoi est effectué par chaque CLI au moyen du propre compte de l’utilisateur (son abonnement auprès de chaque fournisseur).
+              Lorsque les fonctions IA sont utilisées, le texte saisi, le contenu des pages, le texte extrait des PDF, les images jointes, l’audio et les vidéos dont la transcription est demandée ainsi que le texte à lire à voix haute avec une voix d’IA sont envoyés directement depuis l’appareil, au moyen de <b>la clé API configurée par l’utilisateur lui-même</b> et <b>sans transiter par nos serveurs</b>, au service choisi par l’utilisateur parmi les suivants. En cas d’utilisation de Claude Code, Codex ou Antigravity CLI, l’envoi est effectué par chaque CLI au moyen du propre compte de l’utilisateur (son abonnement auprès de chaque fournisseur).
               <ul>
-                <li><b>Google LLC</b>（Gemini API）</li>
-                <li><b>OpenAI</b></li>
-                <li><b>Anthropic PBC</b></li>
+                <li><b>Google LLC</b> (API Gemini, y compris la transcription et la lecture à voix haute)</li>
+                <li><b>OpenAI</b> (y compris la transcription avec Whisper et la lecture à voix haute)</li>
+                <li><b>Anthropic PBC</b> (Claude)</li>
+                <li><b>xAI</b> (Grok)</li>
+                <li><b>DeepSeek</b></li>
+                <li><b>OpenRouter, Inc.</b></li>
               </ul>
               <span class="note">
                 La clé API est stockée chiffrée uniquement sur l’appareil et ne nous est pas transmise. Le traitement des données par chaque fournisseur d’IA est régi par les conditions de chacune de ces sociétés. Uniquement lorsqu’il subsiste un solde de crédits IA achetés précédemment et qu’aucune clé API n’est configurée, les données sont envoyées, jusqu’à épuisement de ce solde, via le serveur relais que nous exploitons (api.hisator-notebook.com, sur l’infrastructure de Cloudflare, Inc.) au moyen d’une clé API à notre nom. Le serveur relais <b>ne conserve pas le contenu</b> des données envoyées ni des réponses et enregistre uniquement le total de l’utilisation (nombre de jetons et montant) de chaque utilisateur.
@@ -237,7 +240,8 @@
             <td>
               Tous les prestataires ci-dessus sont situés hors du Japon.
               <ul>
-                <li><b>États-Unis</b> : Google LLC, OpenAI, Anthropic PBC, Stripe, Inc., RevenueCat, Inc., Cloudflare, Inc., DuckDuckGo, Inc.</li>
+                <li><b>États-Unis</b> : Google LLC, OpenAI, Anthropic PBC, xAI, OpenRouter, Inc., Stripe, Inc., RevenueCat, Inc., Cloudflare, Inc., DuckDuckGo, Inc.</li>
+                <li><b>République populaire de Chine</b> : DeepSeek</li>
                 <li><b>Allemagne</b> : DeepL SE</li>
                 <li><b>Suisse</b> : Open-Meteo</li>
               </ul>
@@ -253,8 +257,9 @@
               <ul>
                 <li><b>Synchronisation cloud (plan Max)</b> : les pages et pièces jointes stockées dans le cloud sont automatiquement supprimées <b>30 jours</b> après la résiliation (avec les plans Free et Pro, les données sont conservées uniquement sur l’appareil).</li>
                 <li><b>Pages publiées sur le web</b> : elles expirent automatiquement à l’issue de la durée indiquée (7 jours par défaut, 30 jours au maximum).</li>
-                <li><b>Informations de compte (identifiant anonyme, nom d’affichage, pays, langue, plan, utilisation)</b> : conservées jusqu’à réception d’une demande de suppression.</li>
+                <li><b>Informations de compte (identifiant anonyme, nom d’affichage, pays, langue, plan, utilisation, liste des appareils)</b> : conservées jusqu’à la suppression du compte ou la réception d’une demande de suppression.</li>
                 <li><b>Contenu des demandes de contact</b> : conservé à titre d’historique de traitement.</li>
+                <li><b>Ce qui subsiste après la suppression du compte</b> : les demandes de contact et les signalements de réponses de l’IA que vous avez envoyés (vous pouvez en demander la suppression via une demande de contact), les historiques d’utilisation de coupons, les historiques d’achats et de transactions conservés par Google Play, RevenueCat et Stripe (pendant la durée prévue par la loi), les pages et autres contenus placés dans des groupes partagés qui comptent encore d’autres membres, ainsi que les données enregistrées sur l’appareil (effacées lors de la désinstallation de l’Application) ne sont pas supprimés lors de la suppression du compte.</li>
               </ul>
             </td>
           </tr>
@@ -262,7 +267,7 @@
           <tr>
             <th>Communication, rectification et suppression</th>
             <td>
-              Si vous souhaitez obtenir la communication, la rectification, la suppression ou la suspension de l’utilisation des informations que nous détenons, veuillez nous contacter aux coordonnées ci-dessus. Nous donnerons suite à votre demande après avoir vérifié votre identité. <span class="note"> <b>À ce jour, l’application ne dispose d’aucune fonction de suppression de compte.</b> Si vous souhaitez une suppression, veuillez nous contacter. Par ailleurs, vous pouvez à tout moment exporter vos propres notes (JSON / .hnmap / HTML / PDF, etc.) depuis l’application. </span>
+              Si vous souhaitez obtenir la communication, la rectification, la suppression ou la suspension de l’utilisation des informations que nous détenons, veuillez nous contacter aux coordonnées ci-dessus. Nous donnerons suite à votre demande après avoir vérifié votre identité. <span class="note"> <b>Vous pouvez supprimer vous-même votre compte à tout moment avec « Supprimer le compte » dans la fenêtre « Réglages → Compte → Compte Google » de l’application.</b> Les données supprimées et celles qui sont conservées sont indiquées sur la page <a href="../account-deletion.html">Supprimer votre compte et vos données</a>. Si vous avez désinstallé l’application ou ne pouvez pas l’ouvrir, vous pouvez également demander la suppression en suivant la procédure indiquée sur cette même page. La suppression du compte n’arrête pas les abonnements Google Play : résiliez-les d’abord dans Google Play. Par ailleurs, vous pouvez à tout moment exporter vos propres notes (JSON / .hnmap / HTML / PDF, etc.) depuis l’application. </span>
             </td>
           </tr>
 
@@ -280,6 +285,7 @@
               <ul>
                 <li><b>Identifiant anonyme</b> émis pour chaque appareil (conservé jusqu’à la suppression de l’application)</li>
                 <li>Ce même identifiant, transmis à Stripe et à RevenueCat pour le rapprochement des achats</li>
+                <li>En cas de connexion avec Google, un <b>identifiant aléatoire</b> émis pour chaque installation et une <b>liste des appareils</b> (type d’appareil, comme « Android » ou « Windows », et date et heure de la dernière utilisation). Ils sont enregistrés dans le dossier de l’utilisateur et servent à limiter le nombre d’appareils utilisables simultanément ainsi qu’à la fonction de déconnexion des autres appareils.</li>
                 <li><b>Cookies</b> définis par les sites visités dans le navigateur intégré (supprimables depuis les paramètres)</li>
               </ul>
             </td>
@@ -288,7 +294,7 @@
           <tr>
             <th>Utilisation par les enfants</th>
             <td>
-              L’Application ne procède à aucune vérification de l’âge et ne collecte pas intentionnellement de données personnelles d’enfants. L’Application comprend une fonction de navigateur sans filtrage ainsi que des fonctions de partage avec d’autres utilisateurs. Si un parent ou tuteur s’aperçoit que son enfant a fourni des données personnelles par l’intermédiaire de l’Application, il est invité à nous contacter aux coordonnées ci-dessus. Après vérification, nous procéderons à leur suppression.
+              L’Application est destinée aux personnes âgées de 13 ans et plus. Les enfants de moins de 13 ans ne doivent pas l’utiliser. Par ailleurs, l’Application ne procède à aucune vérification de l’âge et ne collecte pas intentionnellement de données personnelles d’enfants. L’Application comprend une fonction de navigateur sans filtrage ainsi que des fonctions de partage avec d’autres utilisateurs. Si un parent ou tuteur s’aperçoit que son enfant a fourni des données personnelles par l’intermédiaire de l’Application, il est invité à nous contacter aux coordonnées ci-dessus. Après vérification, nous procéderons à leur suppression.
             </td>
           </tr>
 
@@ -303,7 +309,7 @@
       </table>
 
       <div class="tokutei-intro" style="margin-top:2rem">
-        Date d’établissement : 28 août 2026
+        Date d’établissement : 28 août 2026<br>Dernière révision : 27 novembre 2026
       </div>
 
     </div>

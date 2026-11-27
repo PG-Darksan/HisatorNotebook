@@ -133,12 +133,12 @@
               <ul>
                 <li><b>ID anónimo de cada dispositivo (ID de usuario anónimo de Firebase)</b>: no está vinculado al nombre ni a la dirección de correo electrónico.</li>
                 <li><b>Dirección IP</b> (que se envía de forma inevitable como destino de la comunicación)</li>
-                <li><b>Configuración de país e idioma del dispositivo</b></li>
+                <li><b>Configuración de país e idioma del dispositivo</b> (solo si ha iniciado sesión con Google)</li>
                 <li><b>Fecha y hora del último uso</b></li>
                 <li>Consulta del <b>plan contratado</b> y del saldo de uso de IA</li>
               </ul>
               <span class="note">
-                <b>No se obtienen la edad, el sexo ni la fecha de nacimiento.</b> Tampoco se obtiene la información de ubicación, salvo que el usuario utilice expresamente funciones que empleen mapas, meteorología o información de ubicación.
+                <b>No se obtienen la edad, el sexo ni la fecha de nacimiento.</b> La Aplicación nunca lee por sí misma la ubicación del dispositivo (GPS, etc.). La forma en que se proporciona la ubicación a los sitios abiertos en el navegador integrado se describe más abajo, en «Información enviada según el uso».
               </span>
             </td>
           </tr>
@@ -148,12 +148,12 @@
             <td>
               La siguiente información solo se envía cuando el usuario utiliza la función correspondiente.
               <ul>
-                <li><b>Si inicia sesión con Google</b>: dirección de correo electrónico, nombre visible, imagen de perfil y configuración de idioma</li>
+                <li><b>Si inicia sesión con Google</b>: dirección de correo electrónico, nombre visible, imagen de perfil, configuración de país e idioma, y un identificador por instalación y la lista de dispositivos (véase «Uso de identificadores» más abajo)</li>
                 <li><b>Si utiliza la sincronización en la nube, el uso compartido o la publicación</b>: el texto de las páginas, las notas, los eventos y las imágenes, PDF y vídeos adjuntos</li>
-                <li><b>Si utiliza las funciones de IA</b>: el texto introducido, el contenido de las páginas, el texto extraído de PDF y las imágenes adjuntas</li>
+                <li><b>Si utiliza las funciones de IA</b>: el texto introducido, el contenido de las páginas, el texto extraído de PDF, las imágenes adjuntas, el audio y el vídeo que pida transcribir y el texto que pida leer en voz alta con una voz de IA</li>
                 <li><b>Si adquiere un plan de pago</b>: el plan, las fechas de inicio y fin de la facturación, el código de cupón, y el uso de IA y su importe</li>
                 <li><b>Si realiza una consulta</b>: el texto de la consulta, el nombre visible y el plan contratado</li>
-                <li><b>Ubicación en el navegador integrado</b>: nuestro servidor devuelve una ubicación aproximada (a nivel de municipio).</li>
+                <li><b>Ubicación en el navegador integrado</b>: en la versión para Android, cuando un sitio abierto en el navegador integrado (como Google Maps) solicita la ubicación, la ubicación precisa del dispositivo solo se facilita a ese sitio después de que usted lo confirme para ese sitio en la Aplicación y conceda además el permiso de ubicación de Android (no se nos envía). En la versión para Windows, nuestro servidor devuelve una ubicación aproximada (a nivel de municipio) estimada a partir de la dirección IP.</li>
               </ul>
             </td>
           </tr>
@@ -190,11 +190,14 @@
           <tr>
             <th>Sobre las funciones de IA</th>
             <td>
-              Al utilizar las funciones de IA, el texto introducido, el contenido de las páginas, el texto extraído de PDF y las imágenes adjuntas se envían directamente a uno de los siguientes destinos utilizando <b>la clave de API configurada por el propio usuario</b>, <b>sin pasar por nuestros servidores</b>. Cuando se utilizan Claude Code, Codex o Antigravity CLI, cada CLI realiza el envío con la cuenta del propio usuario (su contrato con cada proveedor).
+              Al utilizar las funciones de IA, el texto introducido, el contenido de las páginas, el texto extraído de PDF, las imágenes adjuntas, el audio y el vídeo que se pida transcribir y el texto que se lea en voz alta con una voz de IA se envían directamente desde el dispositivo al destino que el usuario elija entre los siguientes, utilizando <b>la clave de API configurada por el propio usuario</b>, <b>sin pasar por nuestros servidores</b>. Cuando se utilizan Claude Code, Codex o Antigravity CLI, cada CLI realiza el envío con la cuenta del propio usuario (su contrato con cada proveedor).
               <ul>
-                <li><b>Google LLC</b>（Gemini API）</li>
-                <li><b>OpenAI</b></li>
-                <li><b>Anthropic PBC</b></li>
+                <li><b>Google LLC</b> (API de Gemini, incluidas la transcripción y la lectura en voz alta)</li>
+                <li><b>OpenAI</b> (incluidas la transcripción con Whisper y la lectura en voz alta)</li>
+                <li><b>Anthropic PBC</b> (Claude)</li>
+                <li><b>xAI</b> (Grok)</li>
+                <li><b>DeepSeek</b></li>
+                <li><b>OpenRouter, Inc.</b></li>
               </ul>
               <span class="note">
                 Las claves de API se guardan cifradas únicamente en el dispositivo y no se nos envían. El tratamiento por parte de cada proveedor de IA se rige por las condiciones de cada empresa. Únicamente cuando quede saldo de créditos de IA adquiridos anteriormente y no se haya configurado una clave de API, los datos se envían, hasta agotar dicho saldo, a través de un servidor intermediario gestionado por nosotros (api.hisator-notebook.com, sobre la infraestructura de Cloudflare, Inc.), utilizando claves de API a nuestro nombre. El servidor intermediario <b>no guarda el texto</b> del contenido enviado ni de las respuestas, y solo registra el total de uso (número de tokens e importe) de cada usuario.
@@ -237,7 +240,8 @@
             <td>
               Todas las empresas mencionadas se encuentran fuera de Japón.
               <ul>
-                <li><b>Estados Unidos de América</b>: Google LLC, OpenAI, Anthropic PBC, Stripe, Inc., RevenueCat, Inc., Cloudflare, Inc., DuckDuckGo, Inc.</li>
+                <li><b>Estados Unidos de América</b>: Google LLC, OpenAI, Anthropic PBC, xAI, OpenRouter, Inc., Stripe, Inc., RevenueCat, Inc., Cloudflare, Inc., DuckDuckGo, Inc.</li>
+                <li><b>República Popular China</b>: DeepSeek</li>
                 <li><b>Alemania</b>: DeepL SE</li>
                 <li><b>Suiza</b>: Open-Meteo</li>
               </ul>
@@ -253,8 +257,9 @@
               <ul>
                 <li><b>Sincronización en la nube (plan Max)</b>: las páginas y los archivos adjuntos almacenados en la nube se eliminan automáticamente <b>30 días después</b> de la cancelación (en los planes Free y Pro, los datos se guardan únicamente en el dispositivo).</li>
                 <li><b>Páginas publicadas en la web</b>: caducan automáticamente una vez transcurrido el plazo indicado (7 días por defecto, 30 días como máximo).</li>
-                <li><b>Información de la cuenta (ID anónimo, nombre visible, país, idioma, plan y uso)</b>: se conserva hasta que se solicite su eliminación.</li>
+                <li><b>Información de la cuenta (ID anónimo, nombre visible, país, idioma, plan, uso y lista de dispositivos)</b>: se conserva hasta que se elimine la cuenta o se solicite su eliminación.</li>
                 <li><b>Contenido de las consultas</b>: se conserva como registro de la atención prestada.</li>
+                <li><b>Lo que se conserva tras eliminar la cuenta</b>: las consultas y los informes sobre respuestas de la IA que haya enviado (puede pedirnos su eliminación mediante una consulta), los registros de uso de cupones, los registros de compras y transacciones que conservan Google Play, RevenueCat y Stripe (durante el plazo exigido por la ley), las páginas y demás contenido que haya colocado en grupos compartidos que aún tengan otros miembros, y los datos guardados en el dispositivo (se borran al desinstalar la Aplicación) no se eliminan al eliminar la cuenta.</li>
               </ul>
             </td>
           </tr>
@@ -262,7 +267,7 @@
           <tr>
             <th>Acceso, rectificación y supresión</th>
             <td>
-              Si desea solicitar el acceso, la rectificación, la supresión o la suspensión del uso de la información que conservamos, póngase en contacto con nosotros a través de los datos de contacto indicados anteriormente. Atenderemos la solicitud tras verificar su identidad. <span class="note"> <b>Actualmente, la Aplicación no dispone de ninguna función para eliminar la cuenta.</b> Si desea eliminarla, póngase en contacto con nosotros. Por otra parte, puede exportar sus propias notas (JSON / .hnmap / HTML / PDF, etc.) en cualquier momento desde la Aplicación. </span>
+              Si desea solicitar el acceso, la rectificación, la supresión o la suspensión del uso de la información que conservamos, póngase en contacto con nosotros a través de los datos de contacto indicados anteriormente. Atenderemos la solicitud tras verificar su identidad. <span class="note"> <b>Puede eliminar su cuenta usted mismo en cualquier momento con «Eliminar cuenta» en la ventana «Ajustes → Cuenta → Cuenta de Google» de la Aplicación.</b> Los datos que se eliminan y los que se conservan se indican en la página <a href="../account-deletion.html">Eliminar la cuenta y los datos</a>. Si ha desinstalado la Aplicación o no puede abrirla, también puede solicitar la eliminación siguiendo los pasos de esa misma página. Eliminar la cuenta no cancela las suscripciones de Google Play, así que cancélelas primero en Google Play. Por otra parte, puede exportar sus propias notas (JSON / .hnmap / HTML / PDF, etc.) en cualquier momento desde la Aplicación. </span>
             </td>
           </tr>
 
@@ -280,6 +285,7 @@
               <ul>
                 <li><b>ID anónimo</b> emitido para cada dispositivo (se conserva hasta que se elimine la Aplicación)</li>
                 <li>El mismo ID, facilitado a Stripe y RevenueCat para verificar las compras</li>
+                <li>Si ha iniciado sesión con Google, un <b>identificador aleatorio</b> emitido para cada instalación y una <b>lista de dispositivos</b> (tipo de dispositivo, como «Android» o «Windows», y fecha y hora del último uso). Se guardan en el registro del usuario y se utilizan para limitar el número de dispositivos que pueden usarse a la vez y para la función de cerrar la sesión en otros dispositivos.</li>
                 <li><b>Cookies</b> establecidas por los sitios visitados en el navegador integrado (pueden borrarse desde la configuración)</li>
               </ul>
             </td>
@@ -288,7 +294,7 @@
           <tr>
             <th>Uso por menores</th>
             <td>
-              La Aplicación no verifica la edad de los usuarios y no obtiene intencionadamente información personal de menores. La Aplicación incluye una función de navegador sin filtrado y funciones para compartir con otros usuarios. Si un padre, madre o tutor advierte que su hijo o hija ha proporcionado información personal a través de la Aplicación, le rogamos que se ponga en contacto con nosotros a través de los datos de contacto indicados anteriormente. La eliminaremos tras comprobarlo.
+              La Aplicación está destinada a usuarios de 13 años o más. Los menores de 13 años no deben utilizarla. Por otra parte, la Aplicación no verifica la edad de los usuarios y no obtiene intencionadamente información personal de menores. La Aplicación incluye una función de navegador sin filtrado y funciones para compartir con otros usuarios. Si un padre, madre o tutor advierte que su hijo o hija ha proporcionado información personal a través de la Aplicación, le rogamos que se ponga en contacto con nosotros a través de los datos de contacto indicados anteriormente. La eliminaremos tras comprobarlo.
             </td>
           </tr>
 
@@ -303,7 +309,7 @@
       </table>
 
       <div class="tokutei-intro" style="margin-top:2rem">
-        Fecha de establecimiento: 28 de agosto de 2026
+        Fecha de establecimiento: 28 de agosto de 2026<br>Última revisión: 27 de noviembre de 2026
       </div>
 
     </div>
